@@ -10,12 +10,13 @@
 		02F86F18DBA6913FCF9FE214 /* libPods-GarageDoorOpenerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D4E0F1B9801810CF1594B1F /* libPods-GarageDoorOpenerTests.a */; };
 		43E4AA641CE8C773007F9F15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E4AA631CE8C773007F9F15 /* main.m */; };
 		43E4AA671CE8C773007F9F15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E4AA661CE8C773007F9F15 /* AppDelegate.m */; };
-		43E4AA6A1CE8C773007F9F15 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E4AA691CE8C773007F9F15 /* ViewController.m */; };
+		43E4AA6A1CE8C773007F9F15 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E4AA691CE8C773007F9F15 /* MainViewController.m */; };
 		43E4AA6D1CE8C773007F9F15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E4AA6B1CE8C773007F9F15 /* Main.storyboard */; };
 		43E4AA6F1CE8C773007F9F15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43E4AA6E1CE8C773007F9F15 /* Assets.xcassets */; };
 		43E4AA721CE8C773007F9F15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E4AA701CE8C773007F9F15 /* LaunchScreen.storyboard */; };
 		43E4AA7D1CE8C773007F9F15 /* GarageDoorOpenerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E4AA7C1CE8C773007F9F15 /* GarageDoorOpenerTests.m */; };
 		43E4AA881CE8C774007F9F15 /* GarageDoorOpenerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E4AA871CE8C774007F9F15 /* GarageDoorOpenerUITests.m */; };
+		43E4CB791CE8CF400008FC9D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E4CB781CE8CF400008FC9D /* LoginViewController.m */; };
 		7EA86913DD9E21CF1B5D6F60 /* libPods-GarageDoorOpener.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B337447101DD47D909E36A0 /* libPods-GarageDoorOpener.a */; };
 		B601991150CCBD9A8FC9B3B4 /* libPods-GarageDoorOpenerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6842404DCC28547D6B568EDE /* libPods-GarageDoorOpenerUITests.a */; };
 /* End PBXBuildFile section */
@@ -45,8 +46,8 @@
 		43E4AA631CE8C773007F9F15 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		43E4AA651CE8C773007F9F15 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		43E4AA661CE8C773007F9F15 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		43E4AA681CE8C773007F9F15 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		43E4AA691CE8C773007F9F15 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		43E4AA681CE8C773007F9F15 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		43E4AA691CE8C773007F9F15 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		43E4AA6C1CE8C773007F9F15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		43E4AA6E1CE8C773007F9F15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43E4AA711CE8C773007F9F15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +58,9 @@
 		43E4AA831CE8C773007F9F15 /* GarageDoorOpenerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GarageDoorOpenerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E4AA871CE8C774007F9F15 /* GarageDoorOpenerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GarageDoorOpenerUITests.m; sourceTree = "<group>"; };
 		43E4AA891CE8C774007F9F15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43E4CB771CE8CF400008FC9D /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		43E4CB781CE8CF400008FC9D /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		43E4CB7A1CE8D64B0008FC9D /* SegueDefinations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SegueDefinations.h; sourceTree = "<group>"; };
 		4EDB961EECB4D359203F9D42 /* Pods-GarageDoorOpener.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GarageDoorOpener.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GarageDoorOpener/Pods-GarageDoorOpener.debug.xcconfig"; sourceTree = "<group>"; };
 		6842404DCC28547D6B568EDE /* libPods-GarageDoorOpenerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GarageDoorOpenerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92DA7E9CB51E757E5C6C16D3 /* Pods-GarageDoorOpener.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GarageDoorOpener.release.xcconfig"; path = "Pods/Target Support Files/Pods-GarageDoorOpener/Pods-GarageDoorOpener.release.xcconfig"; sourceTree = "<group>"; };
@@ -120,8 +124,11 @@
 			children = (
 				43E4AA651CE8C773007F9F15 /* AppDelegate.h */,
 				43E4AA661CE8C773007F9F15 /* AppDelegate.m */,
-				43E4AA681CE8C773007F9F15 /* ViewController.h */,
-				43E4AA691CE8C773007F9F15 /* ViewController.m */,
+				43E4AA681CE8C773007F9F15 /* MainViewController.h */,
+				43E4AA691CE8C773007F9F15 /* MainViewController.m */,
+				43E4CB7A1CE8D64B0008FC9D /* SegueDefinations.h */,
+				43E4CB771CE8CF400008FC9D /* LoginViewController.h */,
+				43E4CB781CE8CF400008FC9D /* LoginViewController.m */,
 				43E4AA6B1CE8C773007F9F15 /* Main.storyboard */,
 				43E4AA6E1CE8C773007F9F15 /* Assets.xcassets */,
 				43E4AA701CE8C773007F9F15 /* LaunchScreen.storyboard */,
@@ -444,7 +451,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43E4AA6A1CE8C773007F9F15 /* ViewController.m in Sources */,
+				43E4CB791CE8CF400008FC9D /* LoginViewController.m in Sources */,
+				43E4AA6A1CE8C773007F9F15 /* MainViewController.m in Sources */,
 				43E4AA671CE8C773007F9F15 /* AppDelegate.m in Sources */,
 				43E4AA641CE8C773007F9F15 /* main.m in Sources */,
 			);
