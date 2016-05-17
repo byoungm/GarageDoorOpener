@@ -7,566 +7,663 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0358B918CA8C9D3C214FD4D41CD69A90 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EDC82E26C0F346EB4C7A4C4C5A0E864 /* Security.framework */; };
-		045FFEDD819A734271DD5DE53C877884 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28310C109F80A2823B80B134627E5D8 /* CoreGraphics.framework */; };
-		0A08FC71C4E3B8E0F8734BCDA7CCA7CB /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = A14CB25B3B971824341AEBF8745B27CE /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		100F6A2FDE25E5B0C20EC843ECFAA2B5 /* SparkEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9515FF2852260A56D50955F81336ECD5 /* SparkEvent.m */; };
-		149A13808ADE6D2008D9DCC5B6294763 /* SparkDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0CA9322DEB9FAB6C40FD973F4685FD /* SparkDevice.m */; };
-		14CD3DFB4A25BAEFB205730FA6750025 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 601E5D9BAEC340139DAFA6057A43A484 /* AFAutoPurgingImageCache.m */; };
-		15460ABD372C937E2A07A2FCDF98C473 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EABF55064940A49D5EC95E174124AB /* UIActivityIndicatorView+AFNetworking.m */; };
-		17912D9A89FC36E82029409E9B74A61A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0A15003DCEEBA4FDF7ABE901F172CE /* MobileCoreServices.framework */; };
-		19E6319F6ECED7539AABBD9A211F7AEC /* AFAutoPurgingImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E814CD453ACC2E13ECDCA1461845AA3 /* AFAutoPurgingImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1ABA215CB5CE2904DD6A5B6C4EDC4991 /* SparkDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = D42DEDB99E40E51980CB47D5194BBDF6 /* SparkDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1D379EEE3D85E5BC7278BA2EF5C5B9C9 /* SparkCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 3589A85CE83308E57CA652AFA1B3C1BE /* SparkCloud.m */; };
-		23415204AA48A02959E4E5245CF96037 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E185FF4394509DA11AB4925C974DAFFC /* AFHTTPSessionManager.m */; };
-		2359387620C5E815BF0594BC40311734 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 69AE83F530ACF16AAFA14D8CD0EC1632 /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2F867E2CA2668A17F28F933E0D3AA5C6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 343DFBED3469B92704E04E700E1DFF67 /* SystemConfiguration.framework */; };
-		30DA0B928C8F28E3C3F279C3833458A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FF44178312A86C7B9C1F8431F75735 /* Foundation.framework */; };
-		311E5200832E4AE174A193851A2C6317 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5AE92C831C5737463CF8662563AACA /* AFSecurityPolicy.m */; };
-		326A543AD4E39A2DAECA1CD385E3AEA2 /* AFImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 977316F6E7A6BDBD81928CA7F3656851 /* AFImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3511AE7ADBB71D05565854F0E70B7D08 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 61195F02F2123C37070BACE867F87837 /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		38EEA9ED6B922946C54AD6BAC93B73AD /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = A5AB7CCC56330A61E757BEB6250F7EBC /* UIProgressView+AFNetworking.m */; };
-		3939531EB270B4145C7ADFBAB2E5695F /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E4F48D51484A85D949660ECADCD3DFD /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		43098B12DF5546CB576986E68DBCAFCA /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C82510417602751903BA188E538F1BE /* AFNetworkReachabilityManager.m */; };
-		47AEEB8FCA5F27F28219764CB455A107 /* EventSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFCD533B2BFFFF3617BD4DE993634D3 /* EventSource.m */; };
-		4BA19F7DD8F9FDA648137B2CE89E7588 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B9BC8222CB0651992E551472DD234D /* AFNetworkActivityIndicatorManager.m */; };
-		4C20877C8E183175797FAE4A1AE3A348 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FF44178312A86C7B9C1F8431F75735 /* Foundation.framework */; };
-		598FA467B78B037CC288483B61B29E5E /* SparkCloud.h in Headers */ = {isa = PBXBuildFile; fileRef = 887B6F0E4D370BE034F0C1C04EEC270E /* SparkCloud.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5D52DB6DF2E6C24CECB0015A9177A2E1 /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = CB7E46DBC4FEE3E4F07429A9768A2F02 /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		600F28A40FC0C395104C7D912784CE2D /* Pods-GarageDoorOpenerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB9663C6D3044EA790FCB9CB2B485C /* Pods-GarageDoorOpenerTests-dummy.m */; };
-		60BC1306F35598E99F827E2B669D9580 /* KeychainItemWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C0A8E8442A5078CB24BA69C6C61B2D3 /* KeychainItemWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62EEBA094E7BD15ADEE1E96AC4620715 /* Spark-SDK-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 26A3475DEFFEBCB17FF194AA55713109 /* Spark-SDK-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		650FFDAF60A6C37D824BC6364B09A3E5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 343DFBED3469B92704E04E700E1DFF67 /* SystemConfiguration.framework */; };
-		6EC97BDB3FC508526F9E388095A7DDCC /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 85ED4664BDF4972C985F7225BC91C601 /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		75D375D8B63159262F8E1C7428697EAB /* Pods-GarageDoorOpenerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C1DFC32CF24F495F0B543242BB4DF6 /* Pods-GarageDoorOpenerUITests-dummy.m */; };
-		78940A6980F359C4304C695EF6E67C5D /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 49078A3702EDE988BAF617730217B45D /* UIButton+AFNetworking.m */; };
-		7A96CF0DBAB7DF2737E20E501BC91252 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EDC82E26C0F346EB4C7A4C4C5A0E864 /* Security.framework */; };
-		7F0578A0258E02384F6229C678E60D31 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D9450C6585FC44DBDAD11BC0232003B /* UIRefreshControl+AFNetworking.m */; };
-		830050886B18F54E17F117FD8EFC717B /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 89EA1C76CD4975FE800F081A39AD222F /* UIActivityIndicatorView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8474E53C5A31446C2EFD3A1E5850E2A9 /* SparkEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = FC748241E8A4229ED2046FFF82D4F936 /* SparkEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		85FAB6F1D2FE0598BF2E61D7BB084B8D /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = A985F9936EC23B054D6AF58367475C3E /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8BC8477313BFC3C6FA36A07087C72324 /* Pods-GarageDoorOpener-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B074FDB12ABC6BAEF639FC3378A3E8 /* Pods-GarageDoorOpener-dummy.m */; };
-		8E82178CC9BD8BE3DBF2C10E33807AEB /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA16B3FD82631FE11F04C979385E33C /* AFURLRequestSerialization.m */; };
-		9EF71B71A2609B678E075089DF3FDAA5 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9196221B06B8FE99B34671EA3F79D189 /* KeychainItemWrapper.m */; };
-		A8FC6A53F6C1CB4DEFD972664E1AF3B1 /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C28D7DFE85765DFAA8DD4B3A426F622B /* AFNetworking-dummy.m */; };
-		ACE9C1A6E8D5121C6C5F907C7A9CFCC9 /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CE4C0438A875D071CF586DD71C73EE7 /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD359A96DD4AA2C962E50A5CD5524F54 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C5EA217FC329AD3026F2F9985532B8 /* UIWebView+AFNetworking.m */; };
-		AF4DDCB386621CAA00D5523E60F44CEF /* Spark-SDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4948F7393B5BD9A573361F7EF66CDE2 /* Spark-SDK-dummy.m */; };
-		B0BE398350F83A7B0102C3BBAFC51428 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 988A55FA5937F90972A0EE80FEDC99EF /* UIImageView+AFNetworking.m */; };
-		B4AAF793D305793D3D3471B14ACB941A /* EventSource.h in Headers */ = {isa = PBXBuildFile; fileRef = EBF4810F147FB732DA23C2172E8E3DD2 /* EventSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B51AA1F7701DCDBCC9B88A15320F9C2C /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = BF9B0595BF8D87FAC8E1090B82116FB1 /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B5CF67F7870BAB70A76E57479B706B42 /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 20977D6A26CD941B04EC76EF062F9167 /* UIWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B9F5703AC536FB6EBA13580768052951 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FF44178312A86C7B9C1F8431F75735 /* Foundation.framework */; };
-		C1B65C3D849FEE4FB5298A8135A765DA /* UIImage+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A4FCEC0649A31A26C6F1A7E4ADEAF5F /* UIImage+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2201E34603B014192F0967473518496 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB9822E2642CE4ADCA0F4A205660500 /* AFURLResponseSerialization.m */; };
-		D31FEE51AF4BE2A6CC059F80B983CD3B /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D139B155410C55735F9523508153F47 /* AFImageDownloader.m */; };
-		D4EE845DCD147A2EE5B418E95A9E04F2 /* SparkSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 616EA2DD9D1B322494F03CFE218D5664 /* SparkSession.m */; };
-		D7BEC323391890D36C0B19FCA2F0CBC6 /* Spark-SDK.h in Headers */ = {isa = PBXBuildFile; fileRef = E258034397F74378B6B916AB4B1AA266 /* Spark-SDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DCA1F6E80A18AEBFFFB59826A0D4D793 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FF44178312A86C7B9C1F8431F75735 /* Foundation.framework */; };
-		DFDAC8245626953C4BCE5A2DA6BE2A5B /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = C47A1BCD4802D4157C20ADD059E2A6F6 /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E212C2AA95E8F6EFB69A5F1455F291F8 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B6E31A577CB976C578DD53534D7FCE2B /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E5CF31D33614AFC7AB937DD16F91FF1F /* SparkSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B8EEA859DB5DDCFD1DC38800AE70FD2 /* SparkSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ED69D9B5A342FE9BD3F170D5CDDEC948 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E7AD796A9083937D5734C0CFE6DFE2E1 /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEBBECCE42285656D1D003D54377AF46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FF44178312A86C7B9C1F8431F75735 /* Foundation.framework */; };
-		F3774B1449FCE5B3CA3E1B336E11D284 /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FE4686F3FFDFB8DC79A1FFEAC956855F /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FCDDD3BC67EA205C87238A2A87D5C36C /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D89AE9677EBCC69BB9DEA6FBABC5AAD2 /* AFURLSessionManager.m */; };
+		0061931E274AA7490FB961088D4E1B91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C739F1127D7E94D9137583AECFCC0E /* Foundation.framework */; };
+		01CA06ECD3EA234AAB3908FDBD0F623C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EF139D3016A3EC169A4B9F90049B98D /* Security.framework */; };
+		0A2102A12B648A60C38D6C3D94358BED /* Spark-SDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5331EBFE9465018A7E71DFD1FBD647D5 /* Spark-SDK-dummy.m */; };
+		0B778F7BC3AE374B8CA99564C0C0A09D /* SparkEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 729BAF67AF61F73CB1896A8A330750DF /* SparkEvent.m */; };
+		0C8764EE056B74D7CC4588192A3D14DF /* SparkEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = ADC5D322F62F2945E45EEDF90E30AAC8 /* SparkEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11D61F1A3524D9FF4790DF04241DF17D /* SparkSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 297927D6612664752C6E985BCD8809B0 /* SparkSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1480F4923DBBF217F60572EEECB4027C /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E64A9EE66920A6589D5739C40F528871 /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		174202BD6AE0E4A41F5CE66E975EAE52 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = AB64B06134587209BA47C9BD364E65F1 /* UIRefreshControl+AFNetworking.m */; };
+		183F5F8ACBF18BE52C17E75EF28E4E7B /* Pods-GarageDoorOpenerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B62B417D20EBBBD7704E802AD3F1970D /* Pods-GarageDoorOpenerTests-dummy.m */; };
+		192AC43D2F848129D2CAC66DAAF6CA35 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EF139D3016A3EC169A4B9F90049B98D /* Security.framework */; };
+		1B1867658112A552610ACA7BD429AC9C /* Pods-GarageDoorOpenerUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 902CC55BC77E1A537C945FF9F06DA9C4 /* Pods-GarageDoorOpenerUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B5DEFAED6AFFE9FF912C33D59394E88 /* RNCryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 28600CF072E86ABC6C0ECA2D0825431B /* RNCryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DC77884C245F3DE3A45962EAC31BB2B /* SparkCloud.h in Headers */ = {isa = PBXBuildFile; fileRef = FB26725E60F19EFF6BD0681ABF5A96EE /* SparkCloud.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E5B8F12ED7CC40ECDB9B1F755F387E5 /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = A421754DE2E8ADECC8F88CAA0953522B /* UIActivityIndicatorView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20607BE2B1E5F31765026E5AC64DB27D /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F755390C3F1C666487CB8E158BC101 /* AFSecurityPolicy.m */; };
+		20EE8030FCF2402DAC7F1C9B9DDAEF79 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C1B5E561BE7C6179976F25BA30583DF /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20F6E998BFDFB02D681BF0EAB1AD7A59 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5461D992F0D803F0F05DF72B2849301D /* AFNetworking.framework */; };
+		2E8A32ED46194EDBE22146271F6D26DE /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 699F5927E78CA6F9085A94A9AFEA5B66 /* UIImageView+AFNetworking.m */; };
+		358AD98AABE30A8B2586B0466BE0C485 /* Spark-SDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B15FFA42FF83A52D53CF4FBEF667241 /* Spark-SDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39C01197A5A0379F7377993E75833016 /* SparkSession.m in Sources */ = {isa = PBXBuildFile; fileRef = B49989B45CA996A6F7A8F70440EDCD99 /* SparkSession.m */; };
+		3D2789FC760A97301909F0B1201626CD /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F941B96BBC02789A657D3FDF858B23 /* AFNetworking-dummy.m */; };
+		3F1BC9BAFFEEABB1ABC7614DF0FC97D5 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF86BC3B15AA82B8853E6A77583B40F /* AFAutoPurgingImageCache.m */; };
+		4A495F0492E7C2008D7A5F03A2DF9B5C /* Pods-GarageDoorOpenerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A20AAF4417B46E656BECA2B83904F6 /* Pods-GarageDoorOpenerUITests-dummy.m */; };
+		4ECA9BE68D373E094EFA019CC4EA1720 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E098DE86ED811B6D87786B436462D468 /* CoreGraphics.framework */; };
+		4FE3D0FC60D1370E831CBFF9680FA8EB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53988B41BFD74EE13612A4293F09CD6 /* MobileCoreServices.framework */; };
+		50CE341A17CA757887DBB391CFBA49CE /* RNCryptor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E2395549FE4EF6AD1F0315B4FBF3C588 /* RNCryptor-dummy.m */; };
+		560698A4D707DCBCC1C8F98BC9B89B23 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 81E170C783B65C3A84E5C56D20CBA54F /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57864033816BEDAC33EB5D73ED10B067 /* Pods-GarageDoorOpenerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B8A1F76E005701746E733F4C3D197BD /* Pods-GarageDoorOpenerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5808B477EFF509D810B5CDCFDC944F80 /* AFImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 85732425EDF70712F8083D80E8B15D4C /* AFImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B097FF35853960960DF266EA46464BE /* Pods-GarageDoorOpener-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AF165546660F6F50E8E35B98C6E1DD6 /* Pods-GarageDoorOpener-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FF6453E55785669885F626B853FD2AA /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E376B368E9FC7B70FADB61BD479E66A3 /* UIProgressView+AFNetworking.m */; };
+		60CD7DA1FBC72E73A8A3D5929D41807C /* EventSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F86A9526538BC17D6B0E59598B54AE0 /* EventSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60E3009342BEE96D32C546BE2DB60052 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 4804054EF2C1EA814AAF916A2CD74FAF /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61F0B0C2AE09715EC6B67E97FC724DD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C739F1127D7E94D9137583AECFCC0E /* Foundation.framework */; };
+		625590D5A144FBDB05F07EE2ED71478F /* SparkDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE7BAE593B36A4DC881651249742B64 /* SparkDevice.m */; };
+		659960F7E28E993E08CCC1E8A383E710 /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = C4B98248318A077111C059E38FC37C28 /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68152D921ABF6A423C192C04FDF94F0F /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B06C86D0901214D597C0F8A92D653A0 /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		688E37A2E29646148D380D9034875174 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EC046EEE00CAE53FC620929325D144 /* SystemConfiguration.framework */; };
+		68A38977EBAE334DC3C22386D00D2622 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE498983B4C12C3956579EF2832655E /* AFNetworkReachabilityManager.m */; };
+		69A41AAADF21598CC296B8E57FAB802F /* Spark-SDK.h in Headers */ = {isa = PBXBuildFile; fileRef = F2BFBAD0609A1D264B329D909DBFB6AB /* Spark-SDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D999ACFEB5522688393DE1EFD41A002 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EC046EEE00CAE53FC620929325D144 /* SystemConfiguration.framework */; };
+		6ED4ABEE8A5F51F5ECB59FA1781D29C6 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 81686BFF78B36F0DBFF22B85185098E1 /* UIActivityIndicatorView+AFNetworking.m */; };
+		707B1A7541C8DBDDE8C27896A61370BE /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D50310B681F54C17E0578A42CD68BD6D /* AFURLSessionManager.m */; };
+		70C4C2427F6ED0D7B219B0A07BEE81FE /* Spark-SDK-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A7CE6FA5114E02517D98721D6F6BC6F /* Spark-SDK-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7332F15718920917F544F35CE2C038AA /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 29C4E10F7B3EA4FE3F42A3A9B83660CE /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EE58C6CCD794FD0AE257CC39A39C965 /* RNCryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB088E70F7A33A3B08B9F3A07DA16729 /* RNCryptor.swift */; };
+		81B617F8D26BB10C5726D75E85D21EB7 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 22F3CC2F14E8E6638B3A1FAB08A193A9 /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88384F21694834ADF197685789B4F5AF /* EventSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFECB34FD4F6A1EEA06E1B620F755E0 /* EventSource.m */; };
+		8E5827C47228AED513444310F3BE3392 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C739F1127D7E94D9137583AECFCC0E /* Foundation.framework */; };
+		9D09760CFB78E50F9E2E7CA07209A849 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C739F1127D7E94D9137583AECFCC0E /* Foundation.framework */; };
+		9E1E90DED74B73ECE53C9AD76DE53E2D /* UIImage+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = AA40D51E944C495563F4DEB61CAA0214 /* UIImage+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A462945883F7729B185B64B679A6BFBE /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA50D9247169F60D45B4FA799A13122 /* UIWebView+AFNetworking.m */; };
+		A6C6019D45BE62C61210A9CC619368EF /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF2878655E0F2D55857F4D604736CA1 /* AFNetworkActivityIndicatorManager.m */; };
+		AB39AC9746E7575D7449700475E41B0B /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 89BCE50BFD9B2588513D4B97ACD52B49 /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE2A07407FB50BA249984DC0620E84C0 /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = ABC165571323220759D9E9D8B8EC0AED /* UIWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF03C11A1FAC8132AD3749D8F541701A /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC345BE6EB65B3AF9B989ABEF559D9C /* UIButton+AFNetworking.m */; };
+		B5852322ADE88AAD56EE042B80BA81E4 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 070DAE1434BC449C52249F0635A0C2F6 /* AFURLResponseSerialization.m */; };
+		B9759F956F1AF8E4290218903095E9E2 /* SparkDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = F089E1BD32BFEA649DE8F7009F0BF382 /* SparkDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B99FAFBBC58F176BCBAA61124A21C14B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C739F1127D7E94D9137583AECFCC0E /* Foundation.framework */; };
+		C2DD28375E1F0B1D0D1D2E4E607C499F /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 27870809287150EE14FE1813DDABAB23 /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6354FEC7728A4C86DAD8092509BA7D4 /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 72F5A34F58313FE30AC3A905110B171F /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAC483EF637FB4A2C2E2FC75BA631B87 /* AFAutoPurgingImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = EC644740E8836FCB334852AF243CCB21 /* AFAutoPurgingImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFA8D6B529A0EBFF0316F2629AB2556E /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE6C6752AFFB941AE62974C46BE0C36 /* AFImageDownloader.m */; };
+		D262D9955C7C84378B00010D89CD60FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C739F1127D7E94D9137583AECFCC0E /* Foundation.framework */; };
+		D9F4E833E37B611B432F6B5D7072DDA2 /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BAED7A8A72D3C85064EF8FC75119362 /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFFA215EEAA8DDBD540076927535275C /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 072F968BD65598FBCFA28099AA889961 /* AFURLRequestSerialization.m */; };
+		E0D4045AC4C1B41917FCA23A042D18B2 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4072EC89F050C773A12DE74301E416DF /* AFHTTPSessionManager.m */; };
+		E0DEAE67FF940891FE09135C8487E250 /* Pods-GarageDoorOpener-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A803227BB6F23422CEE1025CC4D3E509 /* Pods-GarageDoorOpener-dummy.m */; };
+		E38D6E9CD3E85BF8FA7C5C34F32DD2CE /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A90175C8B18E996C9324F96019297D /* KeychainItemWrapper.m */; };
+		E7988678C81F7CCB95D239375FC6986D /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 480776B35B1CE3DCC4FC04B129D1A0F4 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC7CADE416A78A1CD6936018A6695126 /* AFNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BFFA19939A38F57ED7009A716ADDAF11 /* AFNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0FE1A98DAFB6F7F73BD6DC2B8C50CF8 /* KeychainItemWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = F863FC70260F7520BD1D186640879657 /* KeychainItemWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4F4CCE888EDCB72FED87897D208FECF /* RNCryptor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16C908B45476291D506D3C5F6B11D07F /* RNCryptor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA51245CE9EB967C757BFC770B8B0E6F /* SparkCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B734725971172692FFE0C94589078BB /* SparkCloud.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		19ED2C12C3015A6A6328A9CCF79CA068 /* PBXContainerItemProxy */ = {
+		5511F24A3C643E224A8EA568C8C5B4E1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 928353533005A4198EBDA5B700D37B64;
+			remoteGlobalIDString = CC0CC7436F9EAFED67079CDA8922F63B;
+			remoteInfo = RNCryptor;
+		};
+		6DDF506770C1B4622D68038D9120CA60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C3436CEA5C3D39764C5F54374794ECB;
 			remoteInfo = AFNetworking;
 		};
-		D2CF3E9B11A41A1D4AAE5A8361A8673A /* PBXContainerItemProxy */ = {
+		AB90BE35C805B36C1CD0A0A8E803D831 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 928353533005A4198EBDA5B700D37B64;
+			remoteGlobalIDString = 1C3436CEA5C3D39764C5F54374794ECB;
 			remoteInfo = AFNetworking;
 		};
-		F683EF082A4609028220B56FA20C6360 /* PBXContainerItemProxy */ = {
+		E7296F91D80BB24FD056DA2F9E0AF780 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A96C6A3118D9627598B0C0183875BFE4;
+			remoteGlobalIDString = 7F54A2673ACF6B9BC650F5619C3824C3;
 			remoteInfo = "Spark-SDK";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0362E1F1C8CFCB9011F944EEF26A548C /* Spark-SDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Spark-SDK.xcconfig"; sourceTree = "<group>"; };
-		0C6C0E4E82516FF557686F1FF62A5592 /* Pods-GarageDoorOpener-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GarageDoorOpener-resources.sh"; sourceTree = "<group>"; };
-		11BF7C17D7AA25091AA834EAE67B3304 /* Pods-GarageDoorOpener-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GarageDoorOpener-acknowledgements.plist"; sourceTree = "<group>"; };
-		1B0A15003DCEEBA4FDF7ABE901F172CE /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
-		1E4F48D51484A85D949660ECADCD3DFD /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
-		20977D6A26CD941B04EC76EF062F9167 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
-		220FC72270AAB5544CF4D7452AF8AF31 /* Pods-GarageDoorOpenerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GarageDoorOpenerUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		26A3475DEFFEBCB17FF194AA55713109 /* Spark-SDK-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Spark-SDK-Bridging-Header.h"; path = "Pod/Classes/Spark-SDK-Bridging-Header.h"; sourceTree = "<group>"; };
-		2A4FCEC0649A31A26C6F1A7E4ADEAF5F /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+AFNetworking.h"; path = "UIKit+AFNetworking/UIImage+AFNetworking.h"; sourceTree = "<group>"; };
-		2EDC82E26C0F346EB4C7A4C4C5A0E864 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		2FA16B3FD82631FE11F04C979385E33C /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
-		32D5D2276D8EE71A41BA31CC5BF02B1D /* Pods-GarageDoorOpener-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GarageDoorOpener-acknowledgements.markdown"; sourceTree = "<group>"; };
-		343DFBED3469B92704E04E700E1DFF67 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		3589A85CE83308E57CA652AFA1B3C1BE /* SparkCloud.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SparkCloud.m; path = Pod/Classes/SDK/SparkCloud.m; sourceTree = "<group>"; };
-		3A5C32BAAE6F0B15FF8AF6A0A5F4C132 /* Pods-GarageDoorOpenerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GarageDoorOpenerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3D5AE92C831C5737463CF8662563AACA /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
-		453C3C4DD1DEF593D9A97A1EC95B42C5 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		49078A3702EDE988BAF617730217B45D /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
-		497516882EB52FB6D53694C9D729BB45 /* libPods-GarageDoorOpenerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GarageDoorOpenerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C82510417602751903BA188E538F1BE /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
-		4D9450C6585FC44DBDAD11BC0232003B /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
-		4E814CD453ACC2E13ECDCA1461845AA3 /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAutoPurgingImageCache.h; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.h"; sourceTree = "<group>"; };
-		54B8BA800E2151E3011077C3574BC731 /* Pods-GarageDoorOpenerTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GarageDoorOpenerTests-resources.sh"; sourceTree = "<group>"; };
-		5B8EEA859DB5DDCFD1DC38800AE70FD2 /* SparkSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SparkSession.h; path = Pod/Classes/SDK/SparkSession.h; sourceTree = "<group>"; };
-		5C0A8E8442A5078CB24BA69C6C61B2D3 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KeychainItemWrapper.h; path = Pod/Classes/Helpers/KeychainItemWrapper.h; sourceTree = "<group>"; };
-		601E5D9BAEC340139DAFA6057A43A484 /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAutoPurgingImageCache.m; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.m"; sourceTree = "<group>"; };
-		61195F02F2123C37070BACE867F87837 /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
-		616EA2DD9D1B322494F03CFE218D5664 /* SparkSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SparkSession.m; path = Pod/Classes/SDK/SparkSession.m; sourceTree = "<group>"; };
-		637D49FC0F0C9EB523E59B7E32EE5BDA /* Pods-GarageDoorOpener.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GarageDoorOpener.debug.xcconfig"; sourceTree = "<group>"; };
-		69AE83F530ACF16AAFA14D8CD0EC1632 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
-		6B4EC69BBCFF38C079D47C648640399C /* Pods-GarageDoorOpenerUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GarageDoorOpenerUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		6D705520C3ABABFBF53A37D407B630C7 /* libPods-GarageDoorOpenerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GarageDoorOpenerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		76C8B4442ED7239D0FCD2665F8E2A9BB /* Pods-GarageDoorOpenerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GarageDoorOpenerTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		79EABF55064940A49D5EC95E174124AB /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
-		7A0607FAC9848A9EB297B7BA7D83343E /* libPods-GarageDoorOpener.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GarageDoorOpener.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7CE4C0438A875D071CF586DD71C73EE7 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
-		7D139B155410C55735F9523508153F47 /* AFImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageDownloader.m; path = "UIKit+AFNetworking/AFImageDownloader.m"; sourceTree = "<group>"; };
-		7DCFD32B7C9ADD46E27C142CD9F5D0DE /* Pods-GarageDoorOpenerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GarageDoorOpenerTests.release.xcconfig"; sourceTree = "<group>"; };
-		80FF44178312A86C7B9C1F8431F75735 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		84446BFC8C6A485AF7A7DDD6E991E83A /* Pods-GarageDoorOpener-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GarageDoorOpener-frameworks.sh"; sourceTree = "<group>"; };
-		85C1DFC32CF24F495F0B543242BB4DF6 /* Pods-GarageDoorOpenerUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GarageDoorOpenerUITests-dummy.m"; sourceTree = "<group>"; };
-		85ED4664BDF4972C985F7225BC91C601 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
-		887B6F0E4D370BE034F0C1C04EEC270E /* SparkCloud.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SparkCloud.h; path = Pod/Classes/SDK/SparkCloud.h; sourceTree = "<group>"; };
-		889BC827FE40BFEB5291E3FD5A653697 /* Spark-SDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Spark-SDK-prefix.pch"; sourceTree = "<group>"; };
-		89EA1C76CD4975FE800F081A39AD222F /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
-		8F47277F22113C7050A320F99159AF1E /* Pods-GarageDoorOpenerUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GarageDoorOpenerUITests-resources.sh"; sourceTree = "<group>"; };
-		8FDB344CAFCC8A872C6819F92EDAC3FB /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
-		9196221B06B8FE99B34671EA3F79D189 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KeychainItemWrapper.m; path = Pod/Classes/Helpers/KeychainItemWrapper.m; sourceTree = "<group>"; };
+		004D0F343A57698E1F057432031C28A2 /* Spark-SDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Spark-SDK-prefix.pch"; sourceTree = "<group>"; };
+		070DAE1434BC449C52249F0635A0C2F6 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		072F968BD65598FBCFA28099AA889961 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		0805BE20E8B378E99F70E882D8FB850E /* AFNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AFNetworking.modulemap; sourceTree = "<group>"; };
+		0A7CE6FA5114E02517D98721D6F6BC6F /* Spark-SDK-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Spark-SDK-Bridging-Header.h"; path = "Pod/Classes/Spark-SDK-Bridging-Header.h"; sourceTree = "<group>"; };
+		0B734725971172692FFE0C94589078BB /* SparkCloud.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SparkCloud.m; path = Pod/Classes/SDK/SparkCloud.m; sourceTree = "<group>"; };
+		11367E339E93721523131881EF73C6DB /* Pods-GarageDoorOpenerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GarageDoorOpenerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		131F193319B1BFF11295676F29FAD678 /* Pods-GarageDoorOpenerUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GarageDoorOpenerUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1599A9DA771843D4FB7A0F703B6AFB75 /* Pods-GarageDoorOpenerUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GarageDoorOpenerUITests-resources.sh"; sourceTree = "<group>"; };
+		16C908B45476291D506D3C5F6B11D07F /* RNCryptor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RNCryptor-umbrella.h"; sourceTree = "<group>"; };
+		1704D359E74047810EE4F993DF0C4DE6 /* Pods-GarageDoorOpener-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GarageDoorOpener-acknowledgements.plist"; sourceTree = "<group>"; };
+		2193BE35CFBDECDA4CF9B3DBB2056E30 /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		225AA58BC1ACDE74164F84A8D8EC757C /* Pods-GarageDoorOpener-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GarageDoorOpener-acknowledgements.markdown"; sourceTree = "<group>"; };
+		22F3CC2F14E8E6638B3A1FAB08A193A9 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		24A90175C8B18E996C9324F96019297D /* KeychainItemWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KeychainItemWrapper.m; path = Pod/Classes/Helpers/KeychainItemWrapper.m; sourceTree = "<group>"; };
+		27870809287150EE14FE1813DDABAB23 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		28600CF072E86ABC6C0ECA2D0825431B /* RNCryptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RNCryptor.h; sourceTree = "<group>"; };
+		297927D6612664752C6E985BCD8809B0 /* SparkSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SparkSession.h; path = Pod/Classes/SDK/SparkSession.h; sourceTree = "<group>"; };
+		29C4E10F7B3EA4FE3F42A3A9B83660CE /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		29F763A4615DDEAFACFB00D2733526E3 /* Pods-GarageDoorOpenerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GarageDoorOpenerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2B8A1F76E005701746E733F4C3D197BD /* Pods-GarageDoorOpenerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GarageDoorOpenerTests-umbrella.h"; sourceTree = "<group>"; };
+		2BAED7A8A72D3C85064EF8FC75119362 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		2DFECB34FD4F6A1EEA06E1B620F755E0 /* EventSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EventSource.m; path = Pod/Classes/Helpers/EventSource.m; sourceTree = "<group>"; };
+		2F55BC4ED63D6CCD8C25686ED85BD567 /* Spark-SDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Spark-SDK.modulemap"; sourceTree = "<group>"; };
+		320449FA5CB81D20516414E28F568C4F /* RNCryptor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RNCryptor.modulemap; sourceTree = "<group>"; };
+		3CA0B46362A18DF351782858AB1EE1A2 /* Pods_GarageDoorOpenerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GarageDoorOpenerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EF2878655E0F2D55857F4D604736CA1 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
+		4072EC89F050C773A12DE74301E416DF /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		41073F8DDEF3ECB2A282C140A985A957 /* Pods-GarageDoorOpenerUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GarageDoorOpenerUITests-frameworks.sh"; sourceTree = "<group>"; };
+		44F755390C3F1C666487CB8E158BC101 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		458E8C479D6E4917B1D7E0E685CCC920 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4804054EF2C1EA814AAF916A2CD74FAF /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		480776B35B1CE3DCC4FC04B129D1A0F4 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		4B15FFA42FF83A52D53CF4FBEF667241 /* Spark-SDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Spark-SDK-umbrella.h"; sourceTree = "<group>"; };
+		4CBC5E0A04AD0872652FBC88684DD1CB /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
+		4F30D811CD52D6FFE9572A7AE43F4A3D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50A20AAF4417B46E656BECA2B83904F6 /* Pods-GarageDoorOpenerUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GarageDoorOpenerUITests-dummy.m"; sourceTree = "<group>"; };
+		5331EBFE9465018A7E71DFD1FBD647D5 /* Spark-SDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Spark-SDK-dummy.m"; sourceTree = "<group>"; };
+		5461D992F0D803F0F05DF72B2849301D /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54F941B96BBC02789A657D3FDF858B23 /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		55C739F1127D7E94D9137583AECFCC0E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5C1B5E561BE7C6179976F25BA30583DF /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		5C1FD1BF3BC3F28951FFAC0D15D9F117 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E0D6FCF76A4740BD4506C9DBFC62CB7 /* Pods-GarageDoorOpenerTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GarageDoorOpenerTests-resources.sh"; sourceTree = "<group>"; };
+		658297447C00F4A986EBCA16AE9D3514 /* Pods-GarageDoorOpener-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GarageDoorOpener-resources.sh"; sourceTree = "<group>"; };
+		67039143628472F2FB128E30F24C03F2 /* Pods-GarageDoorOpener.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GarageDoorOpener.release.xcconfig"; sourceTree = "<group>"; };
+		699F5927E78CA6F9085A94A9AFEA5B66 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		6AF165546660F6F50E8E35B98C6E1DD6 /* Pods-GarageDoorOpener-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GarageDoorOpener-umbrella.h"; sourceTree = "<group>"; };
+		7040EF5FA00D5DE033EE3ECBE59D4A2B /* Pods-GarageDoorOpenerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GarageDoorOpenerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		729BAF67AF61F73CB1896A8A330750DF /* SparkEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SparkEvent.m; path = Pod/Classes/SDK/SparkEvent.m; sourceTree = "<group>"; };
+		72F5A34F58313FE30AC3A905110B171F /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		7BA50D9247169F60D45B4FA799A13122 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		7D70551B8D9707D6DF9A227D0C0433C5 /* Spark_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spark_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E010CE5E06AEA2AA11A8C247F30969D /* Pods-GarageDoorOpenerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GarageDoorOpenerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7F8923966C1D1E7F35C89BA7FC6F9930 /* Spark-SDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Spark-SDK.xcconfig"; sourceTree = "<group>"; };
+		81686BFF78B36F0DBFF22B85185098E1 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		81E170C783B65C3A84E5C56D20CBA54F /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		84AAF7372DBDD9AC33D31DEA7E27283A /* Pods_GarageDoorOpenerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GarageDoorOpenerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85732425EDF70712F8083D80E8B15D4C /* AFImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageDownloader.h; path = "UIKit+AFNetworking/AFImageDownloader.h"; sourceTree = "<group>"; };
+		875875AE139CB4450E7FEA55FB1488F4 /* RNCryptor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RNCryptor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89BCE50BFD9B2588513D4B97ACD52B49 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		8A7A4DF887064E52DAB9DD079FDBC0DB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C1F572B66FF44B008BBD9DBE88F1103 /* Pods-GarageDoorOpenerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GarageDoorOpenerTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8EF139D3016A3EC169A4B9F90049B98D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		902CC55BC77E1A537C945FF9F06DA9C4 /* Pods-GarageDoorOpenerUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GarageDoorOpenerUITests-umbrella.h"; sourceTree = "<group>"; };
+		91289CB00AF337302C907499F970EBFA /* Pods-GarageDoorOpener.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GarageDoorOpener.modulemap"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9515FF2852260A56D50955F81336ECD5 /* SparkEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SparkEvent.m; path = Pod/Classes/SDK/SparkEvent.m; sourceTree = "<group>"; };
-		96C5EA217FC329AD3026F2F9985532B8 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
-		977316F6E7A6BDBD81928CA7F3656851 /* AFImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageDownloader.h; path = "UIKit+AFNetworking/AFImageDownloader.h"; sourceTree = "<group>"; };
-		986CEF7A1C3E4B4DB9D283C1AADAA4DE /* Pods-GarageDoorOpenerTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GarageDoorOpenerTests-frameworks.sh"; sourceTree = "<group>"; };
-		988A55FA5937F90972A0EE80FEDC99EF /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
-		9BB9822E2642CE4ADCA0F4A205660500 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
-		9F68B9CEE4BCDF663528A95DB4723A16 /* Pods-GarageDoorOpenerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GarageDoorOpenerTests.debug.xcconfig"; sourceTree = "<group>"; };
-		A0B9BC8222CB0651992E551472DD234D /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
-		A14CB25B3B971824341AEBF8745B27CE /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
-		A5AB7CCC56330A61E757BEB6250F7EBC /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
-		A985F9936EC23B054D6AF58367475C3E /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
-		B1E97761D2E29F372C9494171C641D4E /* Pods-GarageDoorOpenerUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GarageDoorOpenerUITests-frameworks.sh"; sourceTree = "<group>"; };
-		B2DB9663C6D3044EA790FCB9CB2B485C /* Pods-GarageDoorOpenerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GarageDoorOpenerTests-dummy.m"; sourceTree = "<group>"; };
-		B6E31A577CB976C578DD53534D7FCE2B /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
-		B7B074FDB12ABC6BAEF639FC3378A3E8 /* Pods-GarageDoorOpener-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GarageDoorOpener-dummy.m"; sourceTree = "<group>"; };
-		BC0CA9322DEB9FAB6C40FD973F4685FD /* SparkDevice.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SparkDevice.m; path = Pod/Classes/SDK/SparkDevice.m; sourceTree = "<group>"; };
-		BF9B0595BF8D87FAC8E1090B82116FB1 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
-		C0D0C0D53C193137342389B4CC844373 /* libSpark-SDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libSpark-SDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C22B100B32041A1D4EC92918D9ADD05C /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
-		C252C463C4EAAD8BBDACCBD2945892C5 /* Pods-GarageDoorOpenerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GarageDoorOpenerUITests.release.xcconfig"; sourceTree = "<group>"; };
-		C28D7DFE85765DFAA8DD4B3A426F622B /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
-		C47A1BCD4802D4157C20ADD059E2A6F6 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
-		C4948F7393B5BD9A573361F7EF66CDE2 /* Spark-SDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Spark-SDK-dummy.m"; sourceTree = "<group>"; };
-		CB7E46DBC4FEE3E4F07429A9768A2F02 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
-		D42DEDB99E40E51980CB47D5194BBDF6 /* SparkDevice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SparkDevice.h; path = Pod/Classes/SDK/SparkDevice.h; sourceTree = "<group>"; };
-		D89AE9677EBCC69BB9DEA6FBABC5AAD2 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
-		E185FF4394509DA11AB4925C974DAFFC /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
-		E258034397F74378B6B916AB4B1AA266 /* Spark-SDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Spark-SDK.h"; path = "Pod/Classes/Spark-SDK.h"; sourceTree = "<group>"; };
-		E7AD796A9083937D5734C0CFE6DFE2E1 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
-		E7B14626508F9D52E25E4C6F67BA80E2 /* Pods-GarageDoorOpener.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GarageDoorOpener.release.xcconfig"; sourceTree = "<group>"; };
-		EBF4810F147FB732DA23C2172E8E3DD2 /* EventSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EventSource.h; path = Pod/Classes/Helpers/EventSource.h; sourceTree = "<group>"; };
-		F28310C109F80A2823B80B134627E5D8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		F29D22BE4201BC40A3281B217E774745 /* Pods-GarageDoorOpenerUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GarageDoorOpenerUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FC748241E8A4229ED2046FFF82D4F936 /* SparkEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SparkEvent.h; path = Pod/Classes/SDK/SparkEvent.h; sourceTree = "<group>"; };
-		FE4686F3FFDFB8DC79A1FFEAC956855F /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
-		FFFCD533B2BFFFF3617BD4DE993634D3 /* EventSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EventSource.m; path = Pod/Classes/Helpers/EventSource.m; sourceTree = "<group>"; };
+		95BA171B2EB36F1CC77262296DEED95F /* Pods-GarageDoorOpener.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GarageDoorOpener.debug.xcconfig"; sourceTree = "<group>"; };
+		966CEDBAD8830267EA195E9A17A5282A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B06C86D0901214D597C0F8A92D653A0 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		9F86A9526538BC17D6B0E59598B54AE0 /* EventSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EventSource.h; path = Pod/Classes/Helpers/EventSource.h; sourceTree = "<group>"; };
+		A135E99C0BE61485B9B78C8A199D77D8 /* Pods-GarageDoorOpenerUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GarageDoorOpenerUITests.modulemap"; sourceTree = "<group>"; };
+		A3B0D963CADE3164A77EC5C631331B40 /* Pods-GarageDoorOpenerTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GarageDoorOpenerTests-frameworks.sh"; sourceTree = "<group>"; };
+		A421754DE2E8ADECC8F88CAA0953522B /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		A5C52DCDC6BA09D3A94D5F985B2483DB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6BE19D0541E82387A171D75CD8D5D44 /* RNCryptor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RNCryptor-prefix.pch"; sourceTree = "<group>"; };
+		A78E356E7FD14E0E2913DF7D4EA1B399 /* Pods-GarageDoorOpenerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GarageDoorOpenerTests.release.xcconfig"; sourceTree = "<group>"; };
+		A803227BB6F23422CEE1025CC4D3E509 /* Pods-GarageDoorOpener-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GarageDoorOpener-dummy.m"; sourceTree = "<group>"; };
+		AA40D51E944C495563F4DEB61CAA0214 /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+AFNetworking.h"; path = "UIKit+AFNetworking/UIImage+AFNetworking.h"; sourceTree = "<group>"; };
+		AB088E70F7A33A3B08B9F3A07DA16729 /* RNCryptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RNCryptor.swift; sourceTree = "<group>"; };
+		AB64B06134587209BA47C9BD364E65F1 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		ABC165571323220759D9E9D8B8EC0AED /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		ACE498983B4C12C3956579EF2832655E /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		ADC345BE6EB65B3AF9B989ABEF559D9C /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		ADC5D322F62F2945E45EEDF90E30AAC8 /* SparkEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SparkEvent.h; path = Pod/Classes/SDK/SparkEvent.h; sourceTree = "<group>"; };
+		B49989B45CA996A6F7A8F70440EDCD99 /* SparkSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SparkSession.m; path = Pod/Classes/SDK/SparkSession.m; sourceTree = "<group>"; };
+		B62B417D20EBBBD7704E802AD3F1970D /* Pods-GarageDoorOpenerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GarageDoorOpenerTests-dummy.m"; sourceTree = "<group>"; };
+		B942BB52C8A53842ACBD56F3075CFB60 /* Pods-GarageDoorOpener-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GarageDoorOpener-frameworks.sh"; sourceTree = "<group>"; };
+		BFFA19939A38F57ED7009A716ADDAF11 /* AFNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-umbrella.h"; sourceTree = "<group>"; };
+		C4B98248318A077111C059E38FC37C28 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		C53988B41BFD74EE13612A4293F09CD6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		C6DD1B7788183AD73CFCA64C714F09F8 /* Pods_GarageDoorOpener.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GarageDoorOpener.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9EC046EEE00CAE53FC620929325D144 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		CEE7BAE593B36A4DC881651249742B64 /* SparkDevice.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SparkDevice.m; path = Pod/Classes/SDK/SparkDevice.m; sourceTree = "<group>"; };
+		D50310B681F54C17E0578A42CD68BD6D /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		D509B8D52C05F7FD943F0AEB2FAAFE91 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBF86BC3B15AA82B8853E6A77583B40F /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAutoPurgingImageCache.m; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.m"; sourceTree = "<group>"; };
+		DD54C2BAE3555E6B7432CD3E0F1B0226 /* Pods-GarageDoorOpenerUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GarageDoorOpenerUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E098DE86ED811B6D87786B436462D468 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		E2395549FE4EF6AD1F0315B4FBF3C588 /* RNCryptor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RNCryptor-dummy.m"; sourceTree = "<group>"; };
+		E376B368E9FC7B70FADB61BD479E66A3 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		E3969AF5D6606F6D8BE956A8290AD5AB /* RNCryptor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RNCryptor.xcconfig; sourceTree = "<group>"; };
+		E64A9EE66920A6589D5739C40F528871 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
+		EC644740E8836FCB334852AF243CCB21 /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAutoPurgingImageCache.h; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.h"; sourceTree = "<group>"; };
+		F089E1BD32BFEA649DE8F7009F0BF382 /* SparkDevice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SparkDevice.h; path = Pod/Classes/SDK/SparkDevice.h; sourceTree = "<group>"; };
+		F2BFBAD0609A1D264B329D909DBFB6AB /* Spark-SDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Spark-SDK.h"; path = "Pod/Classes/Spark-SDK.h"; sourceTree = "<group>"; };
+		F6EC7597E677B96CB62DC1BEBE973BCF /* Pods-GarageDoorOpenerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GarageDoorOpenerTests.modulemap"; sourceTree = "<group>"; };
+		F863FC70260F7520BD1D186640879657 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KeychainItemWrapper.h; path = Pod/Classes/Helpers/KeychainItemWrapper.h; sourceTree = "<group>"; };
+		FB26725E60F19EFF6BD0681ABF5A96EE /* SparkCloud.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SparkCloud.h; path = Pod/Classes/SDK/SparkCloud.h; sourceTree = "<group>"; };
+		FBE6C6752AFFB941AE62974C46BE0C36 /* AFImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageDownloader.m; path = "UIKit+AFNetworking/AFImageDownloader.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4B29A3F3443A6C0FCF24A9557C0BBE4F /* Frameworks */ = {
+		40DCC1A1C9C5BDE6F5DC5B4907E5A5C2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9F5703AC536FB6EBA13580768052951 /* Foundation.framework in Frameworks */,
+				0061931E274AA7490FB961088D4E1B91 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		508C962B3E08E8DA04956BF349A3CDFD /* Frameworks */ = {
+		72A050C1740DBC4695C4F4980A174F1C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				045FFEDD819A734271DD5DE53C877884 /* CoreGraphics.framework in Frameworks */,
-				30DA0B928C8F28E3C3F279C3833458A0 /* Foundation.framework in Frameworks */,
-				17912D9A89FC36E82029409E9B74A61A /* MobileCoreServices.framework in Frameworks */,
-				0358B918CA8C9D3C214FD4D41CD69A90 /* Security.framework in Frameworks */,
-				650FFDAF60A6C37D824BC6364B09A3E5 /* SystemConfiguration.framework in Frameworks */,
+				20F6E998BFDFB02D681BF0EAB1AD7A59 /* AFNetworking.framework in Frameworks */,
+				61F0B0C2AE09715EC6B67E97FC724DD8 /* Foundation.framework in Frameworks */,
+				01CA06ECD3EA234AAB3908FDBD0F623C /* Security.framework in Frameworks */,
+				6D999ACFEB5522688393DE1EFD41A002 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		65EA2C9E609354FCC9FA8C173E310F47 /* Frameworks */ = {
+		9A037E6C1A94A2A36EECD1B506B4AECF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCA1F6E80A18AEBFFFB59826A0D4D793 /* Foundation.framework in Frameworks */,
-				7A96CF0DBAB7DF2737E20E501BC91252 /* Security.framework in Frameworks */,
-				2F867E2CA2668A17F28F933E0D3AA5C6 /* SystemConfiguration.framework in Frameworks */,
+				9D09760CFB78E50F9E2E7CA07209A849 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AA3361D83D86B7FC5CFF8F4AE3EA89D8 /* Frameworks */ = {
+		9DFCB7E3D20364BD0065E377AA0930EA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEBBECCE42285656D1D003D54377AF46 /* Foundation.framework in Frameworks */,
+				8E5827C47228AED513444310F3BE3392 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CD04EC59C2A8DF7CA69D6A10DB7B0938 /* Frameworks */ = {
+		B96DE8E22BCE7828EEB2A8B76DA331C4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C20877C8E183175797FAE4A1AE3A348 /* Foundation.framework in Frameworks */,
+				D262D9955C7C84378B00010D89CD60FD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C151364F15F39F7CC60CBF9A3AB49B44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ECA9BE68D373E094EFA019CC4EA1720 /* CoreGraphics.framework in Frameworks */,
+				B99FAFBBC58F176BCBAA61124A21C14B /* Foundation.framework in Frameworks */,
+				4FE3D0FC60D1370E831CBFF9680FA8EB /* MobileCoreServices.framework in Frameworks */,
+				192AC43D2F848129D2CAC66DAAF6CA35 /* Security.framework in Frameworks */,
+				688E37A2E29646148D380D9034875174 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		179FE5E1A0CDC4977072837DD050704C /* Support Files */ = {
+		0272C29FC1AE124EB001B95D1D273F84 /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
-				0362E1F1C8CFCB9011F944EEF26A548C /* Spark-SDK.xcconfig */,
-				C4948F7393B5BD9A573361F7EF66CDE2 /* Spark-SDK-dummy.m */,
-				889BC827FE40BFEB5291E3FD5A653697 /* Spark-SDK-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Spark-SDK";
-			sourceTree = "<group>";
-		};
-		20B56609144CE204DFA8221F742B2D76 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3193CAF693F496CF6BBAA7E0BCD76004 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2153DC03EB0ABE4668F18FCC5FEAF056 /* Serialization */ = {
-			isa = PBXGroup;
-			children = (
-				69AE83F530ACF16AAFA14D8CD0EC1632 /* AFURLRequestSerialization.h */,
-				2FA16B3FD82631FE11F04C979385E33C /* AFURLRequestSerialization.m */,
-				BF9B0595BF8D87FAC8E1090B82116FB1 /* AFURLResponseSerialization.h */,
-				9BB9822E2642CE4ADCA0F4A205660500 /* AFURLResponseSerialization.m */,
-			);
-			name = Serialization;
-			sourceTree = "<group>";
-		};
-		2CDE3223105B5356838D81D398280CBE /* AFNetworking */ = {
-			isa = PBXGroup;
-			children = (
-				A14CB25B3B971824341AEBF8745B27CE /* AFNetworking.h */,
-				A5EF426A6032B82E116EEFDC04C8BD2B /* NSURLSession */,
-				9E0D8610AEB33C34790602AA7E5DCBCC /* Reachability */,
-				584B6F863C0C6963741BC43B8B6EE2A6 /* Security */,
-				2153DC03EB0ABE4668F18FCC5FEAF056 /* Serialization */,
-				E7DDF56B1B0123D9E30DDF075D80F7A4 /* Support Files */,
-				341F973F9569F7FBBEF0203D3AAAFF36 /* UIKit */,
+				480776B35B1CE3DCC4FC04B129D1A0F4 /* AFNetworking.h */,
+				33B4F6F7470EC7FF8720B2705466AE61 /* NSURLSession */,
+				3A86F155CE8BAF86442AFB98BA98DBC6 /* Reachability */,
+				D43C1188A3E2046D2F6C36A318A0E50D /* Security */,
+				932A882A65699637D7571894F8AD11D6 /* Serialization */,
+				5581AA17973C74621D1DC3602DD6E99E /* Support Files */,
+				C5F7D98B080DCB2DD461C2CA6B2CA4F4 /* UIKit */,
 			);
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
-		3106F05F98967F027EAB3294A008D833 /* Products */ = {
+		1EADF5DA00D70829260480C6FB00ECA1 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				453C3C4DD1DEF593D9A97A1EC95B42C5 /* libAFNetworking.a */,
-				7A0607FAC9848A9EB297B7BA7D83343E /* libPods-GarageDoorOpener.a */,
-				497516882EB52FB6D53694C9D729BB45 /* libPods-GarageDoorOpenerTests.a */,
-				6D705520C3ABABFBF53A37D407B630C7 /* libPods-GarageDoorOpenerUITests.a */,
-				C0D0C0D53C193137342389B4CC844373 /* libSpark-SDK.a */,
+				F7596EFA1135E2BCC863DA1E908DA1FA /* Pods-GarageDoorOpener */,
+				4444428BA1852862500CEBA5DB3BD0BA /* Pods-GarageDoorOpenerTests */,
+				7C28C5A53954FE8C9F75336705EBC8BC /* Pods-GarageDoorOpenerUITests */,
 			);
-			name = Products;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		3193CAF693F496CF6BBAA7E0BCD76004 /* iOS */ = {
+		33B4F6F7470EC7FF8720B2705466AE61 /* NSURLSession */ = {
 			isa = PBXGroup;
 			children = (
-				F28310C109F80A2823B80B134627E5D8 /* CoreGraphics.framework */,
-				80FF44178312A86C7B9C1F8431F75735 /* Foundation.framework */,
-				1B0A15003DCEEBA4FDF7ABE901F172CE /* MobileCoreServices.framework */,
-				2EDC82E26C0F346EB4C7A4C4C5A0E864 /* Security.framework */,
-				343DFBED3469B92704E04E700E1DFF67 /* SystemConfiguration.framework */,
+				89BCE50BFD9B2588513D4B97ACD52B49 /* AFHTTPSessionManager.h */,
+				4072EC89F050C773A12DE74301E416DF /* AFHTTPSessionManager.m */,
+				81E170C783B65C3A84E5C56D20CBA54F /* AFURLSessionManager.h */,
+				D50310B681F54C17E0578A42CD68BD6D /* AFURLSessionManager.m */,
 			);
-			name = iOS;
+			name = NSURLSession;
 			sourceTree = "<group>";
 		};
-		341F973F9569F7FBBEF0203D3AAAFF36 /* UIKit */ = {
+		3A86F155CE8BAF86442AFB98BA98DBC6 /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
-				4E814CD453ACC2E13ECDCA1461845AA3 /* AFAutoPurgingImageCache.h */,
-				601E5D9BAEC340139DAFA6057A43A484 /* AFAutoPurgingImageCache.m */,
-				977316F6E7A6BDBD81928CA7F3656851 /* AFImageDownloader.h */,
-				7D139B155410C55735F9523508153F47 /* AFImageDownloader.m */,
-				1E4F48D51484A85D949660ECADCD3DFD /* AFNetworkActivityIndicatorManager.h */,
-				A0B9BC8222CB0651992E551472DD234D /* AFNetworkActivityIndicatorManager.m */,
-				89EA1C76CD4975FE800F081A39AD222F /* UIActivityIndicatorView+AFNetworking.h */,
-				79EABF55064940A49D5EC95E174124AB /* UIActivityIndicatorView+AFNetworking.m */,
-				B6E31A577CB976C578DD53534D7FCE2B /* UIButton+AFNetworking.h */,
-				49078A3702EDE988BAF617730217B45D /* UIButton+AFNetworking.m */,
-				2A4FCEC0649A31A26C6F1A7E4ADEAF5F /* UIImage+AFNetworking.h */,
-				85ED4664BDF4972C985F7225BC91C601 /* UIImageView+AFNetworking.h */,
-				988A55FA5937F90972A0EE80FEDC99EF /* UIImageView+AFNetworking.m */,
-				A985F9936EC23B054D6AF58367475C3E /* UIKit+AFNetworking.h */,
-				CB7E46DBC4FEE3E4F07429A9768A2F02 /* UIProgressView+AFNetworking.h */,
-				A5AB7CCC56330A61E757BEB6250F7EBC /* UIProgressView+AFNetworking.m */,
-				7CE4C0438A875D071CF586DD71C73EE7 /* UIRefreshControl+AFNetworking.h */,
-				4D9450C6585FC44DBDAD11BC0232003B /* UIRefreshControl+AFNetworking.m */,
-				20977D6A26CD941B04EC76EF062F9167 /* UIWebView+AFNetworking.h */,
-				96C5EA217FC329AD3026F2F9985532B8 /* UIWebView+AFNetworking.m */,
+				9B06C86D0901214D597C0F8A92D653A0 /* AFNetworkReachabilityManager.h */,
+				ACE498983B4C12C3956579EF2832655E /* AFNetworkReachabilityManager.m */,
 			);
-			name = UIKit;
+			name = Reachability;
 			sourceTree = "<group>";
 		};
-		3C596B3EB0DAC9FC2F4C66E0F7D5ABB6 /* Helpers */ = {
+		4444428BA1852862500CEBA5DB3BD0BA /* Pods-GarageDoorOpenerTests */ = {
 			isa = PBXGroup;
 			children = (
-				EBF4810F147FB732DA23C2172E8E3DD2 /* EventSource.h */,
-				FFFCD533B2BFFFF3617BD4DE993634D3 /* EventSource.m */,
-				5C0A8E8442A5078CB24BA69C6C61B2D3 /* KeychainItemWrapper.h */,
-				9196221B06B8FE99B34671EA3F79D189 /* KeychainItemWrapper.m */,
+				966CEDBAD8830267EA195E9A17A5282A /* Info.plist */,
+				F6EC7597E677B96CB62DC1BEBE973BCF /* Pods-GarageDoorOpenerTests.modulemap */,
+				11367E339E93721523131881EF73C6DB /* Pods-GarageDoorOpenerTests-acknowledgements.markdown */,
+				8C1F572B66FF44B008BBD9DBE88F1103 /* Pods-GarageDoorOpenerTests-acknowledgements.plist */,
+				B62B417D20EBBBD7704E802AD3F1970D /* Pods-GarageDoorOpenerTests-dummy.m */,
+				A3B0D963CADE3164A77EC5C631331B40 /* Pods-GarageDoorOpenerTests-frameworks.sh */,
+				5E0D6FCF76A4740BD4506C9DBFC62CB7 /* Pods-GarageDoorOpenerTests-resources.sh */,
+				2B8A1F76E005701746E733F4C3D197BD /* Pods-GarageDoorOpenerTests-umbrella.h */,
+				7E010CE5E06AEA2AA11A8C247F30969D /* Pods-GarageDoorOpenerTests.debug.xcconfig */,
+				A78E356E7FD14E0E2913DF7D4EA1B399 /* Pods-GarageDoorOpenerTests.release.xcconfig */,
+			);
+			name = "Pods-GarageDoorOpenerTests";
+			path = "Target Support Files/Pods-GarageDoorOpenerTests";
+			sourceTree = "<group>";
+		};
+		52B648EA43948BBB099D72062080B2D9 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				FB26725E60F19EFF6BD0681ABF5A96EE /* SparkCloud.h */,
+				0B734725971172692FFE0C94589078BB /* SparkCloud.m */,
+				F089E1BD32BFEA649DE8F7009F0BF382 /* SparkDevice.h */,
+				CEE7BAE593B36A4DC881651249742B64 /* SparkDevice.m */,
+				ADC5D322F62F2945E45EEDF90E30AAC8 /* SparkEvent.h */,
+				729BAF67AF61F73CB1896A8A330750DF /* SparkEvent.m */,
+				297927D6612664752C6E985BCD8809B0 /* SparkSession.h */,
+				B49989B45CA996A6F7A8F70440EDCD99 /* SparkSession.m */,
+			);
+			name = SDK;
+			sourceTree = "<group>";
+		};
+		5581AA17973C74621D1DC3602DD6E99E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0805BE20E8B378E99F70E882D8FB850E /* AFNetworking.modulemap */,
+				4CBC5E0A04AD0872652FBC88684DD1CB /* AFNetworking.xcconfig */,
+				54F941B96BBC02789A657D3FDF858B23 /* AFNetworking-dummy.m */,
+				2193BE35CFBDECDA4CF9B3DBB2056E30 /* AFNetworking-prefix.pch */,
+				BFFA19939A38F57ED7009A716ADDAF11 /* AFNetworking-umbrella.h */,
+				8A7A4DF887064E52DAB9DD079FDBC0DB /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AFNetworking";
+			sourceTree = "<group>";
+		};
+		61946A45E9644C8FEEA3BF2E5E52C2B8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9F86A9526538BC17D6B0E59598B54AE0 /* EventSource.h */,
+				2DFECB34FD4F6A1EEA06E1B620F755E0 /* EventSource.m */,
+				F863FC70260F7520BD1D186640879657 /* KeychainItemWrapper.h */,
+				24A90175C8B18E996C9324F96019297D /* KeychainItemWrapper.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
 		};
-		584B6F863C0C6963741BC43B8B6EE2A6 /* Security */ = {
+		73193F7A6E996F39FE5D536A34D80759 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C47A1BCD4802D4157C20ADD059E2A6F6 /* AFSecurityPolicy.h */,
-				3D5AE92C831C5737463CF8662563AACA /* AFSecurityPolicy.m */,
-			);
-			name = Security;
-			sourceTree = "<group>";
-		};
-		5A24E36A6E8EDCD895C03EE4BB3D04DE /* Spark-SDK */ = {
-			isa = PBXGroup;
-			children = (
-				E258034397F74378B6B916AB4B1AA266 /* Spark-SDK.h */,
-				26A3475DEFFEBCB17FF194AA55713109 /* Spark-SDK-Bridging-Header.h */,
-				3C596B3EB0DAC9FC2F4C66E0F7D5ABB6 /* Helpers */,
-				8471AFACF66E69568F1AA803E65B8021 /* SDK */,
-				179FE5E1A0CDC4977072837DD050704C /* Support Files */,
-			);
-			path = "Spark-SDK";
-			sourceTree = "<group>";
-		};
-		6981D12FD1B3074803919F4480EAB27E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2CDE3223105B5356838D81D398280CBE /* AFNetworking */,
-				5A24E36A6E8EDCD895C03EE4BB3D04DE /* Spark-SDK */,
+				0272C29FC1AE124EB001B95D1D273F84 /* AFNetworking */,
+				C6A422566EF57CA55664115AFC602720 /* RNCryptor */,
+				C148207FCAACE39BCC471E915B2CD0D5 /* Spark-SDK */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		76A8D09C0C454078F41BF356BE1F8D8B /* Targets Support Files */ = {
+		7C28C5A53954FE8C9F75336705EBC8BC /* Pods-GarageDoorOpenerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				C0479EF76CC8A72BB955A81B11455B8C /* Pods-GarageDoorOpener */,
-				B73200D9DB239296A1287B69417ACBB7 /* Pods-GarageDoorOpenerTests */,
-				CEA542E7E4AB52EAD1D36BB0C583FEC4 /* Pods-GarageDoorOpenerUITests */,
+				A5C52DCDC6BA09D3A94D5F985B2483DB /* Info.plist */,
+				A135E99C0BE61485B9B78C8A199D77D8 /* Pods-GarageDoorOpenerUITests.modulemap */,
+				131F193319B1BFF11295676F29FAD678 /* Pods-GarageDoorOpenerUITests-acknowledgements.markdown */,
+				DD54C2BAE3555E6B7432CD3E0F1B0226 /* Pods-GarageDoorOpenerUITests-acknowledgements.plist */,
+				50A20AAF4417B46E656BECA2B83904F6 /* Pods-GarageDoorOpenerUITests-dummy.m */,
+				41073F8DDEF3ECB2A282C140A985A957 /* Pods-GarageDoorOpenerUITests-frameworks.sh */,
+				1599A9DA771843D4FB7A0F703B6AFB75 /* Pods-GarageDoorOpenerUITests-resources.sh */,
+				902CC55BC77E1A537C945FF9F06DA9C4 /* Pods-GarageDoorOpenerUITests-umbrella.h */,
+				7040EF5FA00D5DE033EE3ECBE59D4A2B /* Pods-GarageDoorOpenerUITests.debug.xcconfig */,
+				29F763A4615DDEAFACFB00D2733526E3 /* Pods-GarageDoorOpenerUITests.release.xcconfig */,
 			);
-			name = "Targets Support Files";
+			name = "Pods-GarageDoorOpenerUITests";
+			path = "Target Support Files/Pods-GarageDoorOpenerUITests";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
-				6981D12FD1B3074803919F4480EAB27E /* Pods */,
-				3106F05F98967F027EAB3294A008D833 /* Products */,
-				76A8D09C0C454078F41BF356BE1F8D8B /* Targets Support Files */,
+				EFC8D1216166DE80CF4A6175E6193664 /* Frameworks */,
+				73193F7A6E996F39FE5D536A34D80759 /* Pods */,
+				9F7F8DFE5EB4A2F9100BF318DE16CE69 /* Products */,
+				1EADF5DA00D70829260480C6FB00ECA1 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8471AFACF66E69568F1AA803E65B8021 /* SDK */ = {
+		893DA9D9E6EF1BF5A3AB93A699248C40 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				887B6F0E4D370BE034F0C1C04EEC270E /* SparkCloud.h */,
-				3589A85CE83308E57CA652AFA1B3C1BE /* SparkCloud.m */,
-				D42DEDB99E40E51980CB47D5194BBDF6 /* SparkDevice.h */,
-				BC0CA9322DEB9FAB6C40FD973F4685FD /* SparkDevice.m */,
-				FC748241E8A4229ED2046FFF82D4F936 /* SparkEvent.h */,
-				9515FF2852260A56D50955F81336ECD5 /* SparkEvent.m */,
-				5B8EEA859DB5DDCFD1DC38800AE70FD2 /* SparkSession.h */,
-				616EA2DD9D1B322494F03CFE218D5664 /* SparkSession.m */,
+				E098DE86ED811B6D87786B436462D468 /* CoreGraphics.framework */,
+				55C739F1127D7E94D9137583AECFCC0E /* Foundation.framework */,
+				C53988B41BFD74EE13612A4293F09CD6 /* MobileCoreServices.framework */,
+				8EF139D3016A3EC169A4B9F90049B98D /* Security.framework */,
+				C9EC046EEE00CAE53FC620929325D144 /* SystemConfiguration.framework */,
 			);
-			name = SDK;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		9E0D8610AEB33C34790602AA7E5DCBCC /* Reachability */ = {
+		932A882A65699637D7571894F8AD11D6 /* Serialization */ = {
 			isa = PBXGroup;
 			children = (
-				E7AD796A9083937D5734C0CFE6DFE2E1 /* AFNetworkReachabilityManager.h */,
-				4C82510417602751903BA188E538F1BE /* AFNetworkReachabilityManager.m */,
+				5C1B5E561BE7C6179976F25BA30583DF /* AFURLRequestSerialization.h */,
+				072F968BD65598FBCFA28099AA889961 /* AFURLRequestSerialization.m */,
+				29C4E10F7B3EA4FE3F42A3A9B83660CE /* AFURLResponseSerialization.h */,
+				070DAE1434BC449C52249F0635A0C2F6 /* AFURLResponseSerialization.m */,
 			);
-			name = Reachability;
+			name = Serialization;
 			sourceTree = "<group>";
 		};
-		A5EF426A6032B82E116EEFDC04C8BD2B /* NSURLSession */ = {
+		9F7F8DFE5EB4A2F9100BF318DE16CE69 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FE4686F3FFDFB8DC79A1FFEAC956855F /* AFHTTPSessionManager.h */,
-				E185FF4394509DA11AB4925C974DAFFC /* AFHTTPSessionManager.m */,
-				61195F02F2123C37070BACE867F87837 /* AFURLSessionManager.h */,
-				D89AE9677EBCC69BB9DEA6FBABC5AAD2 /* AFURLSessionManager.m */,
+				5C1FD1BF3BC3F28951FFAC0D15D9F117 /* AFNetworking.framework */,
+				C6DD1B7788183AD73CFCA64C714F09F8 /* Pods_GarageDoorOpener.framework */,
+				3CA0B46362A18DF351782858AB1EE1A2 /* Pods_GarageDoorOpenerTests.framework */,
+				84AAF7372DBDD9AC33D31DEA7E27283A /* Pods_GarageDoorOpenerUITests.framework */,
+				875875AE139CB4450E7FEA55FB1488F4 /* RNCryptor.framework */,
+				7D70551B8D9707D6DF9A227D0C0433C5 /* Spark_SDK.framework */,
 			);
-			name = NSURLSession;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		B73200D9DB239296A1287B69417ACBB7 /* Pods-GarageDoorOpenerTests */ = {
+		A28724660BA4A616C14EEDFF74DE44F3 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3A5C32BAAE6F0B15FF8AF6A0A5F4C132 /* Pods-GarageDoorOpenerTests-acknowledgements.markdown */,
-				76C8B4442ED7239D0FCD2665F8E2A9BB /* Pods-GarageDoorOpenerTests-acknowledgements.plist */,
-				B2DB9663C6D3044EA790FCB9CB2B485C /* Pods-GarageDoorOpenerTests-dummy.m */,
-				986CEF7A1C3E4B4DB9D283C1AADAA4DE /* Pods-GarageDoorOpenerTests-frameworks.sh */,
-				54B8BA800E2151E3011077C3574BC731 /* Pods-GarageDoorOpenerTests-resources.sh */,
-				9F68B9CEE4BCDF663528A95DB4723A16 /* Pods-GarageDoorOpenerTests.debug.xcconfig */,
-				7DCFD32B7C9ADD46E27C142CD9F5D0DE /* Pods-GarageDoorOpenerTests.release.xcconfig */,
+				4F30D811CD52D6FFE9572A7AE43F4A3D /* Info.plist */,
+				2F55BC4ED63D6CCD8C25686ED85BD567 /* Spark-SDK.modulemap */,
+				7F8923966C1D1E7F35C89BA7FC6F9930 /* Spark-SDK.xcconfig */,
+				5331EBFE9465018A7E71DFD1FBD647D5 /* Spark-SDK-dummy.m */,
+				004D0F343A57698E1F057432031C28A2 /* Spark-SDK-prefix.pch */,
+				4B15FFA42FF83A52D53CF4FBEF667241 /* Spark-SDK-umbrella.h */,
 			);
-			name = "Pods-GarageDoorOpenerTests";
-			path = "Target Support Files/Pods-GarageDoorOpenerTests";
+			name = "Support Files";
+			path = "../Target Support Files/Spark-SDK";
 			sourceTree = "<group>";
 		};
-		C0479EF76CC8A72BB955A81B11455B8C /* Pods-GarageDoorOpener */ = {
+		C148207FCAACE39BCC471E915B2CD0D5 /* Spark-SDK */ = {
 			isa = PBXGroup;
 			children = (
-				32D5D2276D8EE71A41BA31CC5BF02B1D /* Pods-GarageDoorOpener-acknowledgements.markdown */,
-				11BF7C17D7AA25091AA834EAE67B3304 /* Pods-GarageDoorOpener-acknowledgements.plist */,
-				B7B074FDB12ABC6BAEF639FC3378A3E8 /* Pods-GarageDoorOpener-dummy.m */,
-				84446BFC8C6A485AF7A7DDD6E991E83A /* Pods-GarageDoorOpener-frameworks.sh */,
-				0C6C0E4E82516FF557686F1FF62A5592 /* Pods-GarageDoorOpener-resources.sh */,
-				637D49FC0F0C9EB523E59B7E32EE5BDA /* Pods-GarageDoorOpener.debug.xcconfig */,
-				E7B14626508F9D52E25E4C6F67BA80E2 /* Pods-GarageDoorOpener.release.xcconfig */,
+				F2BFBAD0609A1D264B329D909DBFB6AB /* Spark-SDK.h */,
+				0A7CE6FA5114E02517D98721D6F6BC6F /* Spark-SDK-Bridging-Header.h */,
+				61946A45E9644C8FEEA3BF2E5E52C2B8 /* Helpers */,
+				52B648EA43948BBB099D72062080B2D9 /* SDK */,
+				A28724660BA4A616C14EEDFF74DE44F3 /* Support Files */,
+			);
+			path = "Spark-SDK";
+			sourceTree = "<group>";
+		};
+		C5F7D98B080DCB2DD461C2CA6B2CA4F4 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				EC644740E8836FCB334852AF243CCB21 /* AFAutoPurgingImageCache.h */,
+				DBF86BC3B15AA82B8853E6A77583B40F /* AFAutoPurgingImageCache.m */,
+				85732425EDF70712F8083D80E8B15D4C /* AFImageDownloader.h */,
+				FBE6C6752AFFB941AE62974C46BE0C36 /* AFImageDownloader.m */,
+				E64A9EE66920A6589D5739C40F528871 /* AFNetworkActivityIndicatorManager.h */,
+				3EF2878655E0F2D55857F4D604736CA1 /* AFNetworkActivityIndicatorManager.m */,
+				A421754DE2E8ADECC8F88CAA0953522B /* UIActivityIndicatorView+AFNetworking.h */,
+				81686BFF78B36F0DBFF22B85185098E1 /* UIActivityIndicatorView+AFNetworking.m */,
+				22F3CC2F14E8E6638B3A1FAB08A193A9 /* UIButton+AFNetworking.h */,
+				ADC345BE6EB65B3AF9B989ABEF559D9C /* UIButton+AFNetworking.m */,
+				AA40D51E944C495563F4DEB61CAA0214 /* UIImage+AFNetworking.h */,
+				4804054EF2C1EA814AAF916A2CD74FAF /* UIImageView+AFNetworking.h */,
+				699F5927E78CA6F9085A94A9AFEA5B66 /* UIImageView+AFNetworking.m */,
+				C4B98248318A077111C059E38FC37C28 /* UIKit+AFNetworking.h */,
+				2BAED7A8A72D3C85064EF8FC75119362 /* UIProgressView+AFNetworking.h */,
+				E376B368E9FC7B70FADB61BD479E66A3 /* UIProgressView+AFNetworking.m */,
+				72F5A34F58313FE30AC3A905110B171F /* UIRefreshControl+AFNetworking.h */,
+				AB64B06134587209BA47C9BD364E65F1 /* UIRefreshControl+AFNetworking.m */,
+				ABC165571323220759D9E9D8B8EC0AED /* UIWebView+AFNetworking.h */,
+				7BA50D9247169F60D45B4FA799A13122 /* UIWebView+AFNetworking.m */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		C6A422566EF57CA55664115AFC602720 /* RNCryptor */ = {
+			isa = PBXGroup;
+			children = (
+				28600CF072E86ABC6C0ECA2D0825431B /* RNCryptor.h */,
+				AB088E70F7A33A3B08B9F3A07DA16729 /* RNCryptor.swift */,
+				E267E52FC8128D50A447D8ABC07F203A /* Support Files */,
+			);
+			path = RNCryptor;
+			sourceTree = "<group>";
+		};
+		D43C1188A3E2046D2F6C36A318A0E50D /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				27870809287150EE14FE1813DDABAB23 /* AFSecurityPolicy.h */,
+				44F755390C3F1C666487CB8E158BC101 /* AFSecurityPolicy.m */,
+			);
+			name = Security;
+			sourceTree = "<group>";
+		};
+		E267E52FC8128D50A447D8ABC07F203A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D509B8D52C05F7FD943F0AEB2FAAFE91 /* Info.plist */,
+				320449FA5CB81D20516414E28F568C4F /* RNCryptor.modulemap */,
+				E3969AF5D6606F6D8BE956A8290AD5AB /* RNCryptor.xcconfig */,
+				E2395549FE4EF6AD1F0315B4FBF3C588 /* RNCryptor-dummy.m */,
+				A6BE19D0541E82387A171D75CD8D5D44 /* RNCryptor-prefix.pch */,
+				16C908B45476291D506D3C5F6B11D07F /* RNCryptor-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RNCryptor";
+			sourceTree = "<group>";
+		};
+		EFC8D1216166DE80CF4A6175E6193664 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5461D992F0D803F0F05DF72B2849301D /* AFNetworking.framework */,
+				893DA9D9E6EF1BF5A3AB93A699248C40 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7596EFA1135E2BCC863DA1E908DA1FA /* Pods-GarageDoorOpener */ = {
+			isa = PBXGroup;
+			children = (
+				458E8C479D6E4917B1D7E0E685CCC920 /* Info.plist */,
+				91289CB00AF337302C907499F970EBFA /* Pods-GarageDoorOpener.modulemap */,
+				225AA58BC1ACDE74164F84A8D8EC757C /* Pods-GarageDoorOpener-acknowledgements.markdown */,
+				1704D359E74047810EE4F993DF0C4DE6 /* Pods-GarageDoorOpener-acknowledgements.plist */,
+				A803227BB6F23422CEE1025CC4D3E509 /* Pods-GarageDoorOpener-dummy.m */,
+				B942BB52C8A53842ACBD56F3075CFB60 /* Pods-GarageDoorOpener-frameworks.sh */,
+				658297447C00F4A986EBCA16AE9D3514 /* Pods-GarageDoorOpener-resources.sh */,
+				6AF165546660F6F50E8E35B98C6E1DD6 /* Pods-GarageDoorOpener-umbrella.h */,
+				95BA171B2EB36F1CC77262296DEED95F /* Pods-GarageDoorOpener.debug.xcconfig */,
+				67039143628472F2FB128E30F24C03F2 /* Pods-GarageDoorOpener.release.xcconfig */,
 			);
 			name = "Pods-GarageDoorOpener";
 			path = "Target Support Files/Pods-GarageDoorOpener";
 			sourceTree = "<group>";
 		};
-		CEA542E7E4AB52EAD1D36BB0C583FEC4 /* Pods-GarageDoorOpenerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F29D22BE4201BC40A3281B217E774745 /* Pods-GarageDoorOpenerUITests-acknowledgements.markdown */,
-				6B4EC69BBCFF38C079D47C648640399C /* Pods-GarageDoorOpenerUITests-acknowledgements.plist */,
-				85C1DFC32CF24F495F0B543242BB4DF6 /* Pods-GarageDoorOpenerUITests-dummy.m */,
-				B1E97761D2E29F372C9494171C641D4E /* Pods-GarageDoorOpenerUITests-frameworks.sh */,
-				8F47277F22113C7050A320F99159AF1E /* Pods-GarageDoorOpenerUITests-resources.sh */,
-				220FC72270AAB5544CF4D7452AF8AF31 /* Pods-GarageDoorOpenerUITests.debug.xcconfig */,
-				C252C463C4EAAD8BBDACCBD2945892C5 /* Pods-GarageDoorOpenerUITests.release.xcconfig */,
-			);
-			name = "Pods-GarageDoorOpenerUITests";
-			path = "Target Support Files/Pods-GarageDoorOpenerUITests";
-			sourceTree = "<group>";
-		};
-		E7DDF56B1B0123D9E30DDF075D80F7A4 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8FDB344CAFCC8A872C6819F92EDAC3FB /* AFNetworking.xcconfig */,
-				C28D7DFE85765DFAA8DD4B3A426F622B /* AFNetworking-dummy.m */,
-				C22B100B32041A1D4EC92918D9ADD05C /* AFNetworking-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/AFNetworking";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1F1DD48160641359C433D16BFC536E06 /* Headers */ = {
+		237FD5CB1EDF654C0D05A74A5CDFF81E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4AAF793D305793D3D3471B14ACB941A /* EventSource.h in Headers */,
-				60BC1306F35598E99F827E2B669D9580 /* KeychainItemWrapper.h in Headers */,
-				62EEBA094E7BD15ADEE1E96AC4620715 /* Spark-SDK-Bridging-Header.h in Headers */,
-				D7BEC323391890D36C0B19FCA2F0CBC6 /* Spark-SDK.h in Headers */,
-				598FA467B78B037CC288483B61B29E5E /* SparkCloud.h in Headers */,
-				1ABA215CB5CE2904DD6A5B6C4EDC4991 /* SparkDevice.h in Headers */,
-				8474E53C5A31446C2EFD3A1E5850E2A9 /* SparkEvent.h in Headers */,
-				E5CF31D33614AFC7AB937DD16F91FF1F /* SparkSession.h in Headers */,
+				57864033816BEDAC33EB5D73ED10B067 /* Pods-GarageDoorOpenerTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B981229135DBE9773A86BDB116C368D1 /* Headers */ = {
+		7C6A0D99A9CC32A19A92A62F8A941139 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19E6319F6ECED7539AABBD9A211F7AEC /* AFAutoPurgingImageCache.h in Headers */,
-				F3774B1449FCE5B3CA3E1B336E11D284 /* AFHTTPSessionManager.h in Headers */,
-				326A543AD4E39A2DAECA1CD385E3AEA2 /* AFImageDownloader.h in Headers */,
-				3939531EB270B4145C7ADFBAB2E5695F /* AFNetworkActivityIndicatorManager.h in Headers */,
-				0A08FC71C4E3B8E0F8734BCDA7CCA7CB /* AFNetworking.h in Headers */,
-				ED69D9B5A342FE9BD3F170D5CDDEC948 /* AFNetworkReachabilityManager.h in Headers */,
-				DFDAC8245626953C4BCE5A2DA6BE2A5B /* AFSecurityPolicy.h in Headers */,
-				2359387620C5E815BF0594BC40311734 /* AFURLRequestSerialization.h in Headers */,
-				B51AA1F7701DCDBCC9B88A15320F9C2C /* AFURLResponseSerialization.h in Headers */,
-				3511AE7ADBB71D05565854F0E70B7D08 /* AFURLSessionManager.h in Headers */,
-				830050886B18F54E17F117FD8EFC717B /* UIActivityIndicatorView+AFNetworking.h in Headers */,
-				E212C2AA95E8F6EFB69A5F1455F291F8 /* UIButton+AFNetworking.h in Headers */,
-				C1B65C3D849FEE4FB5298A8135A765DA /* UIImage+AFNetworking.h in Headers */,
-				6EC97BDB3FC508526F9E388095A7DDCC /* UIImageView+AFNetworking.h in Headers */,
-				85FAB6F1D2FE0598BF2E61D7BB084B8D /* UIKit+AFNetworking.h in Headers */,
-				5D52DB6DF2E6C24CECB0015A9177A2E1 /* UIProgressView+AFNetworking.h in Headers */,
-				ACE9C1A6E8D5121C6C5F907C7A9CFCC9 /* UIRefreshControl+AFNetworking.h in Headers */,
-				B5CF67F7870BAB70A76E57479B706B42 /* UIWebView+AFNetworking.h in Headers */,
+				CAC483EF637FB4A2C2E2FC75BA631B87 /* AFAutoPurgingImageCache.h in Headers */,
+				AB39AC9746E7575D7449700475E41B0B /* AFHTTPSessionManager.h in Headers */,
+				5808B477EFF509D810B5CDCFDC944F80 /* AFImageDownloader.h in Headers */,
+				1480F4923DBBF217F60572EEECB4027C /* AFNetworkActivityIndicatorManager.h in Headers */,
+				EC7CADE416A78A1CD6936018A6695126 /* AFNetworking-umbrella.h in Headers */,
+				E7988678C81F7CCB95D239375FC6986D /* AFNetworking.h in Headers */,
+				68152D921ABF6A423C192C04FDF94F0F /* AFNetworkReachabilityManager.h in Headers */,
+				C2DD28375E1F0B1D0D1D2E4E607C499F /* AFSecurityPolicy.h in Headers */,
+				20EE8030FCF2402DAC7F1C9B9DDAEF79 /* AFURLRequestSerialization.h in Headers */,
+				7332F15718920917F544F35CE2C038AA /* AFURLResponseSerialization.h in Headers */,
+				560698A4D707DCBCC1C8F98BC9B89B23 /* AFURLSessionManager.h in Headers */,
+				1E5B8F12ED7CC40ECDB9B1F755F387E5 /* UIActivityIndicatorView+AFNetworking.h in Headers */,
+				81B617F8D26BB10C5726D75E85D21EB7 /* UIButton+AFNetworking.h in Headers */,
+				9E1E90DED74B73ECE53C9AD76DE53E2D /* UIImage+AFNetworking.h in Headers */,
+				60E3009342BEE96D32C546BE2DB60052 /* UIImageView+AFNetworking.h in Headers */,
+				659960F7E28E993E08CCC1E8A383E710 /* UIKit+AFNetworking.h in Headers */,
+				D9F4E833E37B611B432F6B5D7072DDA2 /* UIProgressView+AFNetworking.h in Headers */,
+				C6354FEC7728A4C86DAD8092509BA7D4 /* UIRefreshControl+AFNetworking.h in Headers */,
+				AE2A07407FB50BA249984DC0620E84C0 /* UIWebView+AFNetworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACCB6B81D91EA0330796C128BA1B63B0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B1867658112A552610ACA7BD429AC9C /* Pods-GarageDoorOpenerUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC9E42A438A55306ABC92D2E923EBC67 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60CD7DA1FBC72E73A8A3D5929D41807C /* EventSource.h in Headers */,
+				F0FE1A98DAFB6F7F73BD6DC2B8C50CF8 /* KeychainItemWrapper.h in Headers */,
+				70C4C2427F6ED0D7B219B0A07BEE81FE /* Spark-SDK-Bridging-Header.h in Headers */,
+				358AD98AABE30A8B2586B0466BE0C485 /* Spark-SDK-umbrella.h in Headers */,
+				69A41AAADF21598CC296B8E57FAB802F /* Spark-SDK.h in Headers */,
+				1DC77884C245F3DE3A45962EAC31BB2B /* SparkCloud.h in Headers */,
+				B9759F956F1AF8E4290218903095E9E2 /* SparkDevice.h in Headers */,
+				0C8764EE056B74D7CC4588192A3D14DF /* SparkEvent.h in Headers */,
+				11D61F1A3524D9FF4790DF04241DF17D /* SparkSession.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6F688EB4DA5EF490AEF20A25D8E2DFE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B097FF35853960960DF266EA46464BE /* Pods-GarageDoorOpener-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB500001346A63009072CFEEAC31ABE4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4F4CCE888EDCB72FED87897D208FECF /* RNCryptor-umbrella.h in Headers */,
+				1B5DEFAED6AFFE9FF912C33D59394E88 /* RNCryptor.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4A1BB683F6BB73641B8A731A6EA50EA5 /* Pods-GarageDoorOpenerUITests */ = {
+		1C3436CEA5C3D39764C5F54374794ECB /* AFNetworking */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4A35AF765E8146B56AD21C30E4C9D9AA /* Build configuration list for PBXNativeTarget "Pods-GarageDoorOpenerUITests" */;
+			buildConfigurationList = 57800A0D1724774333EF09E83030AA81 /* Build configuration list for PBXNativeTarget "AFNetworking" */;
 			buildPhases = (
-				65666791B3AA0EDC24B7D9BF09C2A581 /* Sources */,
-				AA3361D83D86B7FC5CFF8F4AE3EA89D8 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-GarageDoorOpenerUITests";
-			productName = "Pods-GarageDoorOpenerUITests";
-			productReference = 6D705520C3ABABFBF53A37D407B630C7 /* libPods-GarageDoorOpenerUITests.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		60E8583F1F305E6C2AB5890061B7A22E /* Pods-GarageDoorOpenerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 081F52E54DEB72E68742C3AAF73322E4 /* Build configuration list for PBXNativeTarget "Pods-GarageDoorOpenerTests" */;
-			buildPhases = (
-				8AFA07B31D2D6A0659978E1F5075C08E /* Sources */,
-				CD04EC59C2A8DF7CA69D6A10DB7B0938 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-GarageDoorOpenerTests";
-			productName = "Pods-GarageDoorOpenerTests";
-			productReference = 497516882EB52FB6D53694C9D729BB45 /* libPods-GarageDoorOpenerTests.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		928353533005A4198EBDA5B700D37B64 /* AFNetworking */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 77CF2A7107BC61A2E90025871305961D /* Build configuration list for PBXNativeTarget "AFNetworking" */;
-			buildPhases = (
-				DE0BAD758C6F291CE7E10DA077987C62 /* Sources */,
-				508C962B3E08E8DA04956BF349A3CDFD /* Frameworks */,
-				B981229135DBE9773A86BDB116C368D1 /* Headers */,
+				1F17F426378DF5EC8DFB10304B8C4BA4 /* Sources */,
+				C151364F15F39F7CC60CBF9A3AB49B44 /* Frameworks */,
+				7C6A0D99A9CC32A19A92A62F8A941139 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -574,44 +671,97 @@
 			);
 			name = AFNetworking;
 			productName = AFNetworking;
-			productReference = 453C3C4DD1DEF593D9A97A1EC95B42C5 /* libAFNetworking.a */;
-			productType = "com.apple.product-type.library.static";
+			productReference = 5C1FD1BF3BC3F28951FFAC0D15D9F117 /* AFNetworking.framework */;
+			productType = "com.apple.product-type.framework";
 		};
-		A27CAED17D3BF76C357B6BA0FD0B5A16 /* Pods-GarageDoorOpener */ = {
+		7F54A2673ACF6B9BC650F5619C3824C3 /* Spark-SDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BD60B2AD60B7179AD84725C696AB01EF /* Build configuration list for PBXNativeTarget "Pods-GarageDoorOpener" */;
+			buildConfigurationList = A9D730F28D045CCE27428D498522A02D /* Build configuration list for PBXNativeTarget "Spark-SDK" */;
 			buildPhases = (
-				9EC230F2AACDEF9B94D8599A319C2E51 /* Sources */,
-				4B29A3F3443A6C0FCF24A9557C0BBE4F /* Frameworks */,
+				45BBAA649E1BADD803519F2EB5EA9C5A /* Sources */,
+				72A050C1740DBC4695C4F4980A174F1C /* Frameworks */,
+				DC9E42A438A55306ABC92D2E923EBC67 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C4B171222BD83AC284FFC456EC8B136E /* PBXTargetDependency */,
-				2FAC8BD2AF5158BB669D03B4ED80F4CF /* PBXTargetDependency */,
-			);
-			name = "Pods-GarageDoorOpener";
-			productName = "Pods-GarageDoorOpener";
-			productReference = 7A0607FAC9848A9EB297B7BA7D83343E /* libPods-GarageDoorOpener.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		A96C6A3118D9627598B0C0183875BFE4 /* Spark-SDK */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 488051FD45CC773ED00B07FF2569988B /* Build configuration list for PBXNativeTarget "Spark-SDK" */;
-			buildPhases = (
-				F0CC69D924C9BF6D8EC2F5804D0D6F53 /* Sources */,
-				65EA2C9E609354FCC9FA8C173E310F47 /* Frameworks */,
-				1F1DD48160641359C433D16BFC536E06 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				37F6869E349DEDB780271C0E99288759 /* PBXTargetDependency */,
+				0D0155E5ABAD10064888AC9D89906E86 /* PBXTargetDependency */,
 			);
 			name = "Spark-SDK";
 			productName = "Spark-SDK";
-			productReference = C0D0C0D53C193137342389B4CC844373 /* libSpark-SDK.a */;
-			productType = "com.apple.product-type.library.static";
+			productReference = 7D70551B8D9707D6DF9A227D0C0433C5 /* Spark_SDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		942124DC61E51D002CAC419C08E043C3 /* Pods-GarageDoorOpener */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 709E9BE27AC000A2BCB83C5895D37796 /* Build configuration list for PBXNativeTarget "Pods-GarageDoorOpener" */;
+			buildPhases = (
+				E270BC8DFCE72974DB7F4F1F40D483C4 /* Sources */,
+				9DFCB7E3D20364BD0065E377AA0930EA /* Frameworks */,
+				E6F688EB4DA5EF490AEF20A25D8E2DFE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DB56E81CAB1533EE2BC196CFABB8B67 /* PBXTargetDependency */,
+				33C002A98D069D22741F818520593147 /* PBXTargetDependency */,
+				10E226D81429EE9222E9833EACBEE95B /* PBXTargetDependency */,
+			);
+			name = "Pods-GarageDoorOpener";
+			productName = "Pods-GarageDoorOpener";
+			productReference = C6DD1B7788183AD73CFCA64C714F09F8 /* Pods_GarageDoorOpener.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B0A7EAA8E28DEECC5B51320740421789 /* Pods-GarageDoorOpenerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC082D3389039C11634ED7721D20CD0A /* Build configuration list for PBXNativeTarget "Pods-GarageDoorOpenerUITests" */;
+			buildPhases = (
+				1BCEE1A175B8B79F7A1E0D3E48415885 /* Sources */,
+				B96DE8E22BCE7828EEB2A8B76DA331C4 /* Frameworks */,
+				ACCB6B81D91EA0330796C128BA1B63B0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-GarageDoorOpenerUITests";
+			productName = "Pods-GarageDoorOpenerUITests";
+			productReference = 84AAF7372DBDD9AC33D31DEA7E27283A /* Pods_GarageDoorOpenerUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CC0CC7436F9EAFED67079CDA8922F63B /* RNCryptor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FEFA66F4AC87519798FE7F86524FDC9 /* Build configuration list for PBXNativeTarget "RNCryptor" */;
+			buildPhases = (
+				647B541208E395A7FAC67F072CA7E294 /* Sources */,
+				40DCC1A1C9C5BDE6F5DC5B4907E5A5C2 /* Frameworks */,
+				FB500001346A63009072CFEEAC31ABE4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RNCryptor;
+			productName = RNCryptor;
+			productReference = 875875AE139CB4450E7FEA55FB1488F4 /* RNCryptor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E0AAA84C67646F9B26545692A6FDB7B5 /* Pods-GarageDoorOpenerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E73AB43631DF24F84B1C32F8DAD98DBB /* Build configuration list for PBXNativeTarget "Pods-GarageDoorOpenerTests" */;
+			buildPhases = (
+				40CFBCF48CC8C0B88BC6C44F36EB7507 /* Sources */,
+				9A037E6C1A94A2A36EECD1B506B4AECF /* Frameworks */,
+				237FD5CB1EDF654C0D05A74A5CDFF81E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-GarageDoorOpenerTests";
+			productName = "Pods-GarageDoorOpenerTests";
+			productReference = 3CA0B46362A18DF351782858AB1EE1A2 /* Pods_GarageDoorOpenerTests.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -630,146 +780,215 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 3106F05F98967F027EAB3294A008D833 /* Products */;
+			productRefGroup = 9F7F8DFE5EB4A2F9100BF318DE16CE69 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				928353533005A4198EBDA5B700D37B64 /* AFNetworking */,
-				A27CAED17D3BF76C357B6BA0FD0B5A16 /* Pods-GarageDoorOpener */,
-				60E8583F1F305E6C2AB5890061B7A22E /* Pods-GarageDoorOpenerTests */,
-				4A1BB683F6BB73641B8A731A6EA50EA5 /* Pods-GarageDoorOpenerUITests */,
-				A96C6A3118D9627598B0C0183875BFE4 /* Spark-SDK */,
+				1C3436CEA5C3D39764C5F54374794ECB /* AFNetworking */,
+				942124DC61E51D002CAC419C08E043C3 /* Pods-GarageDoorOpener */,
+				E0AAA84C67646F9B26545692A6FDB7B5 /* Pods-GarageDoorOpenerTests */,
+				B0A7EAA8E28DEECC5B51320740421789 /* Pods-GarageDoorOpenerUITests */,
+				CC0CC7436F9EAFED67079CDA8922F63B /* RNCryptor */,
+				7F54A2673ACF6B9BC650F5619C3824C3 /* Spark-SDK */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		65666791B3AA0EDC24B7D9BF09C2A581 /* Sources */ = {
+		1BCEE1A175B8B79F7A1E0D3E48415885 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75D375D8B63159262F8E1C7428697EAB /* Pods-GarageDoorOpenerUITests-dummy.m in Sources */,
+				4A495F0492E7C2008D7A5F03A2DF9B5C /* Pods-GarageDoorOpenerUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8AFA07B31D2D6A0659978E1F5075C08E /* Sources */ = {
+		1F17F426378DF5EC8DFB10304B8C4BA4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				600F28A40FC0C395104C7D912784CE2D /* Pods-GarageDoorOpenerTests-dummy.m in Sources */,
+				3F1BC9BAFFEEABB1ABC7614DF0FC97D5 /* AFAutoPurgingImageCache.m in Sources */,
+				E0D4045AC4C1B41917FCA23A042D18B2 /* AFHTTPSessionManager.m in Sources */,
+				CFA8D6B529A0EBFF0316F2629AB2556E /* AFImageDownloader.m in Sources */,
+				A6C6019D45BE62C61210A9CC619368EF /* AFNetworkActivityIndicatorManager.m in Sources */,
+				3D2789FC760A97301909F0B1201626CD /* AFNetworking-dummy.m in Sources */,
+				68A38977EBAE334DC3C22386D00D2622 /* AFNetworkReachabilityManager.m in Sources */,
+				20607BE2B1E5F31765026E5AC64DB27D /* AFSecurityPolicy.m in Sources */,
+				DFFA215EEAA8DDBD540076927535275C /* AFURLRequestSerialization.m in Sources */,
+				B5852322ADE88AAD56EE042B80BA81E4 /* AFURLResponseSerialization.m in Sources */,
+				707B1A7541C8DBDDE8C27896A61370BE /* AFURLSessionManager.m in Sources */,
+				6ED4ABEE8A5F51F5ECB59FA1781D29C6 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				AF03C11A1FAC8132AD3749D8F541701A /* UIButton+AFNetworking.m in Sources */,
+				2E8A32ED46194EDBE22146271F6D26DE /* UIImageView+AFNetworking.m in Sources */,
+				5FF6453E55785669885F626B853FD2AA /* UIProgressView+AFNetworking.m in Sources */,
+				174202BD6AE0E4A41F5CE66E975EAE52 /* UIRefreshControl+AFNetworking.m in Sources */,
+				A462945883F7729B185B64B679A6BFBE /* UIWebView+AFNetworking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9EC230F2AACDEF9B94D8599A319C2E51 /* Sources */ = {
+		40CFBCF48CC8C0B88BC6C44F36EB7507 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BC8477313BFC3C6FA36A07087C72324 /* Pods-GarageDoorOpener-dummy.m in Sources */,
+				183F5F8ACBF18BE52C17E75EF28E4E7B /* Pods-GarageDoorOpenerTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE0BAD758C6F291CE7E10DA077987C62 /* Sources */ = {
+		45BBAA649E1BADD803519F2EB5EA9C5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14CD3DFB4A25BAEFB205730FA6750025 /* AFAutoPurgingImageCache.m in Sources */,
-				23415204AA48A02959E4E5245CF96037 /* AFHTTPSessionManager.m in Sources */,
-				D31FEE51AF4BE2A6CC059F80B983CD3B /* AFImageDownloader.m in Sources */,
-				4BA19F7DD8F9FDA648137B2CE89E7588 /* AFNetworkActivityIndicatorManager.m in Sources */,
-				A8FC6A53F6C1CB4DEFD972664E1AF3B1 /* AFNetworking-dummy.m in Sources */,
-				43098B12DF5546CB576986E68DBCAFCA /* AFNetworkReachabilityManager.m in Sources */,
-				311E5200832E4AE174A193851A2C6317 /* AFSecurityPolicy.m in Sources */,
-				8E82178CC9BD8BE3DBF2C10E33807AEB /* AFURLRequestSerialization.m in Sources */,
-				C2201E34603B014192F0967473518496 /* AFURLResponseSerialization.m in Sources */,
-				FCDDD3BC67EA205C87238A2A87D5C36C /* AFURLSessionManager.m in Sources */,
-				15460ABD372C937E2A07A2FCDF98C473 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
-				78940A6980F359C4304C695EF6E67C5D /* UIButton+AFNetworking.m in Sources */,
-				B0BE398350F83A7B0102C3BBAFC51428 /* UIImageView+AFNetworking.m in Sources */,
-				38EEA9ED6B922946C54AD6BAC93B73AD /* UIProgressView+AFNetworking.m in Sources */,
-				7F0578A0258E02384F6229C678E60D31 /* UIRefreshControl+AFNetworking.m in Sources */,
-				AD359A96DD4AA2C962E50A5CD5524F54 /* UIWebView+AFNetworking.m in Sources */,
+				88384F21694834ADF197685789B4F5AF /* EventSource.m in Sources */,
+				E38D6E9CD3E85BF8FA7C5C34F32DD2CE /* KeychainItemWrapper.m in Sources */,
+				0A2102A12B648A60C38D6C3D94358BED /* Spark-SDK-dummy.m in Sources */,
+				FA51245CE9EB967C757BFC770B8B0E6F /* SparkCloud.m in Sources */,
+				625590D5A144FBDB05F07EE2ED71478F /* SparkDevice.m in Sources */,
+				0B778F7BC3AE374B8CA99564C0C0A09D /* SparkEvent.m in Sources */,
+				39C01197A5A0379F7377993E75833016 /* SparkSession.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F0CC69D924C9BF6D8EC2F5804D0D6F53 /* Sources */ = {
+		647B541208E395A7FAC67F072CA7E294 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47AEEB8FCA5F27F28219764CB455A107 /* EventSource.m in Sources */,
-				9EF71B71A2609B678E075089DF3FDAA5 /* KeychainItemWrapper.m in Sources */,
-				AF4DDCB386621CAA00D5523E60F44CEF /* Spark-SDK-dummy.m in Sources */,
-				1D379EEE3D85E5BC7278BA2EF5C5B9C9 /* SparkCloud.m in Sources */,
-				149A13808ADE6D2008D9DCC5B6294763 /* SparkDevice.m in Sources */,
-				100F6A2FDE25E5B0C20EC843ECFAA2B5 /* SparkEvent.m in Sources */,
-				D4EE845DCD147A2EE5B418E95A9E04F2 /* SparkSession.m in Sources */,
+				50CE341A17CA757887DBB391CFBA49CE /* RNCryptor-dummy.m in Sources */,
+				7EE58C6CCD794FD0AE257CC39A39C965 /* RNCryptor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E270BC8DFCE72974DB7F4F1F40D483C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0DEAE67FF940891FE09135C8487E250 /* Pods-GarageDoorOpener-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2FAC8BD2AF5158BB669D03B4ED80F4CF /* PBXTargetDependency */ = {
+		0D0155E5ABAD10064888AC9D89906E86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = 1C3436CEA5C3D39764C5F54374794ECB /* AFNetworking */;
+			targetProxy = AB90BE35C805B36C1CD0A0A8E803D831 /* PBXContainerItemProxy */;
+		};
+		10E226D81429EE9222E9833EACBEE95B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Spark-SDK";
-			target = A96C6A3118D9627598B0C0183875BFE4 /* Spark-SDK */;
-			targetProxy = F683EF082A4609028220B56FA20C6360 /* PBXContainerItemProxy */;
+			target = 7F54A2673ACF6B9BC650F5619C3824C3 /* Spark-SDK */;
+			targetProxy = E7296F91D80BB24FD056DA2F9E0AF780 /* PBXContainerItemProxy */;
 		};
-		37F6869E349DEDB780271C0E99288759 /* PBXTargetDependency */ = {
+		1DB56E81CAB1533EE2BC196CFABB8B67 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AFNetworking;
-			target = 928353533005A4198EBDA5B700D37B64 /* AFNetworking */;
-			targetProxy = D2CF3E9B11A41A1D4AAE5A8361A8673A /* PBXContainerItemProxy */;
+			target = 1C3436CEA5C3D39764C5F54374794ECB /* AFNetworking */;
+			targetProxy = 6DDF506770C1B4622D68038D9120CA60 /* PBXContainerItemProxy */;
 		};
-		C4B171222BD83AC284FFC456EC8B136E /* PBXTargetDependency */ = {
+		33C002A98D069D22741F818520593147 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = AFNetworking;
-			target = 928353533005A4198EBDA5B700D37B64 /* AFNetworking */;
-			targetProxy = 19ED2C12C3015A6A6328A9CCF79CA068 /* PBXContainerItemProxy */;
+			name = RNCryptor;
+			target = CC0CC7436F9EAFED67079CDA8922F63B /* RNCryptor */;
+			targetProxy = 5511F24A3C643E224A8EA568C8C5B4E1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2DC24CF49880B301BFB11B1B25681704 /* Release */ = {
+		0068B939C3A7A482C7E4649029607A84 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0362E1F1C8CFCB9011F944EEF26A548C /* Spark-SDK.xcconfig */;
+			baseConfigurationReference = 7E010CE5E06AEA2AA11A8C247F30969D /* Pods-GarageDoorOpenerTests.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Spark-SDK/Spark-SDK-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-GarageDoorOpenerTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GarageDoorOpenerTests/Pods-GarageDoorOpenerTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GarageDoorOpenerTests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		3C51C0C1DF1AF101E0EF749B8E660489 /* Release */ = {
+		2952B3C6909CF79419E899529474B8A5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8FDB344CAFCC8A872C6819F92EDAC3FB /* AFNetworking.xcconfig */;
+			baseConfigurationReference = 4CBC5E0A04AD0872652FBC88684DD1CB /* AFNetworking.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				INFOPLIST_FILE = "Target Support Files/AFNetworking/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = AFNetworking;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		367EFD8432B78936F9BF37A8AD6FB37D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7040EF5FA00D5DE033EE3ECBE59D4A2B /* Pods-GarageDoorOpenerUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GarageDoorOpenerUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GarageDoorOpenerUITests/Pods-GarageDoorOpenerUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GarageDoorOpenerUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		3FA451D268613890FA8A5A03801E11D5 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -808,6 +1027,64 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+		};
+		402A7965ADA428421636BF8FF93EF6E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F8923966C1D1E7F35C89BA7FC6F9930 /* Spark-SDK.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Spark-SDK/Spark-SDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Spark-SDK/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Spark-SDK/Spark-SDK.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Spark_SDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		564D79EE97AB6A8672E3F4F003C68B71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F8923966C1D1E7F35C89BA7FC6F9930 /* Spark-SDK.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Spark-SDK/Spark-SDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Spark-SDK/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Spark-SDK/Spark-SDK.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Spark_SDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -851,182 +1128,235 @@
 			};
 			name = Debug;
 		};
-		63BAFB315BD279635E11A7ADB4558379 /* Debug */ = {
+		7110F913F8D4F3CCA667D4E0213A3B0E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0362E1F1C8CFCB9011F944EEF26A548C /* Spark-SDK.xcconfig */;
+			baseConfigurationReference = 95BA171B2EB36F1CC77262296DEED95F /* Pods-GarageDoorOpener.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Spark-SDK/Spark-SDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-GarageDoorOpener/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GarageDoorOpener/Pods-GarageDoorOpener.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GarageDoorOpener;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		739674EB4CDD63555D9D2F23D800D501 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3969AF5D6606F6D8BE956A8290AD5AB /* RNCryptor.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RNCryptor/RNCryptor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RNCryptor/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RNCryptor/RNCryptor.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RNCryptor;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		884EE460CB1DFE4DA7C10952C7384653 /* Debug */ = {
+		8AAEBF22CED30ECC3895D4983C498392 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 637D49FC0F0C9EB523E59B7E32EE5BDA /* Pods-GarageDoorOpener.debug.xcconfig */;
+			baseConfigurationReference = 29F763A4615DDEAFACFB00D2733526E3 /* Pods-GarageDoorOpenerUITests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		89C893B6FB23A3D8E2AD25D7C52AC6AC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7DCFD32B7C9ADD46E27C142CD9F5D0DE /* Pods-GarageDoorOpenerTests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GarageDoorOpenerUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GarageDoorOpenerUITests/Pods-GarageDoorOpenerUITests.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Pods_GarageDoorOpenerUITests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		A9FC37C99DA610AFD2444D5E05F65136 /* Debug */ = {
+		AC044B65E2FB02CB420DF9AE625B92F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F68B9CEE4BCDF663528A95DB4723A16 /* Pods-GarageDoorOpenerTests.debug.xcconfig */;
+			baseConfigurationReference = 4CBC5E0A04AD0872652FBC88684DD1CB /* AFNetworking.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		AB528D70E620CD2DF0B68D553E39B2F0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C252C463C4EAAD8BBDACCBD2945892C5 /* Pods-GarageDoorOpenerUITests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		B76962BF89C76BEA8A4115EB4FBFA2C6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 220FC72270AAB5544CF4D7452AF8AF31 /* Pods-GarageDoorOpenerUITests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		C4D882BA5FCA854D8DD6EAD9606ED133 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7B14626508F9D52E25E4C6F67BA80E2 /* Pods-GarageDoorOpener.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		D9C97EB576CE94D4E00FD675005D2868 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8FDB344CAFCC8A872C6819F92EDAC3FB /* AFNetworking.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				INFOPLIST_FILE = "Target Support Files/AFNetworking/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = AFNetworking;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		AD3A6C8AD414B551340C16A1CEB37A52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67039143628472F2FB128E30F24C03F2 /* Pods-GarageDoorOpener.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GarageDoorOpener/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GarageDoorOpener/Pods-GarageDoorOpener.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GarageDoorOpener;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F8C3D7410C1EF43612DD7049C3CAB882 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3969AF5D6606F6D8BE956A8290AD5AB /* RNCryptor.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RNCryptor/RNCryptor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RNCryptor/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RNCryptor/RNCryptor.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RNCryptor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FA6236C26D1F807BA175118F06C1AEF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A78E356E7FD14E0E2913DF7D4EA1B399 /* Pods-GarageDoorOpenerTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GarageDoorOpenerTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GarageDoorOpenerTests/Pods-GarageDoorOpenerTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GarageDoorOpenerTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		081F52E54DEB72E68742C3AAF73322E4 /* Build configuration list for PBXNativeTarget "Pods-GarageDoorOpenerTests" */ = {
+		1FEFA66F4AC87519798FE7F86524FDC9 /* Build configuration list for PBXNativeTarget "RNCryptor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A9FC37C99DA610AFD2444D5E05F65136 /* Debug */,
-				89C893B6FB23A3D8E2AD25D7C52AC6AC /* Release */,
+				F8C3D7410C1EF43612DD7049C3CAB882 /* Debug */,
+				739674EB4CDD63555D9D2F23D800D501 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1040,38 +1370,47 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		488051FD45CC773ED00B07FF2569988B /* Build configuration list for PBXNativeTarget "Spark-SDK" */ = {
+		57800A0D1724774333EF09E83030AA81 /* Build configuration list for PBXNativeTarget "AFNetworking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				63BAFB315BD279635E11A7ADB4558379 /* Debug */,
-				2DC24CF49880B301BFB11B1B25681704 /* Release */,
+				AC044B65E2FB02CB420DF9AE625B92F2 /* Debug */,
+				2952B3C6909CF79419E899529474B8A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4A35AF765E8146B56AD21C30E4C9D9AA /* Build configuration list for PBXNativeTarget "Pods-GarageDoorOpenerUITests" */ = {
+		709E9BE27AC000A2BCB83C5895D37796 /* Build configuration list for PBXNativeTarget "Pods-GarageDoorOpener" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B76962BF89C76BEA8A4115EB4FBFA2C6 /* Debug */,
-				AB528D70E620CD2DF0B68D553E39B2F0 /* Release */,
+				7110F913F8D4F3CCA667D4E0213A3B0E /* Debug */,
+				AD3A6C8AD414B551340C16A1CEB37A52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		77CF2A7107BC61A2E90025871305961D /* Build configuration list for PBXNativeTarget "AFNetworking" */ = {
+		A9D730F28D045CCE27428D498522A02D /* Build configuration list for PBXNativeTarget "Spark-SDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D9C97EB576CE94D4E00FD675005D2868 /* Debug */,
-				3C51C0C1DF1AF101E0EF749B8E660489 /* Release */,
+				564D79EE97AB6A8672E3F4F003C68B71 /* Debug */,
+				402A7965ADA428421636BF8FF93EF6E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BD60B2AD60B7179AD84725C696AB01EF /* Build configuration list for PBXNativeTarget "Pods-GarageDoorOpener" */ = {
+		AC082D3389039C11634ED7721D20CD0A /* Build configuration list for PBXNativeTarget "Pods-GarageDoorOpenerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				884EE460CB1DFE4DA7C10952C7384653 /* Debug */,
-				C4D882BA5FCA854D8DD6EAD9606ED133 /* Release */,
+				367EFD8432B78936F9BF37A8AD6FB37D /* Debug */,
+				8AAEBF22CED30ECC3895D4983C498392 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E73AB43631DF24F84B1C32F8DAD98DBB /* Build configuration list for PBXNativeTarget "Pods-GarageDoorOpenerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0068B939C3A7A482C7E4649029607A84 /* Debug */,
+				FA6236C26D1F807BA175118F06C1AEF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

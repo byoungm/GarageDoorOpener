@@ -8,6 +8,7 @@
 
 #import "LoginViewController.h"
 #import "Spark-SDK.h"
+#import "CredentialManager.h"
 
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *userNameTextField;
@@ -35,6 +36,8 @@
         if (!error)
         {
             NSLog(@"Logged in to cloud\nAccess Token: %@", [SparkCloud sharedInstance].accessToken);
+            CredentialManager *cm = [[CredentialManager alloc] init];
+            [cm saveUsername:username andPassword:password];
             [self dismissViewControllerAnimated:YES completion:nil];
         }
         else

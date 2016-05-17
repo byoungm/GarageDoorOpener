@@ -12,14 +12,25 @@
 
 #define PARTICLE_GARAGE_DOOR_DEVICE_NAME @"RB Duo 1"
 
+#define GARAGE_DOOR_OPEN_STR @"Open"
+#define GARAGE_DOOR_CLOSED_STR @"Closed"
+#define GARAGE_DOOR_STATE_UNKNOWN_STR @"State Unknown"
+
 @interface MainViewController ()
 @property (nonatomic, strong) SparkDevice* garageDoorDevice;
+@property (weak, nonatomic) IBOutlet UILabel *garageDoorStateLabel;
 
 - (void)loadGarageDoorDevice;
-
++ (NSString *)decodeGarageDoorStateString:(int)stateEnum;
 @end
 
 @implementation MainViewController 
+
++ (NSString *)decodeGarageDoorStateString:(int)stateEnum
+{
+    NSArray *GarageDoorStateStrings = @[GARAGE_DOOR_OPEN_STR, GARAGE_DOOR_CLOSED_STR, GARAGE_DOOR_STATE_UNKNOWN_STR];
+    return GarageDoorStateStrings[stateEnum];
+}
 
 - (void)viewDidAppear:(BOOL)animated
 {
@@ -34,7 +45,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.garageDoorStateLabel.text = GARAGE_DOOR_STATE_UNKNOWN_STR;
 
 }
 
@@ -67,10 +78,23 @@ static int gToggleState = 0;
     {
         gToggleState = 0;
     }
-    [self.garageDoorDevice callFunction:@"ledToggle" withArguments:@[LedCommands[gToggleState]] completion:^(NSNumber *resultCode, NSError *error) {
+    [self.garageDoorDevice callFunction:@"webapi" withArguments:@[LedCommands[gToggleState]] completion:^(NSNumber *resultCode, NSError *error) {
         if (!error)
         {
             NSLog(@"LED was tured on - Result Code:%d", [resultCode intValue]);
+        }
+    }];
+}
+
+- (IBAction)garageDoorClicked:(id)sender {
+    [self.garageDoorDevice callFunction:@"webapi" withArguments:@[@"GarageDoorButtonClicked"] completion:^(NSNumber *resultCode, NSError *error) {
+        if (!error)
+        {
+            NSLog(@"Garage button pushed - Result Code:%d", [resultCode intValue]);
+        }
+        else
+        {
+            NSLog(@"Garage door error: %@", error);
         }
     }];
 }

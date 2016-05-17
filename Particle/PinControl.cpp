@@ -4,25 +4,28 @@
 
 
 // Static Members
-int PinControl::m_Leds[PIN_CONTROL_NUM_LED_PINS] = {PIN_LED_1, PIN_LES_2};
+int PinControl::m_Leds[PIN_CONTROL_NUM_LED_PINS] = {PIN_MAIN_LED};
 
 void PinControl::Init()
 {
     for (int i = 0; i < PIN_CONTROL_NUM_LED_PINS; i++)
     {
         pinMode(m_Leds[i], OUTPUT);
-        SetLed(i, OFF);
+        SetLed(i, LED_OFF);
+    }
+    pinMode(PIN_GARAGE_DOOR_TOGGLE, OUTPUT);
+    SetGarageDoorPin(HIGH);
+}
+
+void PinControl::SetLed(int num, int value)
+{
+    if (num < PIN_CONTROL_NUM_LED_PINS)
+    {
+        digitalWrite(m_Leds[num], value);
     }
 }
 
-void PinControl::SetLed(int num, bool on)
+void PinControl::SetGarageDoorPin(int value)
 {
-    if (on)
-    {
-        digitalWrite(m_Leds[num], HIGH);
-    }
-    else
-    {
-        digitalWrite(m_Leds[num], LOW);
-    }
+    digitalWrite(PIN_GARAGE_DOOR_TOGGLE, value);
 }

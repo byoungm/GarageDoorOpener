@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - RNCryptor (4.0.0)
   - Spark-SDK (0.4.1):
     - Spark-SDK/Helpers (= 0.4.1)
     - Spark-SDK/SDK (= 0.4.1)
@@ -23,12 +24,14 @@ PODS:
     - Spark-SDK/Helpers
 
 DEPENDENCIES:
+  - RNCryptor
   - Spark-SDK
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  RNCryptor: 59d6483908115af5c12b884db23392024e52a5fe
   Spark-SDK: e9f7713a28526157983d28c452f4f271e8496912
 
-PODFILE CHECKSUM: 62155a00896af906da414d4a334a12e8b46b6ae2
+PODFILE CHECKSUM: 15ee63f42285eb994f3a5560e38b4a0971f18ae3
 
 COCOAPODS: 1.0.0

@@ -4,7 +4,7 @@
 
 #include "application.h"
 
-#define PIN_LED_1 D0
-#define PIN_LES_2 D7
+#define PIN_GARAGE_DOOR_TOGGLE D0
+#define PIN_MAIN_LED           D7
 
 #endif // _PINHAL_H_

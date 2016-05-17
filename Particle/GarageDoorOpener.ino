@@ -1,11 +1,13 @@
+#include "GarageControl.h"
 #include "PinControl.h"
 
 void setup()
 {
-    PinControl::Init();
-    
     // Setup Particle Function
-    Particle.function("ledToggle",ledToggle);
+    Spark.function("webapi",webapi);
+
+    PinControl::Init();
+    GarageControl::Init();
 }
 
 void loop()
@@ -13,25 +15,31 @@ void loop()
 
 }
 
-int ledToggle(String command)
+int webapi(String command)
 {
-    int state = 0;
+    int val = 0;
     if (command == "on") 
     {
-        PinControl::SetLed(0, ON);
-        PinControl::SetLed(1, ON);
+        PinControl::SetLed(0, LED_ON);
     }
     else if (command == "off") 
     {
-        PinControl::SetLed(0, OFF);
-        PinControl::SetLed(1, OFF);
+        PinControl::SetLed(0, LED_OFF);
     }
-    else {
-        state = -1;
+    else if (command == "GetGarageDoorState")
+    {
+        val = GarageControl::GetGarageDoorState();
+    }
+    else if (command == "GarageDoorButtonClicked")
+    {
+        GarageControl::SimClick();
+    }
+    else 
+    {
+        val = -255;
     }
     
-    return state;
+    return val;
 }
-
 
 

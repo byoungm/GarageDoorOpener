@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02F86F18DBA6913FCF9FE214 /* libPods-GarageDoorOpenerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D4E0F1B9801810CF1594B1F /* libPods-GarageDoorOpenerTests.a */; };
 		43E4AA641CE8C773007F9F15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E4AA631CE8C773007F9F15 /* main.m */; };
 		43E4AA671CE8C773007F9F15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E4AA661CE8C773007F9F15 /* AppDelegate.m */; };
 		43E4AA6A1CE8C773007F9F15 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E4AA691CE8C773007F9F15 /* MainViewController.m */; };
@@ -17,8 +16,10 @@
 		43E4AA7D1CE8C773007F9F15 /* GarageDoorOpenerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E4AA7C1CE8C773007F9F15 /* GarageDoorOpenerTests.m */; };
 		43E4AA881CE8C774007F9F15 /* GarageDoorOpenerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E4AA871CE8C774007F9F15 /* GarageDoorOpenerUITests.m */; };
 		43E4CB791CE8CF400008FC9D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E4CB781CE8CF400008FC9D /* LoginViewController.m */; };
-		7EA86913DD9E21CF1B5D6F60 /* libPods-GarageDoorOpener.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B337447101DD47D909E36A0 /* libPods-GarageDoorOpener.a */; };
-		B601991150CCBD9A8FC9B3B4 /* libPods-GarageDoorOpenerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6842404DCC28547D6B568EDE /* libPods-GarageDoorOpenerUITests.a */; };
+		43E4CB7D1CEB55130008FC9D /* CredentialManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E4CB7C1CEB55130008FC9D /* CredentialManager.m */; };
+		58945ED37F7BFCE8D95BD8E3 /* Pods_GarageDoorOpenerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE4EDE69FDFB3F627F1FBEF /* Pods_GarageDoorOpenerUITests.framework */; };
+		C76E81410B59A0A026C7831C /* Pods_GarageDoorOpenerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F633FC22B243EC4222F59E /* Pods_GarageDoorOpenerTests.framework */; };
+		C9D964C5545B5CCE9F4CB360 /* Pods_GarageDoorOpener.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8AB3E75742AE53FE495EB3B /* Pods_GarageDoorOpener.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +41,6 @@
 
 /* Begin PBXFileReference section */
 		0C15F38EBBD77DFE3D5ABE2B /* Pods-GarageDoorOpenerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GarageDoorOpenerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GarageDoorOpenerTests/Pods-GarageDoorOpenerTests.release.xcconfig"; sourceTree = "<group>"; };
-		1B337447101DD47D909E36A0 /* libPods-GarageDoorOpener.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GarageDoorOpener.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D4E0F1B9801810CF1594B1F /* libPods-GarageDoorOpenerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GarageDoorOpenerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E4AA5F1CE8C773007F9F15 /* GarageDoorOpener.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GarageDoorOpener.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E4AA631CE8C773007F9F15 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		43E4AA651CE8C773007F9F15 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,12 +60,16 @@
 		43E4CB771CE8CF400008FC9D /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		43E4CB781CE8CF400008FC9D /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		43E4CB7A1CE8D64B0008FC9D /* SegueDefinations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SegueDefinations.h; sourceTree = "<group>"; };
+		43E4CB7B1CEB55130008FC9D /* CredentialManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CredentialManager.h; sourceTree = "<group>"; };
+		43E4CB7C1CEB55130008FC9D /* CredentialManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CredentialManager.m; sourceTree = "<group>"; };
 		4EDB961EECB4D359203F9D42 /* Pods-GarageDoorOpener.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GarageDoorOpener.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GarageDoorOpener/Pods-GarageDoorOpener.debug.xcconfig"; sourceTree = "<group>"; };
-		6842404DCC28547D6B568EDE /* libPods-GarageDoorOpenerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GarageDoorOpenerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81F633FC22B243EC4222F59E /* Pods_GarageDoorOpenerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GarageDoorOpenerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DE4EDE69FDFB3F627F1FBEF /* Pods_GarageDoorOpenerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GarageDoorOpenerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92DA7E9CB51E757E5C6C16D3 /* Pods-GarageDoorOpener.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GarageDoorOpener.release.xcconfig"; path = "Pods/Target Support Files/Pods-GarageDoorOpener/Pods-GarageDoorOpener.release.xcconfig"; sourceTree = "<group>"; };
 		948B1BF307236D14D627A927 /* Pods-GarageDoorOpenerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GarageDoorOpenerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GarageDoorOpenerUITests/Pods-GarageDoorOpenerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AE61BEF0430C07438D3CFB1D /* Pods-GarageDoorOpenerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GarageDoorOpenerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GarageDoorOpenerTests/Pods-GarageDoorOpenerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E994A102C61B053E75155666 /* Pods-GarageDoorOpenerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GarageDoorOpenerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GarageDoorOpenerUITests/Pods-GarageDoorOpenerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F8AB3E75742AE53FE495EB3B /* Pods_GarageDoorOpener.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GarageDoorOpener.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EA86913DD9E21CF1B5D6F60 /* libPods-GarageDoorOpener.a in Frameworks */,
+				C9D964C5545B5CCE9F4CB360 /* Pods_GarageDoorOpener.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02F86F18DBA6913FCF9FE214 /* libPods-GarageDoorOpenerTests.a in Frameworks */,
+				C76E81410B59A0A026C7831C /* Pods_GarageDoorOpenerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B601991150CCBD9A8FC9B3B4 /* libPods-GarageDoorOpenerUITests.a in Frameworks */,
+				58945ED37F7BFCE8D95BD8E3 /* Pods_GarageDoorOpenerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +129,8 @@
 				43E4AA661CE8C773007F9F15 /* AppDelegate.m */,
 				43E4AA681CE8C773007F9F15 /* MainViewController.h */,
 				43E4AA691CE8C773007F9F15 /* MainViewController.m */,
+				43E4CB7B1CEB55130008FC9D /* CredentialManager.h */,
+				43E4CB7C1CEB55130008FC9D /* CredentialManager.m */,
 				43E4CB7A1CE8D64B0008FC9D /* SegueDefinations.h */,
 				43E4CB771CE8CF400008FC9D /* LoginViewController.h */,
 				43E4CB781CE8CF400008FC9D /* LoginViewController.m */,
@@ -167,9 +172,9 @@
 		5FC064C2ABF8BB5F8F8A6F80 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1B337447101DD47D909E36A0 /* libPods-GarageDoorOpener.a */,
-				2D4E0F1B9801810CF1594B1F /* libPods-GarageDoorOpenerTests.a */,
-				6842404DCC28547D6B568EDE /* libPods-GarageDoorOpenerUITests.a */,
+				F8AB3E75742AE53FE495EB3B /* Pods_GarageDoorOpener.framework */,
+				81F633FC22B243EC4222F59E /* Pods_GarageDoorOpenerTests.framework */,
+				8DE4EDE69FDFB3F627F1FBEF /* Pods_GarageDoorOpenerUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -451,6 +456,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43E4CB7D1CEB55130008FC9D /* CredentialManager.m in Sources */,
 				43E4CB791CE8CF400008FC9D /* LoginViewController.m in Sources */,
 				43E4AA6A1CE8C773007F9F15 /* MainViewController.m in Sources */,
 				43E4AA671CE8C773007F9F15 /* AppDelegate.m in Sources */,

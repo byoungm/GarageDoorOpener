@@ -7,8 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "Spark-SDK.h"
+#import "CredentialManager.h"
 
 @interface AppDelegate ()
+- (void)authParticleCloud;
 
 @end
 
@@ -17,7 +20,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    return YES;
+    
+    [self authParticleCloud];
+    return YES;;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -40,6 +45,25 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)authParticleCloud
+{
+    if (![SparkCloud sharedInstance].isAuthenticated)
+    {
+        CredentialManager *cm = [[CredentialManager alloc] init];
+        NSDictionary *dict = [cm getUsernameAndPassword];
+        NSString *username = dict[@"username"];
+        NSString *password = dict[@"password"];
+        [[SparkCloud sharedInstance] loginWithUser:username password:password completion:^(NSError *error){
+            if (!error)
+            {
+                NSLog(@"Logged in to cloud\nAccess Token: %@", [SparkCloud sharedInstance].accessToken);
+            }
+            else
+                NSLog(@"Wrong credentials or no internet connectivity, please try again");
+        }];
+    }
 }
 
 @end
