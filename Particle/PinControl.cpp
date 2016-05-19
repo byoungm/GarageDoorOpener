@@ -15,6 +15,7 @@ void PinControl::Init()
     }
     pinMode(PIN_GARAGE_DOOR_TOGGLE, OUTPUT);
     SetGarageDoorPin(HIGH);
+    pinMode(PIN_GARAGE_REED_SWITCH, INPUT);
 }
 
 void PinControl::SetLed(int num, int value)
@@ -28,4 +29,9 @@ void PinControl::SetLed(int num, int value)
 void PinControl::SetGarageDoorPin(int value)
 {
     digitalWrite(PIN_GARAGE_DOOR_TOGGLE, value);
-} 
+}
+
+int PinControl::GetReedSwitchPinValue(void)
+{
+    return digitalRead(PIN_GARAGE_REED_SWITCH);
+}

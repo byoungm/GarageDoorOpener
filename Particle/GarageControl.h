@@ -15,6 +15,7 @@ public:
     static void Init();
     static void SimClick();
     static GarageDoorState_t GetGarageDoorState();
+    static void UpdateGarageDoorState(void);
     
 private:
     static GarageDoorState_t m_GarageDoorState;

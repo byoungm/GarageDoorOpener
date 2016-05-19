@@ -14,6 +14,7 @@ public:
     static void Init();
     static void SetLed(int num, int value);
     static void SetGarageDoorPin(int value);
+    static int  GetReedSwitchPinValue(void);
     
 private:
     static int m_Leds[PIN_CONTROL_NUM_LED_PINS];
