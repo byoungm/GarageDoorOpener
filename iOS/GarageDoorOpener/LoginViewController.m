@@ -13,6 +13,7 @@
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *userNameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passWordTextField;
+@property (weak, nonatomic) IBOutlet UILabel *loginStatusLabel;
 
 @end
 
@@ -21,6 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.loginStatusLabel.text = @""; // Empty string until an error occurs
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,7 +43,7 @@
             [self dismissViewControllerAnimated:YES completion:nil];
         }
         else
-            NSLog(@"Wrong credentials or no internet connectivity, please try again");
+            self.loginStatusLabel.text = @"Wrong credentials or no internet connectivity, please try again";
     }];
 }
 

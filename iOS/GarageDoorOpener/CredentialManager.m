@@ -44,7 +44,7 @@
     NSError *error;
     NSData *encryptedData = [NSData dataWithContentsOfFile:self.credentialsFilePath];
     NSData *decryptedData = [RNCryptor decryptData:encryptedData password:self.docPassword  error:&error];
-    NSDictionary* dict = nil;
+    NSDictionary *dict = @{@"username":@"__ERROR__", @"password":@"__ERROR__"};
     if (error == nil)
     {
        dict = (NSDictionary*) [NSKeyedUnarchiver unarchiveObjectWithData:decryptedData];

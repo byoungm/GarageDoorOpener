@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ebK-Ps-ECD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ebK-Ps-ECD">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -137,7 +137,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Particle Cloud Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="395" translatesAutoresizingMaskIntoConstraints="NO" id="psE-Mf-oLp">
-                                <rect key="frame" x="105" y="28" width="395" height="93"/>
+                                <rect key="frame" x="20" y="28" width="560" height="65"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -161,29 +161,40 @@
                                     <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gEB-y4-QYy"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crediental Status Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBe-Wg-6WZ">
+                                <rect key="frame" x="20" y="91" width="560" height="60"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="hjH-gR-OHU" secondAttribute="trailing" constant="25" id="1kV-6w-9rs"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="psE-Mf-oLp" secondAttribute="trailing" constant="80" id="4yJ-jQ-cGs"/>
-                            <constraint firstItem="psE-Mf-oLp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="9Vg-3w-keC"/>
-                            <constraint firstItem="hjH-gR-OHU" firstAttribute="top" secondItem="psE-Mf-oLp" secondAttribute="bottom" constant="34" id="HhO-Gu-sOq"/>
+                            <constraint firstItem="iBe-Wg-6WZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="71" id="DIG-lO-IcF"/>
+                            <constraint firstItem="iBe-Wg-6WZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Hha-Ue-Sid"/>
                             <constraint firstItem="qiv-4e-V9z" firstAttribute="leading" secondItem="Epx-sk-Ne8" secondAttribute="trailing" constant="20" id="JBi-33-bNL"/>
                             <constraint firstItem="qiv-4e-V9z" firstAttribute="bottom" secondItem="Epx-sk-Ne8" secondAttribute="bottom" id="KWn-6h-VdL"/>
                             <constraint firstItem="qiv-4e-V9z" firstAttribute="top" secondItem="hjH-gR-OHU" secondAttribute="bottom" constant="11" id="LIw-E5-MWi"/>
-                            <constraint firstItem="psE-Mf-oLp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="85" id="YP0-nz-kHg"/>
+                            <constraint firstItem="psE-Mf-oLp" firstAttribute="leading" secondItem="iBe-Wg-6WZ" secondAttribute="leading" id="Oau-Dh-0Qx"/>
+                            <constraint firstItem="mtL-gW-mkk" firstAttribute="top" secondItem="iBe-Wg-6WZ" secondAttribute="bottom" constant="8" symbolic="YES" id="ZDb-y9-RhR"/>
                             <constraint firstItem="Epx-sk-Ne8" firstAttribute="top" secondItem="mtL-gW-mkk" secondAttribute="bottom" constant="25" id="bJR-Em-V45"/>
+                            <constraint firstItem="psE-Mf-oLp" firstAttribute="trailing" secondItem="iBe-Wg-6WZ" secondAttribute="trailing" id="eyc-hS-Jfa"/>
+                            <constraint firstItem="hjH-gR-OHU" firstAttribute="top" secondItem="psE-Mf-oLp" secondAttribute="bottom" constant="62" id="gtl-Y6-ECH"/>
                             <constraint firstItem="hjH-gR-OHU" firstAttribute="centerY" secondItem="mtL-gW-mkk" secondAttribute="centerY" id="jtM-Sc-MsH"/>
+                            <constraint firstItem="iBe-Wg-6WZ" firstAttribute="centerX" secondItem="RLc-Cx-7o4" secondAttribute="centerX" id="mCm-Mv-H2M"/>
                             <constraint firstItem="RLc-Cx-7o4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mZM-VI-EV2"/>
                             <constraint firstItem="qiv-4e-V9z" firstAttribute="leading" secondItem="hjH-gR-OHU" secondAttribute="leading" id="nHN-UG-iNB"/>
                             <constraint firstItem="RLc-Cx-7o4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oeT-y0-Gmw"/>
                             <constraint firstItem="qiv-4e-V9z" firstAttribute="trailing" secondItem="hjH-gR-OHU" secondAttribute="trailing" id="rKx-C0-Rp8"/>
                             <constraint firstItem="Epx-sk-Ne8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-1" id="uqZ-La-Cch"/>
                             <constraint firstItem="hjH-gR-OHU" firstAttribute="leading" secondItem="mtL-gW-mkk" secondAttribute="trailing" constant="13" id="wpe-hK-BUO"/>
+                            <constraint firstItem="psE-Mf-oLp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="yAT-x1-fh0"/>
                             <constraint firstItem="mtL-gW-mkk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="139" id="yh7-IO-LG3"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="loginStatusLabel" destination="iBe-Wg-6WZ" id="AB9-3h-3l7"/>
                         <outlet property="passWordTextField" destination="qiv-4e-V9z" id="9D6-by-HKd"/>
                         <outlet property="userNameTextField" destination="hjH-gR-OHU" id="aJt-5Y-SVA"/>
                     </connections>
