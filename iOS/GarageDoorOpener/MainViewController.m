@@ -15,20 +15,23 @@
 #define GARAGE_DOOR_OPEN_STR @"Open"
 #define GARAGE_DOOR_CLOSED_STR @"Closed"
 #define GARAGE_DOOR_STATE_UNKNOWN_STR @"State Unknown"
+#define GARAGE_DOOR_STATE_UPDATE_TIMER_INTERVAL 1.0
 
 @interface MainViewController ()
 @property (nonatomic, strong) SparkDevice* garageDoorDevice;
 @property (weak, nonatomic) IBOutlet UILabel *garageDoorStateLabel;
+@property (strong, nonatomic) NSTimer *garageStateUpdateTimer;
 
+- (NSString *)decodeGarageDoorStateString:(int)stateEnum;
 - (void)loadGarageDoorDevice;
-+ (NSString *)decodeGarageDoorStateString:(int)stateEnum;
+- (void)updateGarageStateLabel;
 @end
 
 @implementation MainViewController 
 
-+ (NSString *)decodeGarageDoorStateString:(int)stateEnum
+- (NSString *)decodeGarageDoorStateString:(int)stateEnum
 {
-    NSArray *GarageDoorStateStrings = @[GARAGE_DOOR_OPEN_STR, GARAGE_DOOR_CLOSED_STR, GARAGE_DOOR_STATE_UNKNOWN_STR];
+    const NSArray *GarageDoorStateStrings = @[GARAGE_DOOR_OPEN_STR, GARAGE_DOOR_CLOSED_STR, GARAGE_DOOR_STATE_UNKNOWN_STR];
     return GarageDoorStateStrings[stateEnum];
 }
 
@@ -40,6 +43,20 @@
         [self performSegueWithIdentifier:PARTICLE_LOGIN_SEGUE sender:self];
     }
     [self loadGarageDoorDevice];
+    if (!self.garageStateUpdateTimer || !self.garageStateUpdateTimer.valid)
+    {
+        self.garageStateUpdateTimer = [NSTimer scheduledTimerWithTimeInterval:GARAGE_DOOR_STATE_UPDATE_TIMER_INTERVAL
+                                                                       target:self
+                                                                     selector:@selector(updateGarageStateLabel)
+                                                                     userInfo:nil
+                                                                      repeats:YES];
+    }
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    [self.garageStateUpdateTimer invalidate];
 }
 
 - (void)viewDidLoad
@@ -69,10 +86,26 @@
     }];
 }
 
+- (void)updateGarageStateLabel;
+{
+    [self.garageDoorDevice callFunction:@"webapi" withArguments:@[@"GARAGE_DOOR_GET_STATE"] completion:^(NSNumber *resultCode, NSError *error) {
+        if (!error)
+        {
+            int res = [resultCode intValue];
+            NSLog(@"Garage state :%d", res);
+            self.garageDoorStateLabel.text = [self decodeGarageDoorStateString:res];
+        }
+        else
+        {
+            NSLog(@"Garage state error: %@", error);
+        }
+    }];
+}
+
 static int gToggleState = 0;
 
 - (IBAction)toggleLeds:(id)sender {
-    NSArray* LedCommands = @[@"off",@"on"];
+    NSArray* LedCommands = @[@"LED_OFF",@"LED_ON"];
     gToggleState++;
     if(gToggleState > 1)
     {
@@ -87,7 +120,7 @@ static int gToggleState = 0;
 }
 
 - (IBAction)garageDoorClicked:(id)sender {
-    [self.garageDoorDevice callFunction:@"webapi" withArguments:@[@"GarageDoorButtonClicked"] completion:^(NSNumber *resultCode, NSError *error) {
+    [self.garageDoorDevice callFunction:@"webapi" withArguments:@[@"GARAGE_DOOR_CLICK_BUTTON"] completion:^(NSNumber *resultCode, NSError *error) {
         if (!error)
         {
             NSLog(@"Garage button pushed - Result Code:%d", [resultCode intValue]);
@@ -98,23 +131,6 @@ static int gToggleState = 0;
         }
     }];
 }
-
-/*
- // reading a variable
- [self.garageDoorDevice getVariable:@"temprature" completion:^(id result, NSError *error) {
- if (!error)
- {
- NSNumber *tempratureReading = (NSNumber *)result;
- NSLog(@"Room temprature is %f degrees",tempratureReading.floatValue);
- }
- else
- {
- NSLog(@"Failed reading temprature from Photon device");
- }
- }];
- */
-
-
 
 
 

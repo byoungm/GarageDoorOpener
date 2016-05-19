@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -24,8 +23,8 @@
                                 <rect key="frame" x="223" y="127" width="154" height="46"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="8ZU-5F-S6M"/>
-                                    <constraint firstAttribute="width" constant="154" id="QkF-Wp-VhG"/>
+                                    <constraint firstAttribute="height" constant="46" id="dNV-7x-00X"/>
+                                    <constraint firstAttribute="width" constant="154" id="tgV-FK-ORm"/>
                                     <constraint firstAttribute="height" constant="46" id="ueE-4k-p4e"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="23"/>
@@ -43,6 +42,7 @@
                                 <rect key="frame" x="223" y="349" width="154" height="46"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="4cj-fo-hwA" secondAttribute="height" multiplier="77:23" id="UOz-x8-3CR"/>
                                     <constraint firstAttribute="height" constant="46" id="ocw-xO-awj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="23"/>
@@ -56,39 +56,35 @@
                                     <action selector="garageDoorClicked:" destination="ebK-Ps-ECD" eventType="touchUpInside" id="Vn4-Pu-ng1"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;State&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MtU-XS-Xne">
-                                <rect key="frame" x="166" y="299" width="414" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;State&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MtU-XS-Xne">
+                                <rect key="frame" x="20" y="299" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Garage Door:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQ7-qf-rd1">
-                                <rect key="frame" x="20" y="299" width="138" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="138" id="seC-se-FBK"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Garage Door:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQ7-qf-rd1">
+                                <rect key="frame" x="20" y="261" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="lLb-dM-uPv" firstAttribute="top" secondItem="eQ7-qf-rd1" secondAttribute="bottom" constant="271" id="09S-Fj-d8E"/>
                             <constraint firstItem="XbK-wU-Bro" firstAttribute="leading" secondItem="508-Kj-SKQ" secondAttribute="leadingMargin" constant="203" id="09v-Sm-e1A"/>
-                            <constraint firstItem="lLb-dM-uPv" firstAttribute="top" secondItem="4cj-fo-hwA" secondAttribute="bottom" constant="205" id="2dS-ro-2C2"/>
-                            <constraint firstItem="4cj-fo-hwA" firstAttribute="top" secondItem="MtU-XS-Xne" secondAttribute="bottom" constant="20" id="5Vl-67-Hwi"/>
-                            <constraint firstItem="MtU-XS-Xne" firstAttribute="trailing" secondItem="508-Kj-SKQ" secondAttribute="trailingMargin" id="Eqa-xT-jgV"/>
-                            <constraint firstItem="eQ7-qf-rd1" firstAttribute="firstBaseline" secondItem="MtU-XS-Xne" secondAttribute="firstBaseline" id="FRS-ZT-iGH"/>
-                            <constraint firstItem="XbK-wU-Bro" firstAttribute="top" secondItem="po0-kB-4OD" secondAttribute="bottom" constant="107" id="M0v-BR-Sd9"/>
-                            <constraint firstItem="XbK-wU-Bro" firstAttribute="trailing" secondItem="4cj-fo-hwA" secondAttribute="trailing" id="YWe-0x-Tz2"/>
-                            <constraint firstItem="eQ7-qf-rd1" firstAttribute="leading" secondItem="508-Kj-SKQ" secondAttribute="leadingMargin" id="feZ-UF-DNo"/>
+                            <constraint firstItem="4cj-fo-hwA" firstAttribute="top" secondItem="MtU-XS-Xne" secondAttribute="bottom" constant="20" id="3tV-bv-8p8"/>
+                            <constraint firstItem="MtU-XS-Xne" firstAttribute="centerX" secondItem="4cj-fo-hwA" secondAttribute="centerX" id="7z0-kc-KWz"/>
+                            <constraint firstItem="XbK-wU-Bro" firstAttribute="leading" secondItem="4cj-fo-hwA" secondAttribute="leading" id="8Up-KW-2iL"/>
+                            <constraint firstItem="XbK-wU-Bro" firstAttribute="top" secondItem="po0-kB-4OD" secondAttribute="bottom" constant="107" id="97P-cw-lFD"/>
+                            <constraint firstItem="eQ7-qf-rd1" firstAttribute="trailing" secondItem="508-Kj-SKQ" secondAttribute="trailingMargin" id="Azf-0M-5bR"/>
+                            <constraint firstItem="lLb-dM-uPv" firstAttribute="top" secondItem="4cj-fo-hwA" secondAttribute="bottom" constant="205" id="FmA-Kq-NBz"/>
+                            <constraint firstItem="eQ7-qf-rd1" firstAttribute="leading" secondItem="MtU-XS-Xne" secondAttribute="leading" id="NQQ-uh-eA2"/>
+                            <constraint firstItem="eQ7-qf-rd1" firstAttribute="leading" secondItem="508-Kj-SKQ" secondAttribute="leadingMargin" id="ajS-mq-ZuR"/>
+                            <constraint firstItem="eQ7-qf-rd1" firstAttribute="top" secondItem="XbK-wU-Bro" secondAttribute="bottom" constant="88" id="aup-Db-Ejf"/>
+                            <constraint firstItem="MtU-XS-Xne" firstAttribute="top" secondItem="eQ7-qf-rd1" secondAttribute="bottom" constant="8" symbolic="YES" id="cm5-eA-K2r"/>
+                            <constraint firstItem="XbK-wU-Bro" firstAttribute="trailing" secondItem="4cj-fo-hwA" secondAttribute="trailing" id="fF7-4C-BCv"/>
                             <constraint firstItem="XbK-wU-Bro" firstAttribute="top" secondItem="po0-kB-4OD" secondAttribute="bottom" constant="257" id="ghs-Yv-fF7"/>
-                            <constraint firstItem="XbK-wU-Bro" firstAttribute="centerX" secondItem="508-Kj-SKQ" secondAttribute="centerX" id="kps-0l-fFe"/>
-                            <constraint firstItem="eQ7-qf-rd1" firstAttribute="top" secondItem="po0-kB-4OD" secondAttribute="bottom" constant="279" id="lLb-Xu-wfV"/>
-                            <constraint firstItem="XbK-wU-Bro" firstAttribute="leading" secondItem="4cj-fo-hwA" secondAttribute="leading" id="ngh-c2-A4s"/>
-                            <constraint firstItem="eQ7-qf-rd1" firstAttribute="baseline" secondItem="MtU-XS-Xne" secondAttribute="baseline" id="vm2-DX-cgX"/>
-                            <constraint firstItem="MtU-XS-Xne" firstAttribute="leading" secondItem="eQ7-qf-rd1" secondAttribute="trailing" constant="8" symbolic="YES" id="zVo-79-ngw"/>
+                            <constraint firstItem="eQ7-qf-rd1" firstAttribute="trailing" secondItem="MtU-XS-Xne" secondAttribute="trailing" id="qFO-sZ-ef5"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">

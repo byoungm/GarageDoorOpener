@@ -28,4 +28,4 @@ void PinControl::SetLed(int num, int value)
 void PinControl::SetGarageDoorPin(int value)
 {
     digitalWrite(PIN_GARAGE_DOOR_TOGGLE, value);
-}
+} 
