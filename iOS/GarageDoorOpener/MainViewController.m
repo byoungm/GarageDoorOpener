@@ -81,7 +81,10 @@
         for (SparkDevice *device in sparkDevices)
         {
             if ([device.name isEqualToString:PARTICLE_GARAGE_DOOR_DEVICE_NAME])
+            {
                 self.garageDoorDevice = device;
+                break;
+            }
         }
     }];
 }
@@ -111,15 +114,18 @@ static int gToggleState = 0;
     {
         gToggleState = 0;
     }
+    [(UIButton *)sender setEnabled:NO];
     [self.garageDoorDevice callFunction:@"webapi" withArguments:@[LedCommands[gToggleState]] completion:^(NSNumber *resultCode, NSError *error) {
         if (!error)
         {
             NSLog(@"LED was tured on - Result Code:%d", [resultCode intValue]);
         }
+        [(UIButton *)sender setEnabled:YES];
     }];
 }
 
 - (IBAction)garageDoorClicked:(id)sender {
+    [(UIButton *)sender setEnabled:NO];
     [self.garageDoorDevice callFunction:@"webapi" withArguments:@[@"GARAGE_DOOR_CLICK_BUTTON"] completion:^(NSNumber *resultCode, NSError *error) {
         if (!error)
         {
@@ -129,6 +135,7 @@ static int gToggleState = 0;
         {
             NSLog(@"Garage door error: %@", error);
         }
+        [(UIButton *)sender setEnabled:YES];
     }];
 }
 
