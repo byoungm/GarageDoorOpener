@@ -22,6 +22,7 @@
 @property (nonatomic, strong) SparkDevice* device;
 @property (nonatomic) BOOL currentLedState;
 
+- (void)attemptToConnectToGarageDoorDevice;
 - (NSString *)decodeGarageDoorStateString:(int)stateEnum;
 
 @end
@@ -36,23 +37,29 @@
     {
         self.device = nil;
         self.currentLedState = LED_OFF;
-        if ([SparkCloud sharedInstance].isAuthenticated){
-            [[SparkCloud sharedInstance] getDevices:^(NSArray *sparkDevices, NSError *error) {
-                NSLog(@"%@",sparkDevices.description); // print all devices claimed to user
-                
-                // search for a specific device by name
-                for (SparkDevice *device in sparkDevices)
-                {
-                    if ([device.name isEqualToString:PARTICLE_GARAGE_DOOR_DEVICE_NAME])
-                    {
-                        self.device = device;
-                        break;
-                    }
-                }
-            }];
-        }
+        [self attemptToConnectToGarageDoorDevice];
     }
     return self;
+}
+
+- (void)attemptToConnectToGarageDoorDevice
+{
+    if ([SparkCloud sharedInstance].isAuthenticated){
+        [[SparkCloud sharedInstance] getDevices:^(NSArray *sparkDevices, NSError *error) {
+            NSLog(@"%@",sparkDevices.description); // print all devices claimed to user
+            
+            // search for a specific device by name
+            for (SparkDevice *device in sparkDevices)
+            {
+                if ([device.name isEqualToString:PARTICLE_GARAGE_DOOR_DEVICE_NAME])
+                {
+                    self.device = device;
+                    break;
+                }
+            }
+        }];
+    }
+
 }
 
 - (NSString *)decodeGarageDoorStateString:(int)stateEnum
@@ -82,8 +89,9 @@
     }
     else
     {
+        [self attemptToConnectToGarageDoorDevice];
         NSError *err = [NSError errorWithDomain:@"Device not connected or initalized" code:1000 userInfo:nil];
-        completion(GARAGE_DOOR_STATE_UNKNOWN_STR, err);
+        completion(GARAGE_DOOR_STATE_UNABLE_TO_CONNECT_STR, err);
     }
 
 }
