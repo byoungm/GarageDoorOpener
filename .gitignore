@@ -1,6 +1,9 @@
 
 # Created by https://www.gitignore.io/api/c++,xcode,objective-c
 
+# Particle Cloud
+*.bin
+
 ### C++ ###
 # Compiled Object files
 *.slo

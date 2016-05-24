@@ -20,6 +20,7 @@
 		58945ED37F7BFCE8D95BD8E3 /* Pods_GarageDoorOpenerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE4EDE69FDFB3F627F1FBEF /* Pods_GarageDoorOpenerUITests.framework */; };
 		C76E81410B59A0A026C7831C /* Pods_GarageDoorOpenerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F633FC22B243EC4222F59E /* Pods_GarageDoorOpenerTests.framework */; };
 		C9D964C5545B5CCE9F4CB360 /* Pods_GarageDoorOpener.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8AB3E75742AE53FE495EB3B /* Pods_GarageDoorOpener.framework */; };
+		EF2303371CF0E07700143D2B /* GarageDoorDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2303361CF0E07700143D2B /* GarageDoorDevice.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		948B1BF307236D14D627A927 /* Pods-GarageDoorOpenerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GarageDoorOpenerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GarageDoorOpenerUITests/Pods-GarageDoorOpenerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AE61BEF0430C07438D3CFB1D /* Pods-GarageDoorOpenerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GarageDoorOpenerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GarageDoorOpenerTests/Pods-GarageDoorOpenerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E994A102C61B053E75155666 /* Pods-GarageDoorOpenerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GarageDoorOpenerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GarageDoorOpenerUITests/Pods-GarageDoorOpenerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EF2303351CF0E07700143D2B /* GarageDoorDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GarageDoorDevice.h; sourceTree = "<group>"; };
+		EF2303361CF0E07700143D2B /* GarageDoorDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GarageDoorDevice.m; sourceTree = "<group>"; };
 		F8AB3E75742AE53FE495EB3B /* Pods_GarageDoorOpener.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GarageDoorOpener.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -129,6 +132,8 @@
 				43E4AA661CE8C773007F9F15 /* AppDelegate.m */,
 				43E4AA681CE8C773007F9F15 /* MainViewController.h */,
 				43E4AA691CE8C773007F9F15 /* MainViewController.m */,
+				EF2303351CF0E07700143D2B /* GarageDoorDevice.h */,
+				EF2303361CF0E07700143D2B /* GarageDoorDevice.m */,
 				43E4CB7B1CEB55130008FC9D /* CredentialManager.h */,
 				43E4CB7C1CEB55130008FC9D /* CredentialManager.m */,
 				43E4CB7A1CE8D64B0008FC9D /* SegueDefinations.h */,
@@ -460,6 +465,7 @@
 				43E4CB791CE8CF400008FC9D /* LoginViewController.m in Sources */,
 				43E4AA6A1CE8C773007F9F15 /* MainViewController.m in Sources */,
 				43E4AA671CE8C773007F9F15 /* AppDelegate.m in Sources */,
+				EF2303371CF0E07700143D2B /* GarageDoorDevice.m in Sources */,
 				43E4AA641CE8C773007F9F15 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
