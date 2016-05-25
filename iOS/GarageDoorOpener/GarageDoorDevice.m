@@ -53,7 +53,10 @@
             {
                 if ([device.name isEqualToString:PARTICLE_GARAGE_DOOR_DEVICE_NAME])
                 {
-                    self.device = device;
+                    if (device.connected)
+                    {
+                        self.device = device;
+                    }
                     break;
                 }
             }
