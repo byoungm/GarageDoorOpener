@@ -22,16 +22,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cj-fo-hwA">
-                                <rect key="frame" x="20" y="352" width="154" height="46"/>
+                                <rect key="frame" x="20" y="456" width="154" height="46"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="1ar-zE-HIp"/>
-                                    <constraint firstAttribute="width" constant="154" id="6Hq-CQ-RmA"/>
-                                    <constraint firstAttribute="width" secondItem="4cj-fo-hwA" secondAttribute="height" multiplier="77:23" id="AtJ-4o-aZc"/>
+                                    <constraint firstAttribute="height" constant="46" id="Sc0-As-6F5"/>
                                     <constraint firstAttribute="height" constant="46" id="ocw-xO-awj"/>
+                                    <constraint firstAttribute="width" constant="154" id="qbM-PK-L6J"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="23"/>
-                                <state key="normal" title="Toggle Door"/>
+                                <state key="normal" title="Garage Door"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="ocw-xO-awj"/>
@@ -41,37 +40,97 @@
                                     <action selector="garageDoorClicked:" destination="ebK-Ps-ECD" eventType="touchUpInside" id="Vn4-Pu-ng1"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;State&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MtU-XS-Xne">
-                                <rect key="frame" x="20" y="299" width="560" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Garage Door State:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQ7-qf-rd1">
-                                <rect key="frame" x="20" y="261" width="560" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Garage Door Control Panel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7F-dt-5MB">
                                 <rect key="frame" x="20" y="46" width="560" height="88"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="88" id="z66-ZR-pXX"/>
+                                    <constraint firstAttribute="height" constant="88" id="jyR-pq-EdX"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ArW-3Z-G2V" customClass="GarageDoorStatusView">
+                                <rect key="frame" x="20" y="136" width="560" height="208"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Garage Door:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJl-sF-QyZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="qhg-s7-m47"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Garage Light:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TeI-lx-2T5">
+                                        <rect key="frame" x="0.0" y="111" width="560" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="NSn-UO-Z6v"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;Light State&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YeY-6H-vD0">
+                                        <rect key="frame" x="0.0" y="157" width="560" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="bEq-Dg-4pY"/>
+                                            <constraint firstAttribute="width" constant="560" id="pHp-X5-o6C"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="pHp-X5-o6C"/>
+                                            </mask>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;Door State&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUW-De-398">
+                                        <rect key="frame" x="0.0" y="41" width="560" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="6Pc-Wx-EPY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="TeI-lx-2T5" firstAttribute="leading" secondItem="YeY-6H-vD0" secondAttribute="leading" id="3Xx-vg-Xfs"/>
+                                    <constraint firstItem="IJl-sF-QyZ" firstAttribute="top" secondItem="ArW-3Z-G2V" secondAttribute="top" id="3YW-NY-Yqo"/>
+                                    <constraint firstItem="YeY-6H-vD0" firstAttribute="top" secondItem="TeI-lx-2T5" secondAttribute="bottom" constant="8" symbolic="YES" id="Arr-B2-36y"/>
+                                    <constraint firstItem="IJl-sF-QyZ" firstAttribute="leading" secondItem="ArW-3Z-G2V" secondAttribute="leading" id="GNx-7L-rSX"/>
+                                    <constraint firstItem="nUW-De-398" firstAttribute="top" secondItem="IJl-sF-QyZ" secondAttribute="bottom" constant="3" id="Gz7-9m-Px6"/>
+                                    <constraint firstItem="TeI-lx-2T5" firstAttribute="top" secondItem="nUW-De-398" secondAttribute="bottom" constant="32" id="Ope-OG-Bi4"/>
+                                    <constraint firstItem="IJl-sF-QyZ" firstAttribute="trailing" secondItem="nUW-De-398" secondAttribute="trailing" id="WUB-pb-Ciz"/>
+                                    <constraint firstItem="nUW-De-398" firstAttribute="trailing" secondItem="TeI-lx-2T5" secondAttribute="trailing" id="dNi-ks-cTz"/>
+                                    <constraint firstItem="YeY-6H-vD0" firstAttribute="top" secondItem="TeI-lx-2T5" secondAttribute="bottom" constant="8" id="i7j-n4-gBS"/>
+                                    <constraint firstItem="IJl-sF-QyZ" firstAttribute="leading" secondItem="nUW-De-398" secondAttribute="leading" id="jbj-Oc-2kD"/>
+                                    <constraint firstAttribute="trailing" secondItem="IJl-sF-QyZ" secondAttribute="trailing" id="m8c-Eg-gUP"/>
+                                    <constraint firstAttribute="bottom" secondItem="YeY-6H-vD0" secondAttribute="bottom" constant="13" id="prE-zM-awC"/>
+                                    <constraint firstItem="TeI-lx-2T5" firstAttribute="trailing" secondItem="YeY-6H-vD0" secondAttribute="trailing" id="wZX-Oh-uIq"/>
+                                    <constraint firstItem="nUW-De-398" firstAttribute="leading" secondItem="TeI-lx-2T5" secondAttribute="leading" id="yL2-bM-1jx"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="prE-zM-awC"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outlet property="doorStatusLabel" destination="nUW-De-398" id="kkh-jt-DEg"/>
+                                    <outlet property="lightStatusLabel" destination="YeY-6H-vD0" id="OtW-u3-t8e"/>
+                                </connections>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XbK-wU-Bro">
-                                <rect key="frame" x="426" y="352" width="154" height="46"/>
+                                <rect key="frame" x="426" y="456" width="154" height="46"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="XbK-wU-Bro" secondAttribute="height" multiplier="77:23" id="Adt-6l-m9a"/>
-                                    <constraint firstAttribute="width" constant="154" id="tpU-sY-YES"/>
                                     <constraint firstAttribute="height" constant="46" id="ueE-4k-p4e"/>
+                                    <constraint firstAttribute="width" constant="154" id="ybj-qZ-Jh5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="23"/>
-                                <state key="normal" title="Toggle Leds"/>
+                                <state key="normal" title="Garage Light"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="ueE-4k-p4e"/>
@@ -85,36 +144,39 @@
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="XbK-wU-Bro" firstAttribute="leading" secondItem="508-Kj-SKQ" secondAttribute="leadingMargin" constant="203" id="09v-Sm-e1A"/>
-                            <constraint firstItem="MtU-XS-Xne" firstAttribute="trailing" secondItem="XbK-wU-Bro" secondAttribute="trailing" id="2Ps-7H-hKI"/>
-                            <constraint firstItem="lLb-dM-uPv" firstAttribute="top" secondItem="4cj-fo-hwA" secondAttribute="bottom" constant="202" id="2Ua-4q-Vco"/>
-                            <constraint firstItem="4cj-fo-hwA" firstAttribute="baseline" secondItem="XbK-wU-Bro" secondAttribute="firstBaseline" id="4Sa-xM-07g"/>
-                            <constraint firstItem="i7F-dt-5MB" firstAttribute="trailing" secondItem="eQ7-qf-rd1" secondAttribute="trailing" id="4wC-yS-tUX"/>
-                            <constraint firstItem="i7F-dt-5MB" firstAttribute="top" secondItem="po0-kB-4OD" secondAttribute="bottom" constant="26" id="7xF-YS-mMo"/>
-                            <constraint firstItem="i7F-dt-5MB" firstAttribute="trailing" secondItem="508-Kj-SKQ" secondAttribute="trailingMargin" id="9Ty-bR-HUW"/>
-                            <constraint firstItem="eQ7-qf-rd1" firstAttribute="trailing" secondItem="MtU-XS-Xne" secondAttribute="trailing" id="J7A-k8-YcH"/>
-                            <constraint firstItem="eQ7-qf-rd1" firstAttribute="top" secondItem="i7F-dt-5MB" secondAttribute="bottom" constant="127" id="PWo-4U-ZV9"/>
-                            <constraint firstItem="4cj-fo-hwA" firstAttribute="top" secondItem="XbK-wU-Bro" secondAttribute="top" id="gDK-CM-nV9"/>
+                            <constraint firstItem="XbK-wU-Bro" firstAttribute="baseline" secondItem="4cj-fo-hwA" secondAttribute="firstBaseline" id="3Rk-CR-Ulw"/>
+                            <constraint firstItem="4cj-fo-hwA" firstAttribute="baseline" secondItem="XbK-wU-Bro" secondAttribute="firstBaseline" id="4aO-Ph-gOC"/>
+                            <constraint firstItem="i7F-dt-5MB" firstAttribute="leading" secondItem="ArW-3Z-G2V" secondAttribute="leading" id="83l-KQ-7Zh"/>
+                            <constraint firstItem="lLb-dM-uPv" firstAttribute="top" secondItem="4cj-fo-hwA" secondAttribute="bottom" constant="98" id="DOj-jz-LeS"/>
+                            <constraint firstItem="i7F-dt-5MB" firstAttribute="trailing" secondItem="508-Kj-SKQ" secondAttribute="trailingMargin" id="HWW-xe-k91"/>
+                            <constraint firstItem="i7F-dt-5MB" firstAttribute="trailing" secondItem="ArW-3Z-G2V" secondAttribute="trailing" id="Lkw-XR-RwM"/>
+                            <constraint firstItem="ArW-3Z-G2V" firstAttribute="leading" secondItem="4cj-fo-hwA" secondAttribute="leading" id="PRt-ri-K3a"/>
+                            <constraint firstItem="ArW-3Z-G2V" firstAttribute="top" secondItem="i7F-dt-5MB" secondAttribute="bottom" constant="2" id="Pv7-j1-KuA"/>
+                            <constraint firstItem="i7F-dt-5MB" firstAttribute="leading" secondItem="ArW-3Z-G2V" secondAttribute="leading" id="Tpw-oH-kr2"/>
+                            <constraint firstItem="i7F-dt-5MB" firstAttribute="leading" secondItem="508-Kj-SKQ" secondAttribute="leadingMargin" id="X0W-5X-bEj"/>
+                            <constraint firstItem="IJl-sF-QyZ" firstAttribute="leading" secondItem="i7F-dt-5MB" secondAttribute="trailing" constant="-560" id="Znx-xv-RSY"/>
+                            <constraint firstItem="i7F-dt-5MB" firstAttribute="trailing" secondItem="ArW-3Z-G2V" secondAttribute="trailing" id="bsA-Re-XDY"/>
                             <constraint firstItem="XbK-wU-Bro" firstAttribute="top" secondItem="po0-kB-4OD" secondAttribute="bottom" constant="257" id="ghs-Yv-fF7"/>
-                            <constraint firstItem="4cj-fo-hwA" firstAttribute="top" secondItem="MtU-XS-Xne" secondAttribute="bottom" constant="23" id="ln2-2O-cyt"/>
-                            <constraint firstItem="MtU-XS-Xne" firstAttribute="top" secondItem="eQ7-qf-rd1" secondAttribute="bottom" constant="8" id="poM-hZ-YYL"/>
-                            <constraint firstItem="eQ7-qf-rd1" firstAttribute="leading" secondItem="MtU-XS-Xne" secondAttribute="leading" id="rTM-YW-9Gd"/>
-                            <constraint firstItem="i7F-dt-5MB" firstAttribute="leading" secondItem="eQ7-qf-rd1" secondAttribute="leading" id="reW-qk-mqu"/>
-                            <constraint firstItem="XbK-wU-Bro" firstAttribute="baseline" secondItem="4cj-fo-hwA" secondAttribute="firstBaseline" id="utL-HS-LnX"/>
-                            <constraint firstItem="MtU-XS-Xne" firstAttribute="leading" secondItem="4cj-fo-hwA" secondAttribute="leading" id="vkc-J6-mug"/>
-                            <constraint firstItem="i7F-dt-5MB" firstAttribute="leading" secondItem="508-Kj-SKQ" secondAttribute="leadingMargin" id="xcP-C2-XOT"/>
-                            <constraint firstItem="MtU-XS-Xne" firstAttribute="top" secondItem="eQ7-qf-rd1" secondAttribute="bottom" constant="8" symbolic="YES" id="yIy-0M-JDw"/>
+                            <constraint firstItem="i7F-dt-5MB" firstAttribute="leading" secondItem="ArW-3Z-G2V" secondAttribute="leading" id="kOk-ux-EtC"/>
+                            <constraint firstItem="ArW-3Z-G2V" firstAttribute="trailing" secondItem="XbK-wU-Bro" secondAttribute="trailing" id="lRM-Eh-cko"/>
+                            <constraint firstItem="i7F-dt-5MB" firstAttribute="top" secondItem="po0-kB-4OD" secondAttribute="bottom" constant="26" id="nQW-oq-w1q"/>
+                            <constraint firstItem="4cj-fo-hwA" firstAttribute="top" secondItem="XbK-wU-Bro" secondAttribute="top" id="ul0-nG-dol"/>
+                            <constraint firstAttribute="bottom" secondItem="ArW-3Z-G2V" secondAttribute="bottom" constant="256" id="wtm-bL-Vzs"/>
+                            <constraint firstItem="ArW-3Z-G2V" firstAttribute="leading" secondItem="4cj-fo-hwA" secondAttribute="leading" id="yR0-az-5N5"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="poM-hZ-YYL"/>
-                                <exclude reference="ln2-2O-cyt"/>
+                                <exclude reference="Lkw-XR-RwM"/>
+                                <exclude reference="Tpw-oH-kr2"/>
+                                <exclude reference="kOk-ux-EtC"/>
+                                <exclude reference="yR0-az-5N5"/>
+                                <exclude reference="Znx-xv-RSY"/>
                                 <exclude reference="09v-Sm-e1A"/>
                                 <exclude reference="ghs-Yv-fF7"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="garageDoorStateLabel" destination="MtU-XS-Xne" id="aTk-9i-E1H"/>
                         <segue destination="BYZ-38-t0r" kind="showDetail" identifier="ParticleCloudLoginSegue" id="t3q-Rv-mql"/>
                     </connections>
                 </viewController>

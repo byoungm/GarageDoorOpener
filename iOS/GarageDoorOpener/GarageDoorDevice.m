@@ -67,34 +67,36 @@
 
 - (NSString *)decodeGarageDoorStateString:(int)stateEnum
 {
-    const NSArray *GarageDoorStateStrings = @[GARAGE_DOOR_OPEN_STR, GARAGE_DOOR_CLOSED_STR, GARAGE_DOOR_STATE_UNKNOWN_STR];
+    const NSArray *GarageDoorStateStrings = @[GARAGE_DOOR_OPEN_STR, GARAGE_DOOR_CLOSED_STR, GARAGE_STATE_UNKNOWN_STR];
     return GarageDoorStateStrings[stateEnum];
 }
 
-- (void)getDeviceStateWithCompletion:(nullable void (^)(NSString * _Nullable deviceState, NSError * _Nullable error))completion
+- (void)getDeviceStateWithCompletion:(void (^)(NSString * _Nullable, NSString * _Nullable, NSError * _Nullable))completion
 {
     if (self.device)
     {
         [self.device callFunction:WEB_API_MAIN_FUNCTION withArguments:@[WEB_API_ARG_GET_GARAGE_DOOR_STATE] completion:^(NSNumber *resultCode, NSError *error) {
-            NSString *garageStateStr = GARAGE_DOOR_STATE_UNKNOWN_STR;
+            NSString *doorStateStr = GARAGE_STATE_UNKNOWN_STR;
+            NSString *lightStateStr = GARAGE_STATE_UNKNOWN_STR;
             if (!error)
             {
                 int res = [resultCode intValue];
                 NSLog(@"Garage state :%d", res);
-                garageStateStr = [self decodeGarageDoorStateString:res];
+                doorStateStr = [self decodeGarageDoorStateString:res];
+                lightStateStr = GARAGE_STATE_UNKNOWN_STR;
             }
             else
             {
                 NSLog(@"Garage state error: %@", error);
             }
-            completion(garageStateStr, error);
+            completion(doorStateStr, lightStateStr, error);
         }];
     }
     else
     {
         [self attemptToConnectToGarageDoorDevice];
         NSError *err = [NSError errorWithDomain:@"Device not connected or initalized" code:1000 userInfo:nil];
-        completion(GARAGE_DOOR_STATE_UNABLE_TO_CONNECT_STR, err);
+        completion(GARAGE_STATE_UNABLE_TO_CONNECT_STR,GARAGE_STATE_UNABLE_TO_CONNECT_STR, err);
     }
 
 }

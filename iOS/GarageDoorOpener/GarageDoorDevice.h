@@ -10,12 +10,16 @@
 
 #define GARAGE_DOOR_OPEN_STR @"Open"
 #define GARAGE_DOOR_CLOSED_STR @"Closed"
-#define GARAGE_DOOR_STATE_UNKNOWN_STR @"State Unknown"
-#define GARAGE_DOOR_STATE_UNABLE_TO_CONNECT_STR @"Unable to connect to device"
+#define GARAGE_LIGHT_ON_STR @"On"
+#define GARAGE_LIGHT_OFF_STR @"Off"
+#define GARAGE_STATE_UNKNOWN_STR @"State Unknown"
+#define GARAGE_STATE_UNABLE_TO_CONNECT_STR @"Unable to connect to device"
 
 @interface GarageDoorDevice : NSObject
 
-- (void)getDeviceStateWithCompletion:(nullable void (^)(NSString * _Nullable deviceState, NSError * _Nullable error))completion;
+- (void)getDeviceStateWithCompletion:(nullable void (^)(NSString * _Nullable doorState,
+                                                        NSString * _Nullable lightState,
+                                                        NSError * _Nullable error))completion;
 - (void)toggleGarageDoorWithCompletion:(nullable void (^)(NSError * _Nullable error))completion;
 - (void)toggleGarageLedsWithCompletion:(nullable void (^)(NSError * _Nullable error))completion;
 

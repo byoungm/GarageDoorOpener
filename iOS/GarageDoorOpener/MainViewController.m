@@ -10,12 +10,13 @@
 #import "GarageDoorDevice.h"
 #import "Spark-SDK.h"
 #import "SegueDefinations.h"
+#import "GarageDoorStatusView.h"
 
 #define GARAGE_DOOR_STATE_UPDATE_TIMER_INTERVAL 1.0
 
 @interface MainViewController ()
 @property (nonatomic, strong) GarageDoorDevice* garageDoorDevice;
-@property (weak, nonatomic) IBOutlet UILabel *garageDoorStateLabel;
+@property (weak, nonatomic) IBOutlet GarageDoorStatusView *garageDoorStatusView;
 @property (strong, nonatomic) NSTimer *garageStateUpdateTimer;
 
 @end
@@ -51,7 +52,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.garageDoorStateLabel.text = GARAGE_DOOR_STATE_UNKNOWN_STR;
 
 }
 
@@ -63,8 +63,12 @@
 
 - (void)updateGarageDeviceState;
 {
-    [self.garageDoorDevice getDeviceStateWithCompletion:^(NSString * _Nullable deviceState, NSError * _Nullable error) {
-        self.garageDoorStateLabel.text = deviceState;
+    [self.garageDoorDevice getDeviceStateWithCompletion:^(NSString * _Nullable doorState,
+                                                          NSString * _Nullable lightState,
+                                                          NSError * _Nullable error) {
+        [self.garageDoorStatusView setDoorStatus:doorState];
+        [self.garageDoorStatusView setDoorStatus:lightState];
+        
     }];
 }
 
