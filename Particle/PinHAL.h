@@ -4,8 +4,9 @@
 
 #include "application.h"
 
-#define PIN_GARAGE_DOOR_TOGGLE D0
-#define PIN_GARAGE_REED_SWITCH D4
-#define PIN_MAIN_LED           D7
+#define PIN_GARAGE_DOOR_TOGGLE  D0
+#define PIN_GARAGE_LIGHT_TOGGLE D1
+#define PIN_GARAGE_REED_SWITCH  D4
+#define PIN_MAIN_LED            D7
 
 #endif // _PINHAL_H_
