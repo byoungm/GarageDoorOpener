@@ -14,12 +14,14 @@ public:
     static void Init();
     static void SetLed(int num, int value);
     static void SetGarageDoorPin(int value);
+    static void SetGarageLightPin(int value);
+    static int  GetGarageLightPinValue(void);
     static int  GetReedSwitchPinValue(void);
-    
+
 private:
     static int m_Leds[PIN_CONTROL_NUM_LED_PINS];
+    static int m_GarageLightPinLastWrite;
 
 };
 
 #endif // _PIN_CONTROL_H_
-
