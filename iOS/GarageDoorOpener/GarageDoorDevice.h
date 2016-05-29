@@ -12,8 +12,8 @@
 #define GARAGE_DOOR_CLOSED_STR @"Closed"
 #define GARAGE_LIGHT_ON_STR @"On"
 #define GARAGE_LIGHT_OFF_STR @"Off"
-#define GARAGE_STATE_UNKNOWN_STR @"State Unknown"
-#define GARAGE_STATE_UNABLE_TO_CONNECT_STR @"Unable to connect to device"
+#define GARAGE_STATE_UNKNOWN_STR @"Unknown"
+#define GARAGE_STATE_UNABLE_TO_CONNECT_STR @"No Connection"
 
 @interface GarageDoorDevice : NSObject
 

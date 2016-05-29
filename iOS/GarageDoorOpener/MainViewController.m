@@ -67,8 +67,7 @@
                                                           NSString * _Nullable lightState,
                                                           NSError * _Nullable error) {
         [self.garageDoorStatusView setDoorStatus:doorState];
-        [self.garageDoorStatusView setDoorStatus:lightState];
-        
+        [self.garageDoorStatusView setLightStatus:lightState];        
     }];
 }
 

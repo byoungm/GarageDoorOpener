@@ -18,12 +18,28 @@
 #define LED_OFF FALSE
 #define LED_ON  TRUE
 
+typedef enum
+{
+    GARAGE_DOOR_OPEN = 0,
+    GARAGE_DOOR_CLOSED = 1,
+    GARAGE_DOOR_STATE_UNKNOWN = 0xFF,
+} GarageDoorState_t;
+
+typedef enum
+{
+    GARAGE_LIGHT_ON = 0,
+    GARAGE_LIGHT_OFF = 1,
+    GARAGE_LIGHT_STATE_UNKNOWN = 0xFF,
+} GarageLightState_t;
+
+
 @interface GarageDoorDevice()
 @property (nonatomic, strong) SparkDevice* device;
 @property (nonatomic) BOOL currentLedState;
 
 - (void)attemptToConnectToGarageDoorDevice;
-- (NSString *)decodeGarageDoorStateString:(int)stateEnum;
+- (NSString *)decodeGarageDoorState:(int)stateEnum;
+- (NSString *)decodeGarageLightState:(int)stateEnum;
 
 @end
 
@@ -65,10 +81,38 @@
 
 }
 
-- (NSString *)decodeGarageDoorStateString:(int)stateEnum
+- (NSString *)decodeGarageDoorState:(int)stateEnum
 {
-    const NSArray *GarageDoorStateStrings = @[GARAGE_DOOR_OPEN_STR, GARAGE_DOOR_CLOSED_STR, GARAGE_STATE_UNKNOWN_STR];
-    return GarageDoorStateStrings[stateEnum];
+    NSString *str;
+    switch (stateEnum) {
+        case GARAGE_DOOR_OPEN:
+            str = GARAGE_DOOR_OPEN_STR;
+            break;
+        case GARAGE_DOOR_CLOSED:
+            str = GARAGE_DOOR_CLOSED_STR;
+            break;
+        default:
+            str = GARAGE_STATE_UNKNOWN_STR;
+            break;
+    }
+    return str;
+}
+
+- (NSString *)decodeGarageLightState:(int)stateEnum
+{
+    NSString *str;
+    switch (stateEnum) {
+        case GARAGE_LIGHT_ON:
+            str = GARAGE_LIGHT_ON_STR;
+            break;
+        case GARAGE_LIGHT_OFF:
+            str = GARAGE_LIGHT_OFF_STR;
+            break;
+        default:
+            str = GARAGE_STATE_UNKNOWN_STR;
+            break;
+    }
+    return str;
 }
 
 - (void)getDeviceStateWithCompletion:(void (^)(NSString * _Nullable, NSString * _Nullable, NSError * _Nullable))completion
@@ -81,9 +125,11 @@
             if (!error)
             {
                 int res = [resultCode intValue];
-                NSLog(@"Garage state :%d", res);
-                doorStateStr = [self decodeGarageDoorStateString:res];
-                lightStateStr = GARAGE_STATE_UNKNOWN_STR;
+                NSLog(@"Garage State: %d", res);
+                int doorEnum = res & 0xFF;
+                int lightEnum = (res & 0xFF00) >> 8;
+                doorStateStr = [self decodeGarageDoorState:doorEnum];
+                lightStateStr = [self decodeGarageLightState:lightEnum];
             }
             else
             {

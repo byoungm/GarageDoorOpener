@@ -68,6 +68,7 @@
     }
     self.doorStatusLabel.textColor = color;
     self.doorStatusLabel.text = status;
+    NSLog(@"Door Status: %@", status);
 }
 
 
