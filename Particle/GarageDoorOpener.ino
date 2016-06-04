@@ -20,13 +20,15 @@ void loop()
 int webapi(String command)
 {
     int val = 0;
-    if (command == "LED_ON")
+    if (command == "LED_ON" || command == "GARAGE_TURN_LIGHT_ON")
     {
         PinControl::SetLed(0, LED_ON);
+        GarageControl::TurnGarageLightOn();
     }
-    else if (command == "LED_OFF")
+    else if (command == "LED_OFF" || "GARAGE_TURN_LIGHT_OFF")
     {
         PinControl::SetLed(0, LED_OFF);
+        GarageControl::TurnGarageLightOff();
     }
     else if (command == "GARAGE_DOOR_GET_STATE")
     {
@@ -37,14 +39,6 @@ int webapi(String command)
     else if (command == "GARAGE_DOOR_CLICK_BUTTON")
     {
         GarageControl::SimDoorClick();
-    }
-    else if (command == "GARAGE_TURN_LIGHT_ON")
-    {
-        GarageControl::TurnGarageLightOn();
-    }
-    else if (command == "GARAGE_TURN_LIGHT_OFF")
-    {
-        GarageControl::TurnGarageLightOff();
     }
     else
     {
