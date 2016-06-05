@@ -25,7 +25,7 @@ int webapi(String command)
         PinControl::SetLed(0, LED_ON);
         GarageControl::TurnGarageLightOn();
     }
-    else if (command == "LED_OFF" || "GARAGE_TURN_LIGHT_OFF")
+    else if (command == "LED_OFF" || command == "GARAGE_TURN_LIGHT_OFF")
     {
         PinControl::SetLed(0, LED_OFF);
         GarageControl::TurnGarageLightOff();
