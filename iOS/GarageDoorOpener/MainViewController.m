@@ -52,7 +52,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [[NSNotificationCenter defaultCenter] addObserver:self.garageDoorStatusView
+                                             selector:@selector(resetStatus)
+                                                 name:UIApplicationWillEnterForegroundNotification
+                                               object:nil];
 
+}
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self.garageDoorStatusView];
 }
 
 - (void)didReceiveMemoryWarning

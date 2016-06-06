@@ -14,7 +14,6 @@
 @property (nonatomic, weak) IBOutlet UILabel* doorStatusLabel;
 @property (nonatomic, weak) IBOutlet UILabel* lightStatusLabel;
 
-- (void)initView;
 @end
 
 
@@ -22,13 +21,14 @@
 
 - (void)awakeFromNib
 {
-    [self initView];
+    [self resetStatus];
 }
 
-- (void)initView
+- (void)resetStatus
 {
     [self setLightStatus:GARAGE_STATE_UNKNOWN_STR];
     [self setDoorStatus:GARAGE_STATE_UNKNOWN_STR];
+    [self setNeedsDisplay];
 }
 
 

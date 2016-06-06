@@ -12,5 +12,6 @@
 
 - (void)setLightStatus:(NSString *)status;
 - (void)setDoorStatus:(NSString *)status;
+- (void)resetStatus;
 
 @end
