@@ -22,6 +22,17 @@
 		C9D964C5545B5CCE9F4CB360 /* Pods_GarageDoorOpener.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8AB3E75742AE53FE495EB3B /* Pods_GarageDoorOpener.framework */; };
 		EF2303371CF0E07700143D2B /* GarageDoorDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2303361CF0E07700143D2B /* GarageDoorDevice.m */; };
 		EF5608961CFA01F0007BF05C /* GarageDoorStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5608951CFA01F0007BF05C /* GarageDoorStatusView.m */; };
+		EF8F04C21D8DDF66000FB388 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF8F04C01D8DDF66000FB388 /* Interface.storyboard */; };
+		EF8F04C41D8DDF66000FB388 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF8F04C31D8DDF66000FB388 /* Assets.xcassets */; };
+		EF8F04CB1D8DDF66000FB388 /* GDO Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EF8F04CA1D8DDF66000FB388 /* GDO Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EF8F04D31D8DDF66000FB388 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8F04D21D8DDF66000FB388 /* InterfaceController.m */; };
+		EF8F04D61D8DDF66000FB388 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8F04D51D8DDF66000FB388 /* ExtensionDelegate.m */; };
+		EF8F04D91D8DDF66000FB388 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8F04D81D8DDF66000FB388 /* NotificationController.m */; };
+		EF8F04DC1D8DDF66000FB388 /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8F04DB1D8DDF66000FB388 /* GlanceController.m */; };
+		EF8F04DF1D8DDF66000FB388 /* ComplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8F04DE1D8DDF66000FB388 /* ComplicationController.m */; };
+		EF8F04E11D8DDF66000FB388 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF8F04E01D8DDF66000FB388 /* Assets.xcassets */; };
+		EF8F04E51D8DDF66000FB388 /* GDO.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EF8F04BE1D8DDF65000FB388 /* GDO.app */; };
+		EF8F04EF1D8E20F0000FB388 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF8F04EE1D8E20F0000FB388 /* WatchConnectivity.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +50,46 @@
 			remoteGlobalIDString = 43E4AA5E1CE8C773007F9F15;
 			remoteInfo = GarageDoorOpener;
 		};
+		EF8F04CC1D8DDF66000FB388 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43E4AA571CE8C773007F9F15 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF8F04C91D8DDF66000FB388;
+			remoteInfo = "GDO Extension";
+		};
+		EF8F04E31D8DDF66000FB388 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43E4AA571CE8C773007F9F15 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF8F04BD1D8DDF65000FB388;
+			remoteInfo = GDO;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EF8F04EB1D8DDF66000FB388 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EF8F04CB1D8DDF66000FB388 /* GDO Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF8F04ED1D8DDF66000FB388 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				EF8F04E51D8DDF66000FB388 /* GDO.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0C15F38EBBD77DFE3D5ABE2B /* Pods-GarageDoorOpenerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GarageDoorOpenerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GarageDoorOpenerTests/Pods-GarageDoorOpenerTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -75,6 +125,25 @@
 		EF2303361CF0E07700143D2B /* GarageDoorDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GarageDoorDevice.m; sourceTree = "<group>"; };
 		EF5608941CFA01F0007BF05C /* GarageDoorStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GarageDoorStatusView.h; sourceTree = "<group>"; };
 		EF5608951CFA01F0007BF05C /* GarageDoorStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GarageDoorStatusView.m; sourceTree = "<group>"; };
+		EF8F04BE1D8DDF65000FB388 /* GDO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GDO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF8F04C11D8DDF66000FB388 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		EF8F04C31D8DDF66000FB388 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF8F04C51D8DDF66000FB388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF8F04CA1D8DDF66000FB388 /* GDO Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GDO Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF8F04D01D8DDF66000FB388 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		EF8F04D11D8DDF66000FB388 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		EF8F04D21D8DDF66000FB388 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		EF8F04D41D8DDF66000FB388 /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		EF8F04D51D8DDF66000FB388 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		EF8F04D71D8DDF66000FB388 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		EF8F04D81D8DDF66000FB388 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		EF8F04DA1D8DDF66000FB388 /* GlanceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlanceController.h; sourceTree = "<group>"; };
+		EF8F04DB1D8DDF66000FB388 /* GlanceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlanceController.m; sourceTree = "<group>"; };
+		EF8F04DD1D8DDF66000FB388 /* ComplicationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComplicationController.h; sourceTree = "<group>"; };
+		EF8F04DE1D8DDF66000FB388 /* ComplicationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComplicationController.m; sourceTree = "<group>"; };
+		EF8F04E01D8DDF66000FB388 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF8F04E21D8DDF66000FB388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF8F04EE1D8E20F0000FB388 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
 		F8AB3E75742AE53FE495EB3B /* Pods_GarageDoorOpener.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GarageDoorOpener.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -83,6 +152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF8F04EF1D8E20F0000FB388 /* WatchConnectivity.framework in Frameworks */,
 				C9D964C5545B5CCE9F4CB360 /* Pods_GarageDoorOpener.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +173,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF8F04C71D8DDF66000FB388 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -112,6 +189,8 @@
 				43E4AA611CE8C773007F9F15 /* GarageDoorOpener */,
 				43E4AA7B1CE8C773007F9F15 /* GarageDoorOpenerTests */,
 				43E4AA861CE8C774007F9F15 /* GarageDoorOpenerUITests */,
+				EF8F04BF1D8DDF66000FB388 /* GDO */,
+				EF8F04CE1D8DDF66000FB388 /* GDO Extension */,
 				43E4AA601CE8C773007F9F15 /* Products */,
 				F1A36DBA7EA0B5FE618CC07D /* Pods */,
 				5FC064C2ABF8BB5F8F8A6F80 /* Frameworks */,
@@ -124,6 +203,8 @@
 				43E4AA5F1CE8C773007F9F15 /* GarageDoorOpener.app */,
 				43E4AA781CE8C773007F9F15 /* GarageDoorOpenerTests.xctest */,
 				43E4AA831CE8C773007F9F15 /* GarageDoorOpenerUITests.xctest */,
+				EF8F04BE1D8DDF65000FB388 /* GDO.app */,
+				EF8F04CA1D8DDF66000FB388 /* GDO Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -182,11 +263,50 @@
 		5FC064C2ABF8BB5F8F8A6F80 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EF8F04EE1D8E20F0000FB388 /* WatchConnectivity.framework */,
 				F8AB3E75742AE53FE495EB3B /* Pods_GarageDoorOpener.framework */,
 				81F633FC22B243EC4222F59E /* Pods_GarageDoorOpenerTests.framework */,
 				8DE4EDE69FDFB3F627F1FBEF /* Pods_GarageDoorOpenerUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF8F04BF1D8DDF66000FB388 /* GDO */ = {
+			isa = PBXGroup;
+			children = (
+				EF8F04C01D8DDF66000FB388 /* Interface.storyboard */,
+				EF8F04C31D8DDF66000FB388 /* Assets.xcassets */,
+				EF8F04C51D8DDF66000FB388 /* Info.plist */,
+			);
+			path = GDO;
+			sourceTree = "<group>";
+		};
+		EF8F04CE1D8DDF66000FB388 /* GDO Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EF8F04D11D8DDF66000FB388 /* InterfaceController.h */,
+				EF8F04D21D8DDF66000FB388 /* InterfaceController.m */,
+				EF8F04D41D8DDF66000FB388 /* ExtensionDelegate.h */,
+				EF8F04D51D8DDF66000FB388 /* ExtensionDelegate.m */,
+				EF8F04D71D8DDF66000FB388 /* NotificationController.h */,
+				EF8F04D81D8DDF66000FB388 /* NotificationController.m */,
+				EF8F04DA1D8DDF66000FB388 /* GlanceController.h */,
+				EF8F04DB1D8DDF66000FB388 /* GlanceController.m */,
+				EF8F04DD1D8DDF66000FB388 /* ComplicationController.h */,
+				EF8F04DE1D8DDF66000FB388 /* ComplicationController.m */,
+				EF8F04E01D8DDF66000FB388 /* Assets.xcassets */,
+				EF8F04E21D8DDF66000FB388 /* Info.plist */,
+				EF8F04CF1D8DDF66000FB388 /* Supporting Files */,
+			);
+			path = "GDO Extension";
+			sourceTree = "<group>";
+		};
+		EF8F04CF1D8DDF66000FB388 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF8F04D01D8DDF66000FB388 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		F1A36DBA7EA0B5FE618CC07D /* Pods */ = {
@@ -215,10 +335,12 @@
 				43E4AA5D1CE8C773007F9F15 /* Resources */,
 				EA361A2FE47590B659B04866 /* 📦 Embed Pods Frameworks */,
 				0B945207D5C5D1AC2BE352D6 /* 📦 Copy Pods Resources */,
+				EF8F04ED1D8DDF66000FB388 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EF8F04E41D8DDF66000FB388 /* PBXTargetDependency */,
 			);
 			name = GarageDoorOpener;
 			productName = GarageDoorOpener;
@@ -266,6 +388,40 @@
 			productReference = 43E4AA831CE8C773007F9F15 /* GarageDoorOpenerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		EF8F04BD1D8DDF65000FB388 /* GDO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF8F04EC1D8DDF66000FB388 /* Build configuration list for PBXNativeTarget "GDO" */;
+			buildPhases = (
+				EF8F04BC1D8DDF65000FB388 /* Resources */,
+				EF8F04EB1D8DDF66000FB388 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF8F04CD1D8DDF66000FB388 /* PBXTargetDependency */,
+			);
+			name = GDO;
+			productName = GDO;
+			productReference = EF8F04BE1D8DDF65000FB388 /* GDO.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		EF8F04C91D8DDF66000FB388 /* GDO Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF8F04EA1D8DDF66000FB388 /* Build configuration list for PBXNativeTarget "GDO Extension" */;
+			buildPhases = (
+				EF8F04C61D8DDF66000FB388 /* Sources */,
+				EF8F04C71D8DDF66000FB388 /* Frameworks */,
+				EF8F04C81D8DDF66000FB388 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GDO Extension";
+			productName = "GDO Extension";
+			productReference = EF8F04CA1D8DDF66000FB388 /* GDO Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -289,6 +445,13 @@
 						DevelopmentTeam = LY3KT5M7GY;
 						TestTargetID = 43E4AA5E1CE8C773007F9F15;
 					};
+					EF8F04BD1D8DDF65000FB388 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = LY3KT5M7GY;
+					};
+					EF8F04C91D8DDF66000FB388 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 				};
 			};
 			buildConfigurationList = 43E4AA5A1CE8C773007F9F15 /* Build configuration list for PBXProject "GarageDoorOpener" */;
@@ -307,6 +470,8 @@
 				43E4AA5E1CE8C773007F9F15 /* GarageDoorOpener */,
 				43E4AA771CE8C773007F9F15 /* GarageDoorOpenerTests */,
 				43E4AA821CE8C773007F9F15 /* GarageDoorOpenerUITests */,
+				EF8F04BD1D8DDF65000FB388 /* GDO */,
+				EF8F04C91D8DDF66000FB388 /* GDO Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -333,6 +498,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF8F04BC1D8DDF65000FB388 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF8F04C41D8DDF66000FB388 /* Assets.xcassets in Resources */,
+				EF8F04C21D8DDF66000FB388 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF8F04C81D8DDF66000FB388 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF8F04E11D8DDF66000FB388 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +674,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF8F04C61D8DDF66000FB388 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF8F04D61D8DDF66000FB388 /* ExtensionDelegate.m in Sources */,
+				EF8F04D31D8DDF66000FB388 /* InterfaceController.m in Sources */,
+				EF8F04D91D8DDF66000FB388 /* NotificationController.m in Sources */,
+				EF8F04DC1D8DDF66000FB388 /* GlanceController.m in Sources */,
+				EF8F04DF1D8DDF66000FB388 /* ComplicationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -504,6 +698,16 @@
 			isa = PBXTargetDependency;
 			target = 43E4AA5E1CE8C773007F9F15 /* GarageDoorOpener */;
 			targetProxy = 43E4AA841CE8C774007F9F15 /* PBXContainerItemProxy */;
+		};
+		EF8F04CD1D8DDF66000FB388 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF8F04C91D8DDF66000FB388 /* GDO Extension */;
+			targetProxy = EF8F04CC1D8DDF66000FB388 /* PBXContainerItemProxy */;
+		};
+		EF8F04E41D8DDF66000FB388 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF8F04BD1D8DDF65000FB388 /* GDO */;
+			targetProxy = EF8F04E31D8DDF66000FB388 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -522,6 +726,14 @@
 				43E4AA711CE8C773007F9F15 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EF8F04C01D8DDF66000FB388 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF8F04C11D8DDF66000FB388 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -685,6 +897,66 @@
 			};
 			name = Release;
 		};
+		EF8F04E61D8DDF66000FB388 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = GDO_Extension;
+				INFOPLIST_FILE = GDO/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ElectricTech.GarageDoorOpener.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		EF8F04E71D8DDF66000FB388 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = GDO_Extension;
+				INFOPLIST_FILE = GDO/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ElectricTech.GarageDoorOpener.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		EF8F04E81D8DDF66000FB388 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "GDO Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ElectricTech.GarageDoorOpener.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		EF8F04E91D8DDF66000FB388 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "GDO Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ElectricTech.GarageDoorOpener.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -723,6 +995,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		EF8F04EA1D8DDF66000FB388 /* Build configuration list for PBXNativeTarget "GDO Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF8F04E81D8DDF66000FB388 /* Debug */,
+				EF8F04E91D8DDF66000FB388 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF8F04EC1D8DDF66000FB388 /* Build configuration list for PBXNativeTarget "GDO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF8F04E61D8DDF66000FB388 /* Debug */,
+				EF8F04E71D8DDF66000FB388 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
