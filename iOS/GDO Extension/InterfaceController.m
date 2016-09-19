@@ -7,16 +7,27 @@
 //
 
 #import "InterfaceController.h"
+#import "GDOWCDefines.h"
 
+@import WatchConnectivity;
 
 @interface InterfaceController()
+@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceButton *garageDoorButton;
+@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceButton *garageLightButton;
+
+@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceLabel *garageDoorStatus;
+@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceLabel *garageLightStatus;
+
+- (void)sendWCiOSActionRequest:(NSString *)action withCompletion:(nullable void (^)(void))completion;
+- (void)displayErrorForWCReturn:(NSString *)err;
 
 @end
 
 
 @implementation InterfaceController
 
-- (void)awakeWithContext:(id)context {
+- (void)awakeWithContext:(id)context
+ {
     [super awakeWithContext:context];
 
     // Configure interface objects here.
@@ -32,22 +43,59 @@
     [super didDeactivate];
 }
 
-
-- (IBAction)toggleLeds:(id)sender {
+- (IBAction)toggleLeds
+{
     
-    [(WKInterfaceButton *)sender setEnabled:NO];
-    
-    // Ask iOS to perform actions to toggle light
-    
-    [(WKInterfaceButton *)sender setEnabled:YES];
+    [self.garageLightButton setEnabled:NO];
+    [self sendWCiOSActionRequest:GDO_WC_ACTION_GARAGE_LIGHT_TOGGLE withCompletion:^{
+        [self.garageLightButton setEnabled:YES];
+    }];
 }
 
-- (IBAction)garageDoorClicked:(id)sender {
-    [(WKInterfaceButton *)sender setEnabled:NO];
-    
-    // Ask iOS to perform actions to toggle garage door
-    
-    [(WKInterfaceButton *)sender setEnabled:YES];
+- (IBAction)garageDoorClicked
+{
+    [self.garageDoorButton setEnabled:NO];
+    [self sendWCiOSActionRequest:GDO_WC_ACTION_GARAGE_DOOR_TOGGLE withCompletion:^{
+        [self.garageDoorButton setEnabled:YES];
+    }];
+}
+
+- (void)sendWCiOSActionRequest:(NSString *)action withCompletion:(void (^)(void))completion
+{
+    if ([[WCSession defaultSession] isReachable])
+    {
+        [[WCSession defaultSession] sendMessage:@{GDO_WC_ACTION_REQUEST_KEY: action}
+                                    replyHandler:^(NSDictionary<NSString *,id> * _Nonnull replyMessage) {
+                                        NSLog(@"GDO WC DataBack: %@", replyMessage);
+                                        NSString *valStr = [replyMessage objectForKey:GDO_WC_ERROR_OCCURED_KEY];
+                                        if (valStr != nil)
+                                        {
+                                            [self displayErrorForWCReturn:valStr];
+                                            completion();
+                                        }
+                                    }
+                                    errorHandler:^(NSError * _Nonnull error) {
+                                        NSLog(@"GDO WC Error Occured: %@", error);
+                                        completion();
+                                    }];
+    }
+    else
+    {
+        [self displayErrorForWCReturn:GDO_WC_ERROR_COULD_NOT_CONNECT_TO_PHONE];
+    }
+}
+
+- (void)displayErrorForWCReturn:(NSString *)err
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        WKAlertAction *alert = [WKAlertAction actionWithTitle:@"OK" style:WKAlertActionStyleDefault handler:^{
+                                    NSLog(@"Error Alert: %@", err);
+                                }];
+        [self presentAlertControllerWithTitle:nil
+                                      message:err
+                               preferredStyle:WKAlertControllerStyleAlert
+                                      actions:@[alert]];
+    });
 }
 
 @end

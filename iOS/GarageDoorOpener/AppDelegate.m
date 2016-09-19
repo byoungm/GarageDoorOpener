@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "Spark-SDK.h"
 #import "CredentialManager.h"
+#import "GarageDoorDevice.h"
+#import "GDOWCDefines.h"
 
 @interface AppDelegate ()
 - (void)authParticleCloud;
@@ -19,8 +21,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    
+    if ([WCSession isSupported])
+    {
+        WCSession *session = [WCSession defaultSession];
+        session.delegate = self;
+        [session activateSession];
+    }
     [self authParticleCloud];
     return YES;;
 }
@@ -49,20 +55,34 @@
 
 - (void)authParticleCloud
 {
-    if (![SparkCloud sharedInstance].isAuthenticated)
+    dispatch_async(dispatch_queue_create("Initial Partice Cloud Auth Queue", DISPATCH_QUEUE_SERIAL), ^{
+        if (![SparkCloud sharedInstance].isAuthenticated)
+        {
+            CredentialManager *cm = [[CredentialManager alloc] init];
+            NSDictionary *dict = [cm getUsernameAndPassword];
+            NSString *username = dict[@"username"];
+            NSString *password = dict[@"password"];
+            [[SparkCloud sharedInstance] loginWithUser:username password:password completion:^(NSError *error){
+                if (!error)
+                {
+                    NSLog(@"Logged in to cloud\nAccess Token: %@", [SparkCloud sharedInstance].accessToken);
+                }
+                else
+                    NSLog(@"Wrong credentials or no internet connectivity, please try again");
+            }];
+        }
+    });
+}
+
+- (void)session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *,id> *)message replyHandler:(void (^)(NSDictionary<NSString *,id> * _Nonnull))replyHandler
+{
+    if ([SparkCloud sharedInstance].isAuthenticated)
     {
-        CredentialManager *cm = [[CredentialManager alloc] init];
-        NSDictionary *dict = [cm getUsernameAndPassword];
-        NSString *username = dict[@"username"];
-        NSString *password = dict[@"password"];
-        [[SparkCloud sharedInstance] loginWithUser:username password:password completion:^(NSError *error){
-            if (!error)
-            {
-                NSLog(@"Logged in to cloud\nAccess Token: %@", [SparkCloud sharedInstance].accessToken);
-            }
-            else
-                NSLog(@"Wrong credentials or no internet connectivity, please try again");
-        }];
+        GarageDoorDevice *garageDoorDevice = [[GarageDoorDevice alloc] init];
+    }
+    else
+    {
+        replyHandler(@{GDO_WC_ERROR_OCCURED_KEY: GDO_WC_ERROR_NOT_AUTHENCATED});
     }
 }
 

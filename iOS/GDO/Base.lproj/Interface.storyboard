@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
@@ -11,10 +11,24 @@
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
                         <label width="1" height="36.5" alignment="left" text="Door: Unknown" textAlignment="center" id="831-Ty-sfC"/>
-                        <button width="1" alignment="left" title="Garage Door" id="9PM-yC-vOA"/>
+                        <button width="1" alignment="left" title="Garage Door" id="9PM-yC-vOA">
+                            <connections>
+                                <action selector="garageDoorClicked" destination="AgC-eL-Hgc" id="cxO-9t-9by"/>
+                            </connections>
+                        </button>
                         <label width="1" height="36.5" alignment="left" text="Light: Unknown" textAlignment="center" id="vRp-H9-HYv"/>
-                        <button width="1" alignment="left" title="Light" id="4Uh-Jo-H1L"/>
+                        <button width="1" alignment="left" title="Light" id="4Uh-Jo-H1L">
+                            <connections>
+                                <action selector="toggleLeds" destination="AgC-eL-Hgc" id="Dg6-ij-qZy"/>
+                            </connections>
+                        </button>
                     </items>
+                    <connections>
+                        <outlet property="garageDoorButton" destination="9PM-yC-vOA" id="Ef5-Wa-3bI"/>
+                        <outlet property="garageDoorStatus" destination="831-Ty-sfC" id="j9F-sX-mtf"/>
+                        <outlet property="garageLightButton" destination="4Uh-Jo-H1L" id="b6V-lW-uIM"/>
+                        <outlet property="garageLightStatus" destination="vRp-H9-HYv" id="abY-1E-Mlv"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="235" y="347"/>

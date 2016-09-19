@@ -5,9 +5,11 @@
 //  Created by Benjamin Young on 9/17/16.
 //  Copyright © 2016 Benjamin Young. All rights reserved.
 //
-
+  
 #import <WatchKit/WatchKit.h>
 
-@interface ExtensionDelegate : NSObject <WKExtensionDelegate>
+@import WatchConnectivity;
+
+@interface ExtensionDelegate : NSObject <WKExtensionDelegate, WCSessionDelegate>
 
 @end

@@ -8,7 +8,6 @@
 
 #import "ExtensionDelegate.h"
 
-@import WatchConnectivity;
 
 @implementation ExtensionDelegate
 
@@ -18,8 +17,7 @@
     if ([WCSession isSupported])
     {
         WCSession *session = [WCSession defaultSession];
-        // TODO: See if we need this statement
-        //session.delegate = self;
+        session.delegate = self;
         [session activateSession];
     }
     
