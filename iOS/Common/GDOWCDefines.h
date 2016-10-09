@@ -9,9 +9,13 @@
 #ifndef GDOWCTransferDefines_h
 #define GDOWCTransferDefines_h
 
+typedef enum {
+    GDO_WC_ACTION_GARAGE_DOOR_TOGGLE = 1,
+    GDO_WC_ACTION_GARAGE_LIGHT_TOGGLE,
+} GdoWcActionCode_t;
+
 #define GDO_WC_ACTION_REQUEST_KEY @"Action"
-#define GDO_WC_ACTION_GARAGE_DOOR_TOGGLE @"Garage Door Toggle"
-#define GDO_WC_ACTION_GARAGE_LIGHT_TOGGLE @"Garage Light Toggle"
+#define GDO_WC_SUCCESS_OCCURED_KEY @"Success"
 
 // Error Defines
 #define GDO_WC_ERROR_OCCURED_KEY @"Error"

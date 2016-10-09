@@ -18,7 +18,7 @@
 @property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceLabel *garageDoorStatus;
 @property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceLabel *garageLightStatus;
 
-- (void)sendWCiOSActionRequest:(NSString *)action withCompletion:(nullable void (^)(void))completion;
+- (void)sendWCiOSActionRequest:(GdoWcActionCode_t)actionCode withCompletion:(nullable void (^)(void))completion;
 - (void)displayErrorForWCReturn:(NSString *)err;
 
 @end
@@ -60,11 +60,11 @@
     }];
 }
 
-- (void)sendWCiOSActionRequest:(NSString *)action withCompletion:(void (^)(void))completion
+- (void)sendWCiOSActionRequest:(GdoWcActionCode_t)actionCode withCompletion:(void (^)(void))completion
 {
     if ([[WCSession defaultSession] isReachable])
     {
-        [[WCSession defaultSession] sendMessage:@{GDO_WC_ACTION_REQUEST_KEY: action}
+        [[WCSession defaultSession] sendMessage:@{GDO_WC_ACTION_REQUEST_KEY: [NSNumber numberWithInteger:actionCode]}
                                     replyHandler:^(NSDictionary<NSString *,id> * _Nonnull replyMessage) {
                                         NSLog(@"GDO WC DataBack: %@", replyMessage);
                                         NSString *valStr = [replyMessage objectForKey:GDO_WC_ERROR_OCCURED_KEY];

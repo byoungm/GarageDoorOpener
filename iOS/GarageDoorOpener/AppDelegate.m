@@ -79,6 +79,27 @@
     if ([SparkCloud sharedInstance].isAuthenticated)
     {
         GarageDoorDevice *garageDoorDevice = [[GarageDoorDevice alloc] init];
+        int actionCode = [message[GDO_WC_ACTION_REQUEST_KEY] intValue];
+        switch (actionCode)
+        {
+            case GDO_WC_ACTION_GARAGE_DOOR_TOGGLE:
+            {
+                [garageDoorDevice toggleGarageDoorWithCompletion:^(NSError * _Nullable error) {
+                    replyHandler(@{GDO_WC_SUCCESS_OCCURED_KEY: error});
+                }];
+                break;
+            }
+            case GDO_WC_ACTION_GARAGE_LIGHT_TOGGLE:
+            {
+                [garageDoorDevice toggleGarageLedsWithCompletion:^(NSError * _Nullable error) {
+                    replyHandler(@{GDO_WC_SUCCESS_OCCURED_KEY: error});
+                }];
+                break;
+            }
+            default:
+                replyHandler(@{GDO_WC_ERROR_OCCURED_KEY: GDO_WC_ERROR_NOT_AUTHENCATED});
+                break;
+        }
     }
     else
     {
