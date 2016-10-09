@@ -13,6 +13,7 @@
 #import "GDOWCDefines.h"
 
 @interface AppDelegate ()
+@property GarageDoorDevice *garageDoorDevice;
 - (void)authParticleCloud;
 
 @end
@@ -26,6 +27,7 @@
         WCSession *session = [WCSession defaultSession];
         session.delegate = self;
         [session activateSession];
+        self.garageDoorDevice = [[GarageDoorDevice alloc] init];
     }
     [self authParticleCloud];
     return YES;;
@@ -76,34 +78,45 @@
 
 - (void)session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *,id> *)message replyHandler:(void (^)(NSDictionary<NSString *,id> * _Nonnull))replyHandler
 {
+    NSLog(@"Recieved Request for WC Action on iOS");
     if ([SparkCloud sharedInstance].isAuthenticated)
     {
-        GarageDoorDevice *garageDoorDevice = [[GarageDoorDevice alloc] init];
-        int actionCode = [message[GDO_WC_ACTION_REQUEST_KEY] intValue];
-        switch (actionCode)
+        NSString *actionCmd = message[GDO_WC_KEY_ACTION_REQUEST];
+        NSLog(@"Trying to process request: %@", actionCmd);
+        if ([actionCmd isEqualToString:GDO_WC_ACTION_GARAGE_DOOR_TOGGLE])
         {
-            case GDO_WC_ACTION_GARAGE_DOOR_TOGGLE:
-            {
-                [garageDoorDevice toggleGarageDoorWithCompletion:^(NSError * _Nullable error) {
-                    replyHandler(@{GDO_WC_SUCCESS_OCCURED_KEY: error});
-                }];
-                break;
-            }
-            case GDO_WC_ACTION_GARAGE_LIGHT_TOGGLE:
-            {
-                [garageDoorDevice toggleGarageLedsWithCompletion:^(NSError * _Nullable error) {
-                    replyHandler(@{GDO_WC_SUCCESS_OCCURED_KEY: error});
-                }];
-                break;
-            }
-            default:
-                replyHandler(@{GDO_WC_ERROR_OCCURED_KEY: GDO_WC_ERROR_NOT_AUTHENCATED});
-                break;
+            [self.garageDoorDevice toggleGarageDoorWithCompletion:^(NSError * _Nullable error) {
+                NSDictionary *dict = @{GDO_WC_KEY_SUCCESS_OCCURED: GDO_WC_NO_ERROR};
+                if (error) dict = @{GDO_WC_KEY_ERROR_OCCURED: [error description]};
+                replyHandler(dict);
+            }];
+        }
+        else if ([actionCmd isEqualToString:GDO_WC_ACTION_GARAGE_LIGHT_TOGGLE])
+        {
+            [self.garageDoorDevice toggleGarageLedsWithCompletion:^(NSError * _Nullable error) {
+                NSDictionary *dict = @{GDO_WC_KEY_SUCCESS_OCCURED: GDO_WC_NO_ERROR};
+                if (error) dict = @{GDO_WC_KEY_ERROR_OCCURED: [error description]};
+                replyHandler(dict);
+            }];
+        }
+        else if ([actionCmd isEqualToString:GDO_WC_ACTION_GARAGE_GET_STATUS])
+        {
+            [self.garageDoorDevice getDeviceStateWithCompletion:^(NSString * _Nullable doorState,
+                                                                  NSString * _Nullable lightState,
+                                                                  NSError * _Nullable error) {
+                replyHandler(@{GDO_WC_KEY_SUCCESS_OCCURED : error,
+                               GDO_WC_KEY_LIGHT_STATUS    : lightState,
+                               GDO_WC_KEY_DOOR_STATUS     : doorState});
+            }];
+        }
+        else
+        {
+            replyHandler(@{GDO_WC_KEY_ERROR_OCCURED: GDO_WC_ERROR_UNKNOWN_ACTION_CODE});
         }
     }
     else
     {
-        replyHandler(@{GDO_WC_ERROR_OCCURED_KEY: GDO_WC_ERROR_NOT_AUTHENCATED});
+        replyHandler(@{GDO_WC_KEY_ERROR_OCCURED: GDO_WC_ERROR_NOT_AUTHENCATED});
     }
 }
 

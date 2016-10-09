@@ -18,7 +18,7 @@
 @property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceLabel *garageDoorStatus;
 @property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceLabel *garageLightStatus;
 
-- (void)sendWCiOSActionRequest:(GdoWcActionCode_t)actionCode withCompletion:(nullable void (^)(void))completion;
+- (void)sendWCiOSActionRequest:(NSString *)action withCompletion:(void (^)(void))completion;
 - (void)displayErrorForWCReturn:(NSString *)err;
 
 @end
@@ -60,19 +60,32 @@
     }];
 }
 
-- (void)sendWCiOSActionRequest:(GdoWcActionCode_t)actionCode withCompletion:(void (^)(void))completion
+- (void)sendWCiOSActionRequest:(NSString *)action withCompletion:(void (^)(void))completion
 {
     if ([[WCSession defaultSession] isReachable])
     {
-        [[WCSession defaultSession] sendMessage:@{GDO_WC_ACTION_REQUEST_KEY: [NSNumber numberWithInteger:actionCode]}
+        [[WCSession defaultSession] sendMessage:@{GDO_WC_KEY_ACTION_REQUEST: action}
                                     replyHandler:^(NSDictionary<NSString *,id> * _Nonnull replyMessage) {
                                         NSLog(@"GDO WC DataBack: %@", replyMessage);
-                                        NSString *valStr = [replyMessage objectForKey:GDO_WC_ERROR_OCCURED_KEY];
+                                        NSString *valStr = [replyMessage objectForKey:GDO_WC_KEY_ERROR_OCCURED];
                                         if (valStr != nil)
                                         {
                                             [self displayErrorForWCReturn:valStr];
-                                            completion();
                                         }
+                                        else
+                                        {
+                                            valStr = [replyMessage objectForKey:GDO_WC_KEY_LIGHT_STATUS];
+                                            if (valStr != nil)
+                                            {
+                                                [self.garageLightStatus setText:valStr];
+                                            }
+                                            valStr = [replyMessage objectForKey:GDO_WC_KEY_DOOR_STATUS];
+                                            if (valStr != nil)
+                                            {
+                                                [self.garageDoorStatus setText:valStr];
+                                            }
+                                        }
+                                        completion();
                                     }
                                     errorHandler:^(NSError * _Nonnull error) {
                                         NSLog(@"GDO WC Error Occured: %@", error);
