@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11077"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
@@ -25,9 +26,7 @@
                     </items>
                     <connections>
                         <outlet property="garageDoorButton" destination="9PM-yC-vOA" id="Ef5-Wa-3bI"/>
-                        <outlet property="garageDoorStatus" destination="831-Ty-sfC" id="j9F-sX-mtf"/>
                         <outlet property="garageLightButton" destination="4Uh-Jo-H1L" id="b6V-lW-uIM"/>
-                        <outlet property="garageLightStatus" destination="vRp-H9-HYv" id="abY-1E-Mlv"/>
                     </connections>
                 </controller>
             </objects>
@@ -41,7 +40,7 @@
                         <group alignment="left" id="t8f-Gd-c4y">
                             <items>
                                 <label width="116" height="47.5" alignment="left" text="Garage Door Status" textAlignment="center" numberOfLines="2" id="s1P-Sh-wBZ">
-                                    <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                                 </label>
                             </items>

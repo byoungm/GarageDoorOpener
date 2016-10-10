@@ -13,7 +13,7 @@
 #import "GDOWCDefines.h"
 
 @interface AppDelegate ()
-@property GarageDoorDevice *garageDoorDevice;
+@property (strong, nonatomic) GarageDoorDevice *garageDoorDevice;
 - (void)authParticleCloud;
 
 @end
@@ -104,9 +104,10 @@
             [self.garageDoorDevice getDeviceStateWithCompletion:^(NSString * _Nullable doorState,
                                                                   NSString * _Nullable lightState,
                                                                   NSError * _Nullable error) {
-                replyHandler(@{GDO_WC_KEY_SUCCESS_OCCURED : error,
-                               GDO_WC_KEY_LIGHT_STATUS    : lightState,
-                               GDO_WC_KEY_DOOR_STATUS     : doorState});
+                NSDictionary *dict = @{GDO_WC_KEY_LIGHT_STATUS    : lightState,
+                                       GDO_WC_KEY_DOOR_STATUS     : doorState};
+                if (error) dict = @{GDO_WC_KEY_ERROR_OCCURED: [error description]};
+                replyHandler(dict);
             }];
         }
         else

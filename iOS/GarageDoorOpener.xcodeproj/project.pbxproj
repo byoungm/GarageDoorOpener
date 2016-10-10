@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43BB04441DAAB37600098FBC /* GDOWKStatusLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BB04431DAAB37600098FBC /* GDOWKStatusLabel.m */; };
 		43E4AA641CE8C773007F9F15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E4AA631CE8C773007F9F15 /* main.m */; };
 		43E4AA671CE8C773007F9F15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E4AA661CE8C773007F9F15 /* AppDelegate.m */; };
 		43E4AA6A1CE8C773007F9F15 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E4AA691CE8C773007F9F15 /* MainViewController.m */; };
@@ -95,6 +96,9 @@
 		0C15F38EBBD77DFE3D5ABE2B /* Pods-GarageDoorOpenerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GarageDoorOpenerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GarageDoorOpenerTests/Pods-GarageDoorOpenerTests.release.xcconfig"; sourceTree = "<group>"; };
 		43A97ACB1D8F779B007106D3 /* GDOWCDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDOWCDefines.h; sourceTree = "<group>"; };
 		43B767A61DAA1D7500B831DE /* GarageDoorOpener.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GarageDoorOpener.entitlements; sourceTree = "<group>"; };
+		43BB04421DAAB37600098FBC /* GDOWKStatusLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDOWKStatusLabel.h; path = "GDO Extension/GDOWKStatusLabel.h"; sourceTree = SOURCE_ROOT; };
+		43BB04431DAAB37600098FBC /* GDOWKStatusLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GDOWKStatusLabel.m; path = "GDO Extension/GDOWKStatusLabel.m"; sourceTree = SOURCE_ROOT; };
+		43BB04451DAAFE1500098FBC /* GDODeviceDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDODeviceDefines.h; path = ../GarageDoorOpener/GDODeviceDefines.h; sourceTree = "<group>"; };
 		43E4AA5F1CE8C773007F9F15 /* GarageDoorOpener.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GarageDoorOpener.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E4AA631CE8C773007F9F15 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		43E4AA651CE8C773007F9F15 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -189,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				43A97ACB1D8F779B007106D3 /* GDOWCDefines.h */,
+				43BB04451DAAFE1500098FBC /* GDODeviceDefines.h */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -296,6 +301,8 @@
 		EF8F04CE1D8DDF66000FB388 /* GDO Extension */ = {
 			isa = PBXGroup;
 			children = (
+				43BB04421DAAB37600098FBC /* GDOWKStatusLabel.h */,
+				43BB04431DAAB37600098FBC /* GDOWKStatusLabel.m */,
 				EF8F04D11D8DDF66000FB388 /* InterfaceController.h */,
 				EF8F04D21D8DDF66000FB388 /* InterfaceController.m */,
 				EF8F04D41D8DDF66000FB388 /* ExtensionDelegate.h */,
@@ -702,6 +709,7 @@
 				EF8F04D61D8DDF66000FB388 /* ExtensionDelegate.m in Sources */,
 				EF8F04D31D8DDF66000FB388 /* InterfaceController.m in Sources */,
 				EF8F04D91D8DDF66000FB388 /* NotificationController.m in Sources */,
+				43BB04441DAAB37600098FBC /* GDOWKStatusLabel.m in Sources */,
 				EF8F04DC1D8DDF66000FB388 /* GlanceController.m in Sources */,
 				EF8F04DF1D8DDF66000FB388 /* ComplicationController.m in Sources */,
 			);
@@ -850,6 +858,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = GarageDoorOpener/GarageDoorOpener.entitlements;
+				DEVELOPMENT_TEAM = LY3KT5M7GY;
 				INFOPLIST_FILE = GarageDoorOpener/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ElectricTech.GarageDoorOpener;
@@ -864,6 +873,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = GarageDoorOpener/GarageDoorOpener.entitlements;
+				DEVELOPMENT_TEAM = LY3KT5M7GY;
 				INFOPLIST_FILE = GarageDoorOpener/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ElectricTech.GarageDoorOpener;
@@ -926,6 +936,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LY3KT5M7GY;
 				IBSC_MODULE = GDO_Extension;
 				INFOPLIST_FILE = GDO/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ElectricTech.GarageDoorOpener.watchkitapp;
@@ -942,6 +953,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LY3KT5M7GY;
 				IBSC_MODULE = GDO_Extension;
 				INFOPLIST_FILE = GDO/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ElectricTech.GarageDoorOpener.watchkitapp;

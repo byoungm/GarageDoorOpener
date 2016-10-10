@@ -1,0 +1,71 @@
+//
+//  GDOWKStatusLabels.m
+//  GarageDoorOpener
+//
+//  Created by Benjamin Young on 10/9/16.
+//  Copyright © 2016 Benjamin Young. All rights reserved.
+//
+
+#import "GDOWKStatusLabel.h"
+#import "GDODeviceDefines.h"
+
+@implementation GDOWKStatusLabel
+
+- (void)resetStatus
+{
+    [self setStatus:GARAGE_STATE_UNKNOWN_STR];
+}
+
+- (void)setStatus:(NSString *)status
+{
+    self.text = status;
+}
+
+@end
+
+@implementation GDOWKLightStatusLabel
+
+- (void)setStatus:(NSString *)status
+{
+    UIColor *color;
+    if ([status isEqualToString:GARAGE_LIGHT_ON_STR])
+    {
+        color = [UIColor greenColor];
+    }
+    else if ([status isEqualToString:GARAGE_LIGHT_OFF_STR])
+    {
+        color = [UIColor whiteColor];
+    }
+    else
+    {
+        color = [UIColor redColor];
+    }
+    self.textColor = color;
+    self.text = [NSString stringWithFormat:@"Light: %@", status];
+}
+
+
+@end
+
+@implementation GDOWKDoorStatusLabel
+
+- (void)setStatus:(NSString *)status
+{
+    UIColor *color;
+    if ([status isEqualToString:GARAGE_DOOR_OPEN_STR])
+    {
+        color = [UIColor greenColor];
+    }
+    else if ([status isEqualToString:GARAGE_DOOR_CLOSED_STR])
+    {
+        color = [UIColor whiteColor];
+    }
+    else
+    {
+        color = [UIColor redColor];
+    }
+    self.textColor = color;
+    self.text = [NSString stringWithFormat:@"Door: %@", status];
+}
+
+@end

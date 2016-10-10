@@ -8,21 +8,24 @@
 
 #import "InterfaceController.h"
 #import "GDOWCDefines.h"
+#import "GDOWKStatusLabel.h"
 
 @import WatchConnectivity;
 
 @interface InterfaceController()
 @property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceButton *garageDoorButton;
 @property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceButton *garageLightButton;
-
-@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceLabel *garageDoorStatus;
-@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceLabel *garageLightStatus;
+@property (unsafe_unretained, nonatomic) IBOutlet GDOWKDoorStatusLabel *garageDoorStatus;
+@property (unsafe_unretained, nonatomic) IBOutlet GDOWKLightStatusLabel *garageLightStatus;
+@property (strong, nonatomic) NSTimer *garageStateUpdateTimer;
 
 - (void)sendWCiOSActionRequest:(NSString *)action withCompletion:(void (^)(void))completion;
 - (void)displayErrorForWCReturn:(NSString *)err;
+- (void)updateGarageDeviceState;
 
 @end
 
+#define GARAGE_DOOR_STATE_UPDATE_TIMER_INTERVAL_WATCH 1.0
 
 @implementation InterfaceController
 
@@ -33,14 +36,30 @@
     // Configure interface objects here.
 }
 
-- (void)willActivate {
+- (void)willActivate
+{
     // This method is called when watch view controller is about to be visible to user
     [super willActivate];
+    if (!self.garageStateUpdateTimer || !self.garageStateUpdateTimer.valid)
+    {
+        self.garageStateUpdateTimer = [NSTimer scheduledTimerWithTimeInterval:GARAGE_DOOR_STATE_UPDATE_TIMER_INTERVAL_WATCH
+                                                                       target:self
+                                                                     selector:@selector(updateGarageDeviceState)
+                                                                     userInfo:nil
+                                                                      repeats:YES];
+    }
 }
 
-- (void)didDeactivate {
+- (void)didDeactivate
+{
     // This method is called when watch view controller is no longer visible
+    [self.garageStateUpdateTimer invalidate];
     [super didDeactivate];
+}
+
+- (void)updateGarageDeviceState
+{
+    [self sendWCiOSActionRequest:GDO_WC_ACTION_GARAGE_GET_STATUS withCompletion:^{}];
 }
 
 - (IBAction)toggleLeds
@@ -77,12 +96,12 @@
                                             valStr = [replyMessage objectForKey:GDO_WC_KEY_LIGHT_STATUS];
                                             if (valStr != nil)
                                             {
-                                                [self.garageLightStatus setText:valStr];
+                                                [self.garageLightStatus setStatus:valStr];
                                             }
                                             valStr = [replyMessage objectForKey:GDO_WC_KEY_DOOR_STATUS];
                                             if (valStr != nil)
                                             {
-                                                [self.garageDoorStatus setText:valStr];
+                                                [self.garageDoorStatus setStatus:valStr];
                                             }
                                         }
                                         completion();
