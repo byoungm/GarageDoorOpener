@@ -54,6 +54,8 @@
                                                                      userInfo:nil
                                                                       repeats:YES];
     }
+    [self.garageDoorStatus resetStatus];
+    [self.garageLightStatus resetStatus];
 }
 
 - (void)didDeactivate
