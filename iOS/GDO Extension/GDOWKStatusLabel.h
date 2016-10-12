@@ -9,8 +9,9 @@
 #import <WatchKit/WatchKit.h>
 
 
-@interface GDOWKStatusLabel : WKInterfaceLabel
+@interface GDOWKStatusLabel : NSObject 
 
+- (id)initWithWKLabel:(WKInterfaceLabel *)label;
 - (void)setStatus:(NSString *)status;
 - (void)resetStatus;
 

@@ -9,7 +9,23 @@
 #import "GDOWKStatusLabel.h"
 #import "GDODeviceDefines.h"
 
+@interface GDOWKStatusLabel()
+
+@property (unsafe_unretained, nonatomic) WKInterfaceLabel *label;
+
+@end
+
 @implementation GDOWKStatusLabel
+
+- (id)initWithWKLabel:(WKInterfaceLabel *)label
+{
+    if (self = [super init])
+    {
+        self.label = label;
+        [self resetStatus];
+    }
+    return self;
+}
 
 - (void)resetStatus
 {
@@ -18,7 +34,7 @@
 
 - (void)setStatus:(NSString *)status
 {
-    self.text = status;
+    self.label.text = status;
 }
 
 @end
@@ -40,8 +56,8 @@
     {
         color = [UIColor redColor];
     }
-    self.textColor = color;
-    self.text = [NSString stringWithFormat:@"Light: %@", status];
+    self.label.textColor = color;
+    self.label.text = [NSString stringWithFormat:@"Light: %@", status];
 }
 
 
@@ -64,8 +80,8 @@
     {
         color = [UIColor redColor];
     }
-    self.textColor = color;
-    self.text = [NSString stringWithFormat:@"Door: %@", status];
+    self.label.textColor = color;
+    self.label.text = [NSString stringWithFormat:@"Door: %@", status];
 }
 
 @end

@@ -15,9 +15,13 @@
 @interface InterfaceController()
 @property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceButton *garageDoorButton;
 @property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceButton *garageLightButton;
-@property (unsafe_unretained, nonatomic) IBOutlet GDOWKDoorStatusLabel *garageDoorStatus;
-@property (unsafe_unretained, nonatomic) IBOutlet GDOWKLightStatusLabel *garageLightStatus;
+@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceLabel *garageDoorLabel;
+@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceLabel *garageLightLabel;
+
+@property (strong, nonatomic) GDOWKDoorStatusLabel *garageDoorStatus;
+@property (strong, nonatomic) GDOWKLightStatusLabel *garageLightStatus;
 @property (strong, nonatomic) NSTimer *garageStateUpdateTimer;
+
 
 - (void)sendWCiOSActionRequest:(NSString *)action withCompletion:(void (^)(void))completion;
 - (void)displayErrorForWCReturn:(NSString *)err;
@@ -34,6 +38,8 @@
     [super awakeWithContext:context];
 
     // Configure interface objects here.
+     self.garageDoorStatus = [[GDOWKDoorStatusLabel alloc] initWithWKLabel:self.garageDoorLabel];
+     self.garageLightStatus = [[GDOWKLightStatusLabel alloc] initWithWKLabel:self.garageLightLabel];
 }
 
 - (void)willActivate
@@ -89,7 +95,8 @@
                                         NSString *valStr = [replyMessage objectForKey:GDO_WC_KEY_ERROR_OCCURED];
                                         if (valStr != nil)
                                         {
-                                            [self displayErrorForWCReturn:valStr];
+                                            // TODO: Reenable this error display when we can give errors the user needs to know about.
+                                            //[self displayErrorForWCReturn:valStr];
                                         }
                                         else
                                         {

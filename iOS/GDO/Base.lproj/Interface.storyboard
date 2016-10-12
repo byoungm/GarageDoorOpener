@@ -26,7 +26,9 @@
                     </items>
                     <connections>
                         <outlet property="garageDoorButton" destination="9PM-yC-vOA" id="Ef5-Wa-3bI"/>
+                        <outlet property="garageDoorLabel" destination="831-Ty-sfC" id="ohg-ka-Uvq"/>
                         <outlet property="garageLightButton" destination="4Uh-Jo-H1L" id="b6V-lW-uIM"/>
+                        <outlet property="garageLightLabel" destination="vRp-H9-HYv" id="w9I-EG-82k"/>
                     </connections>
                 </controller>
             </objects>
