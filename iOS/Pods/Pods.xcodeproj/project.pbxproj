@@ -7,246 +7,242 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0061931E274AA7490FB961088D4E1B91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C739F1127D7E94D9137583AECFCC0E /* Foundation.framework */; };
-		01CA06ECD3EA234AAB3908FDBD0F623C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EF139D3016A3EC169A4B9F90049B98D /* Security.framework */; };
-		0A2102A12B648A60C38D6C3D94358BED /* Spark-SDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5331EBFE9465018A7E71DFD1FBD647D5 /* Spark-SDK-dummy.m */; };
-		0B778F7BC3AE374B8CA99564C0C0A09D /* SparkEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 729BAF67AF61F73CB1896A8A330750DF /* SparkEvent.m */; };
-		0C8764EE056B74D7CC4588192A3D14DF /* SparkEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = ADC5D322F62F2945E45EEDF90E30AAC8 /* SparkEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		11D61F1A3524D9FF4790DF04241DF17D /* SparkSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 297927D6612664752C6E985BCD8809B0 /* SparkSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1480F4923DBBF217F60572EEECB4027C /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E64A9EE66920A6589D5739C40F528871 /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		174202BD6AE0E4A41F5CE66E975EAE52 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = AB64B06134587209BA47C9BD364E65F1 /* UIRefreshControl+AFNetworking.m */; };
+		078C2DC2EDCF789C7D7BD571F3967317 /* SparkEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = ED81F2F99FF9EF7ACC048D2C9B691D3E /* SparkEvent.m */; };
+		0922B96B3B1B3BCA728238B78867CBAB /* RNCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 918EDA98B2FD6A70116240B7A13E8521 /* RNCryptor.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0C3519C80B821A7C0676D6CD479C2DDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C739F1127D7E94D9137583AECFCC0E /* Foundation.framework */; };
+		0D2075D78CC5A12ABC0FC4984331E96B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EF139D3016A3EC169A4B9F90049B98D /* Security.framework */; };
+		0E70AEB40CADDA48F9D25481814E3171 /* SparkEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 44F5F26A22D79FDDBC769B8F56D705F4 /* SparkEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12B1445ECB257C80332B72608E4A205D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EC046EEE00CAE53FC620929325D144 /* SystemConfiguration.framework */; };
+		1480F4923DBBF217F60572EEECB4027C /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 842B98234D98737086FD0757448EEEA6 /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		174202BD6AE0E4A41F5CE66E975EAE52 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E43CD95C8AF8AC31BDBBF8632F7D89 /* UIRefreshControl+AFNetworking.m */; };
 		183F5F8ACBF18BE52C17E75EF28E4E7B /* Pods-GarageDoorOpenerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B62B417D20EBBBD7704E802AD3F1970D /* Pods-GarageDoorOpenerTests-dummy.m */; };
 		192AC43D2F848129D2CAC66DAAF6CA35 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EF139D3016A3EC169A4B9F90049B98D /* Security.framework */; };
 		1B1867658112A552610ACA7BD429AC9C /* Pods-GarageDoorOpenerUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 902CC55BC77E1A537C945FF9F06DA9C4 /* Pods-GarageDoorOpenerUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1B5DEFAED6AFFE9FF912C33D59394E88 /* RNCryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 28600CF072E86ABC6C0ECA2D0825431B /* RNCryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1DC77884C245F3DE3A45962EAC31BB2B /* SparkCloud.h in Headers */ = {isa = PBXBuildFile; fileRef = FB26725E60F19EFF6BD0681ABF5A96EE /* SparkCloud.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1E5B8F12ED7CC40ECDB9B1F755F387E5 /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = A421754DE2E8ADECC8F88CAA0953522B /* UIActivityIndicatorView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20607BE2B1E5F31765026E5AC64DB27D /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F755390C3F1C666487CB8E158BC101 /* AFSecurityPolicy.m */; };
-		20EE8030FCF2402DAC7F1C9B9DDAEF79 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C1B5E561BE7C6179976F25BA30583DF /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20F6E998BFDFB02D681BF0EAB1AD7A59 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5461D992F0D803F0F05DF72B2849301D /* AFNetworking.framework */; };
-		2E8A32ED46194EDBE22146271F6D26DE /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 699F5927E78CA6F9085A94A9AFEA5B66 /* UIImageView+AFNetworking.m */; };
-		358AD98AABE30A8B2586B0466BE0C485 /* Spark-SDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B15FFA42FF83A52D53CF4FBEF667241 /* Spark-SDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		39C01197A5A0379F7377993E75833016 /* SparkSession.m in Sources */ = {isa = PBXBuildFile; fileRef = B49989B45CA996A6F7A8F70440EDCD99 /* SparkSession.m */; };
-		3D2789FC760A97301909F0B1201626CD /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F941B96BBC02789A657D3FDF858B23 /* AFNetworking-dummy.m */; };
-		3F1BC9BAFFEEABB1ABC7614DF0FC97D5 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF86BC3B15AA82B8853E6A77583B40F /* AFAutoPurgingImageCache.m */; };
+		1E5B8F12ED7CC40ECDB9B1F755F387E5 /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 51355BDAC6A0E9E61EE2233D249B2B14 /* UIActivityIndicatorView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20607BE2B1E5F31765026E5AC64DB27D /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7437C62B8447131018EE781EC86D1BD8 /* AFSecurityPolicy.m */; };
+		20EE8030FCF2402DAC7F1C9B9DDAEF79 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = EAFAE8A8FB1A59214C1F09FBA38A45D2 /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C29F5AB399E3D3448930789C72D9113 /* SparkDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E09E164E8D2712257FCADA8E9A76676 /* SparkDevice.m */; };
+		2DAEBE4FE411E0685A47376157A9CE8A /* Pods-GarageDoorOpener-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A803227BB6F23422CEE1025CC4D3E509 /* Pods-GarageDoorOpener-dummy.m */; };
+		2E30BFBEB221EF37F51E1DB5B1B99D31 /* Spark-SDK-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = FEC4DB7E5938566BB154E6AC4931EDBC /* Spark-SDK-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E8A32ED46194EDBE22146271F6D26DE /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 815CC37BE5FE3CADA595887BAB41DEF3 /* UIImageView+AFNetworking.m */; };
+		3CA84D5996A386938AF8D94361B46603 /* RNCryptor+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = CF225B79589324CA3553528AE3872F0F /* RNCryptor+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		3D2789FC760A97301909F0B1201626CD /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EC7B5D189DF7D3B10151B4FA95BCB3 /* AFNetworking-dummy.m */; };
+		3F1BC9BAFFEEABB1ABC7614DF0FC97D5 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = AC85CB8C97880B7CA17C181168E547AD /* AFAutoPurgingImageCache.m */; };
+		40A4DA55966B8409492163E1C2CA6141 /* SparkSession.h in Headers */ = {isa = PBXBuildFile; fileRef = A8D4B6D9F968AA8206187E6CE453F8FE /* SparkSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49390FE83D1C54CCCB8FB25C4D077BE4 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 61293F7018641AD0EFE0DBA51B3EF3BF /* KeychainItemWrapper.m */; };
 		4A495F0492E7C2008D7A5F03A2DF9B5C /* Pods-GarageDoorOpenerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A20AAF4417B46E656BECA2B83904F6 /* Pods-GarageDoorOpenerUITests-dummy.m */; };
+		4B8CD21FDF79871816CB103D8A8A38EC /* SparkCloud.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E2D3B4386B11CE7B624BA931756F869 /* SparkCloud.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4ECA9BE68D373E094EFA019CC4EA1720 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E098DE86ED811B6D87786B436462D468 /* CoreGraphics.framework */; };
 		4FE3D0FC60D1370E831CBFF9680FA8EB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53988B41BFD74EE13612A4293F09CD6 /* MobileCoreServices.framework */; };
-		50CE341A17CA757887DBB391CFBA49CE /* RNCryptor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E2395549FE4EF6AD1F0315B4FBF3C588 /* RNCryptor-dummy.m */; };
-		560698A4D707DCBCC1C8F98BC9B89B23 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 81E170C783B65C3A84E5C56D20CBA54F /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		513104411A6DB65D93AC3CDDCA12682F /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5461D992F0D803F0F05DF72B2849301D /* AFNetworking.framework */; };
+		5244890762E2DFF03F1173AD8921E729 /* RNDecryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = B589CDD3241D6BB9E0472543121EF2E8 /* RNDecryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		560698A4D707DCBCC1C8F98BC9B89B23 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CA1F6C01312CC5452F87A26367DE611 /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		57864033816BEDAC33EB5D73ED10B067 /* Pods-GarageDoorOpenerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B8A1F76E005701746E733F4C3D197BD /* Pods-GarageDoorOpenerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5808B477EFF509D810B5CDCFDC944F80 /* AFImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 85732425EDF70712F8083D80E8B15D4C /* AFImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B097FF35853960960DF266EA46464BE /* Pods-GarageDoorOpener-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AF165546660F6F50E8E35B98C6E1DD6 /* Pods-GarageDoorOpener-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5FF6453E55785669885F626B853FD2AA /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E376B368E9FC7B70FADB61BD479E66A3 /* UIProgressView+AFNetworking.m */; };
-		60CD7DA1FBC72E73A8A3D5929D41807C /* EventSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F86A9526538BC17D6B0E59598B54AE0 /* EventSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		60E3009342BEE96D32C546BE2DB60052 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 4804054EF2C1EA814AAF916A2CD74FAF /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		61F0B0C2AE09715EC6B67E97FC724DD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C739F1127D7E94D9137583AECFCC0E /* Foundation.framework */; };
-		625590D5A144FBDB05F07EE2ED71478F /* SparkDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE7BAE593B36A4DC881651249742B64 /* SparkDevice.m */; };
-		659960F7E28E993E08CCC1E8A383E710 /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = C4B98248318A077111C059E38FC37C28 /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		68152D921ABF6A423C192C04FDF94F0F /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B06C86D0901214D597C0F8A92D653A0 /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5808B477EFF509D810B5CDCFDC944F80 /* AFImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F1B355069973CA1B5307CF0D892484 /* AFImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E9083ED070CD91ACA2774336886D76D /* RNCryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 54321294AE39F0CDD52039A4003327D3 /* RNCryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FF6453E55785669885F626B853FD2AA /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 99297AFD164F3204932B375889293E23 /* UIProgressView+AFNetworking.m */; };
+		60E3009342BEE96D32C546BE2DB60052 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 29E4B57DF56D3DB3D79983E49285FCB0 /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		659960F7E28E993E08CCC1E8A383E710 /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = BD9CFFF9E119275AEAA9914FA13D7035 /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68152D921ABF6A423C192C04FDF94F0F /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FECBEF4B3BCD78259C8B8F8BCB58D8B /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		688E37A2E29646148D380D9034875174 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EC046EEE00CAE53FC620929325D144 /* SystemConfiguration.framework */; };
-		68A38977EBAE334DC3C22386D00D2622 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE498983B4C12C3956579EF2832655E /* AFNetworkReachabilityManager.m */; };
-		69A41AAADF21598CC296B8E57FAB802F /* Spark-SDK.h in Headers */ = {isa = PBXBuildFile; fileRef = F2BFBAD0609A1D264B329D909DBFB6AB /* Spark-SDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D999ACFEB5522688393DE1EFD41A002 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EC046EEE00CAE53FC620929325D144 /* SystemConfiguration.framework */; };
-		6ED4ABEE8A5F51F5ECB59FA1781D29C6 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 81686BFF78B36F0DBFF22B85185098E1 /* UIActivityIndicatorView+AFNetworking.m */; };
-		707B1A7541C8DBDDE8C27896A61370BE /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D50310B681F54C17E0578A42CD68BD6D /* AFURLSessionManager.m */; };
-		70C4C2427F6ED0D7B219B0A07BEE81FE /* Spark-SDK-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A7CE6FA5114E02517D98721D6F6BC6F /* Spark-SDK-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7332F15718920917F544F35CE2C038AA /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 29C4E10F7B3EA4FE3F42A3A9B83660CE /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7EE58C6CCD794FD0AE257CC39A39C965 /* RNCryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB088E70F7A33A3B08B9F3A07DA16729 /* RNCryptor.swift */; };
-		81B617F8D26BB10C5726D75E85D21EB7 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 22F3CC2F14E8E6638B3A1FAB08A193A9 /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		88384F21694834ADF197685789B4F5AF /* EventSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFECB34FD4F6A1EEA06E1B620F755E0 /* EventSource.m */; };
-		8E5827C47228AED513444310F3BE3392 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C739F1127D7E94D9137583AECFCC0E /* Foundation.framework */; };
+		68A38977EBAE334DC3C22386D00D2622 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3741C26DF49F882300E6A7E427B32950 /* AFNetworkReachabilityManager.m */; };
+		6ED4ABEE8A5F51F5ECB59FA1781D29C6 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8E2BC66C5C216CE4ACF68ACEB21866 /* UIActivityIndicatorView+AFNetworking.m */; };
+		707B1A7541C8DBDDE8C27896A61370BE /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BFBFD806B8A5B24289B24F16BA85D7 /* AFURLSessionManager.m */; };
+		7332F15718920917F544F35CE2C038AA /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 95B1CB648420AF8A23B0D0BD08C36782 /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8126935EC67E307577EE9834F538BEDF /* EventSource.h in Headers */ = {isa = PBXBuildFile; fileRef = B55E7036308FDEF630348BC24FA966D4 /* EventSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8167C0785D0FD450BC5C7D4FD1653F01 /* Pods-GarageDoorOpener-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AF165546660F6F50E8E35B98C6E1DD6 /* Pods-GarageDoorOpener-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81B617F8D26BB10C5726D75E85D21EB7 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 399695B57838204A8692590ACD4F0271 /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D3274FED7452EE883CE20CA522FC01C /* EventSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E5A2695E85F7AE65E81572EB04C783 /* EventSource.m */; };
+		92F1A8E5757279464C0D03E7C6CAEC22 /* SparkDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = E79FAB405E92ABC46EA246D2DD67449B /* SparkDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99CD4757E48150EF1A8DB98E9E25A913 /* RNCryptor-objc-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FDC615577CD684E43AC0662EB666732 /* RNCryptor-objc-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D09760CFB78E50F9E2E7CA07209A849 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C739F1127D7E94D9137583AECFCC0E /* Foundation.framework */; };
-		9E1E90DED74B73ECE53C9AD76DE53E2D /* UIImage+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = AA40D51E944C495563F4DEB61CAA0214 /* UIImage+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A462945883F7729B185B64B679A6BFBE /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA50D9247169F60D45B4FA799A13122 /* UIWebView+AFNetworking.m */; };
-		A6C6019D45BE62C61210A9CC619368EF /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF2878655E0F2D55857F4D604736CA1 /* AFNetworkActivityIndicatorManager.m */; };
-		AB39AC9746E7575D7449700475E41B0B /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 89BCE50BFD9B2588513D4B97ACD52B49 /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE2A07407FB50BA249984DC0620E84C0 /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = ABC165571323220759D9E9D8B8EC0AED /* UIWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AF03C11A1FAC8132AD3749D8F541701A /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC345BE6EB65B3AF9B989ABEF559D9C /* UIButton+AFNetworking.m */; };
-		B5852322ADE88AAD56EE042B80BA81E4 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 070DAE1434BC449C52249F0635A0C2F6 /* AFURLResponseSerialization.m */; };
-		B9759F956F1AF8E4290218903095E9E2 /* SparkDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = F089E1BD32BFEA649DE8F7009F0BF382 /* SparkDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E1E90DED74B73ECE53C9AD76DE53E2D /* UIImage+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 79D6526C65729FB953E7954DEF35DDCE /* UIImage+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A462945883F7729B185B64B679A6BFBE /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0E72130F18938CB7F52E8ED5A94CC5 /* UIWebView+AFNetworking.m */; };
+		A6C6019D45BE62C61210A9CC619368EF /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB7E091A5E8E431E8C73D6870A355F2 /* AFNetworkActivityIndicatorManager.m */; };
+		AB39AC9746E7575D7449700475E41B0B /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F628D8015B9AFFEE7A309B4552AAC304 /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE2A07407FB50BA249984DC0620E84C0 /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 23D004F971137D0A11196EE956560AC1 /* UIWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF03C11A1FAC8132AD3749D8F541701A /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D700CB79600B4745E70ED39584497175 /* UIButton+AFNetworking.m */; };
+		B57DACE4DCC151771BCDD0B311D568E9 /* SparkSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 59027B645DB349079A8CC68308675C33 /* SparkSession.m */; };
+		B5852322ADE88AAD56EE042B80BA81E4 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C58D145B73C8DA7E6FCC550358859BC /* AFURLResponseSerialization.m */; };
+		B86F7CB7EA259EC027F099939B231B6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C739F1127D7E94D9137583AECFCC0E /* Foundation.framework */; };
 		B99FAFBBC58F176BCBAA61124A21C14B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C739F1127D7E94D9137583AECFCC0E /* Foundation.framework */; };
-		C2DD28375E1F0B1D0D1D2E4E607C499F /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 27870809287150EE14FE1813DDABAB23 /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C6354FEC7728A4C86DAD8092509BA7D4 /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 72F5A34F58313FE30AC3A905110B171F /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CAC483EF637FB4A2C2E2FC75BA631B87 /* AFAutoPurgingImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = EC644740E8836FCB334852AF243CCB21 /* AFAutoPurgingImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CFA8D6B529A0EBFF0316F2629AB2556E /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE6C6752AFFB941AE62974C46BE0C36 /* AFImageDownloader.m */; };
+		C10F6E94106DEFC41C7D1E051584A186 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C739F1127D7E94D9137583AECFCC0E /* Foundation.framework */; };
+		C2DD28375E1F0B1D0D1D2E4E607C499F /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 83C7FB320D5B7F3E2F694D6D8A1D1F8C /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6354FEC7728A4C86DAD8092509BA7D4 /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 60A7EBE532D62CE9D83AFB806B0279EE /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAC483EF637FB4A2C2E2FC75BA631B87 /* AFAutoPurgingImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 91DB39F02D90F55E16161CCC8174108C /* AFAutoPurgingImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFA4CDE408F9B43E6155936382A2C999 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EF139D3016A3EC169A4B9F90049B98D /* Security.framework */; };
+		CFA8D6B529A0EBFF0316F2629AB2556E /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = E23FE6F3425F0A014341B80D18018462 /* AFImageDownloader.m */; };
+		D22257AEE0FE178B81C21E0C3F893BBF /* RNEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = EB501302330B96853306B1C2263EE868 /* RNEncryptor.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		D262D9955C7C84378B00010D89CD60FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C739F1127D7E94D9137583AECFCC0E /* Foundation.framework */; };
-		D9F4E833E37B611B432F6B5D7072DDA2 /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BAED7A8A72D3C85064EF8FC75119362 /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DFFA215EEAA8DDBD540076927535275C /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 072F968BD65598FBCFA28099AA889961 /* AFURLRequestSerialization.m */; };
-		E0D4045AC4C1B41917FCA23A042D18B2 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4072EC89F050C773A12DE74301E416DF /* AFHTTPSessionManager.m */; };
-		E0DEAE67FF940891FE09135C8487E250 /* Pods-GarageDoorOpener-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A803227BB6F23422CEE1025CC4D3E509 /* Pods-GarageDoorOpener-dummy.m */; };
-		E38D6E9CD3E85BF8FA7C5C34F32DD2CE /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A90175C8B18E996C9324F96019297D /* KeychainItemWrapper.m */; };
-		E7988678C81F7CCB95D239375FC6986D /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 480776B35B1CE3DCC4FC04B129D1A0F4 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EC7CADE416A78A1CD6936018A6695126 /* AFNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BFFA19939A38F57ED7009A716ADDAF11 /* AFNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F0FE1A98DAFB6F7F73BD6DC2B8C50CF8 /* KeychainItemWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = F863FC70260F7520BD1D186640879657 /* KeychainItemWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F4F4CCE888EDCB72FED87897D208FECF /* RNCryptor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16C908B45476291D506D3C5F6B11D07F /* RNCryptor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FA51245CE9EB967C757BFC770B8B0E6F /* SparkCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B734725971172692FFE0C94589078BB /* SparkCloud.m */; };
+		D2E8EC0979DAC020265C549217F46E77 /* Spark-SDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A3188716006CE14B69AC4BB610FF4C1 /* Spark-SDK-dummy.m */; };
+		D9F4E833E37B611B432F6B5D7072DDA2 /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = D25C2EE80DDFD5C1E5460B0CE3426E6B /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFDB2C38060439545FB7D89961E3A234 /* RNEncryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = BDF18AF065B30DEB2D01B73DFDF3B885 /* RNEncryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFFA215EEAA8DDBD540076927535275C /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 2794F37C6CA2F3EC6386FC46D2E9AA4E /* AFURLRequestSerialization.m */; };
+		E0741F972FFB2E5D21C43FEAA8C35A14 /* Spark-SDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 662385C2B8F0E6FEDFFBDD6CC047A413 /* Spark-SDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0D4045AC4C1B41917FCA23A042D18B2 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B40508B92FFCBAC0B6AB044CC6F754 /* AFHTTPSessionManager.m */; };
+		E4C34B3FEDDC6C2F342684775D2D840E /* RNCryptorEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = E07D4D267B7F6A6D0EAB9C555C6064A9 /* RNCryptorEngine.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E64A657E5C9DF93FAAE56A2718D06D93 /* RNDecryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = A4010A81DC652387080A7DC122038E72 /* RNDecryptor.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E7988678C81F7CCB95D239375FC6986D /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = C208FCD92FF0DB0C843749A4659AAFD7 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC7CADE416A78A1CD6936018A6695126 /* AFNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DF3425E25E0EAFBE703FA88BEB073733 /* AFNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4FD3A2471CE5BA2EC134509F7D008F3 /* RNCryptorEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = B55CAFDC84405A3F5D548315782C994A /* RNCryptorEngine.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F8F4C0B0173F9B5BA5F161D65DDA1CA4 /* RNCryptor-objc-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 172721C998874A62E5446B81222D85FC /* RNCryptor-objc-dummy.m */; };
+		FD3510FE609ED60229510248CB2D04E9 /* KeychainItemWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BE7D50605EC1F6ACC1DBBC452571AD1 /* KeychainItemWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDC9DA51B1554D81A7D00AFC96F9CFCA /* Spark-SDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CBA61969E8CA5CBA63951FFAB9BC9EB9 /* Spark-SDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDFEB3CF9BC6A6417DBA000B117C661C /* SparkCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 905F02A3122ABBDC3334E01DE828CD5C /* SparkCloud.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5511F24A3C643E224A8EA568C8C5B4E1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CC0CC7436F9EAFED67079CDA8922F63B;
-			remoteInfo = RNCryptor;
-		};
-		6DDF506770C1B4622D68038D9120CA60 /* PBXContainerItemProxy */ = {
+		19423BDE8EA4ECD083ACC7308CBEBCB9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1C3436CEA5C3D39764C5F54374794ECB;
 			remoteInfo = AFNetworking;
 		};
-		AB90BE35C805B36C1CD0A0A8E803D831 /* PBXContainerItemProxy */ = {
+		7826899365A0B0457BE6AB8AC60B6961 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1C3436CEA5C3D39764C5F54374794ECB;
-			remoteInfo = AFNetworking;
-		};
-		E7296F91D80BB24FD056DA2F9E0AF780 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7F54A2673ACF6B9BC650F5619C3824C3;
+			remoteGlobalIDString = EDA572D6FC302B355E94EDC24A1DA893;
 			remoteInfo = "Spark-SDK";
+		};
+		97197C0666DAE915D084BEF1D69FA05E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C3436CEA5C3D39764C5F54374794ECB;
+			remoteInfo = AFNetworking;
+		};
+		F01BE1B3CE4003275C97E7AC256A0763 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBFB6983DA7B2BB1A8577C32FD16C479;
+			remoteInfo = "RNCryptor-objc";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		004D0F343A57698E1F057432031C28A2 /* Spark-SDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Spark-SDK-prefix.pch"; sourceTree = "<group>"; };
-		070DAE1434BC449C52249F0635A0C2F6 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
-		072F968BD65598FBCFA28099AA889961 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
-		0805BE20E8B378E99F70E882D8FB850E /* AFNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AFNetworking.modulemap; sourceTree = "<group>"; };
-		0A7CE6FA5114E02517D98721D6F6BC6F /* Spark-SDK-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Spark-SDK-Bridging-Header.h"; path = "Pod/Classes/Spark-SDK-Bridging-Header.h"; sourceTree = "<group>"; };
-		0B734725971172692FFE0C94589078BB /* SparkCloud.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SparkCloud.m; path = Pod/Classes/SDK/SparkCloud.m; sourceTree = "<group>"; };
+		0CA1F6C01312CC5452F87A26367DE611 /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
 		11367E339E93721523131881EF73C6DB /* Pods-GarageDoorOpenerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GarageDoorOpenerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		131F193319B1BFF11295676F29FAD678 /* Pods-GarageDoorOpenerUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GarageDoorOpenerUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1599A9DA771843D4FB7A0F703B6AFB75 /* Pods-GarageDoorOpenerUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GarageDoorOpenerUITests-resources.sh"; sourceTree = "<group>"; };
-		16C908B45476291D506D3C5F6B11D07F /* RNCryptor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RNCryptor-umbrella.h"; sourceTree = "<group>"; };
 		1704D359E74047810EE4F993DF0C4DE6 /* Pods-GarageDoorOpener-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GarageDoorOpener-acknowledgements.plist"; sourceTree = "<group>"; };
-		2193BE35CFBDECDA4CF9B3DBB2056E30 /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		172721C998874A62E5446B81222D85FC /* RNCryptor-objc-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RNCryptor-objc-dummy.m"; sourceTree = "<group>"; };
+		1819B814121D75D0805CE7552F9525C4 /* Pods_GarageDoorOpenerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GarageDoorOpenerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C58D145B73C8DA7E6FCC550358859BC /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		1E0E72130F18938CB7F52E8ED5A94CC5 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		225AA58BC1ACDE74164F84A8D8EC757C /* Pods-GarageDoorOpener-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GarageDoorOpener-acknowledgements.markdown"; sourceTree = "<group>"; };
-		22F3CC2F14E8E6638B3A1FAB08A193A9 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
-		24A90175C8B18E996C9324F96019297D /* KeychainItemWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KeychainItemWrapper.m; path = Pod/Classes/Helpers/KeychainItemWrapper.m; sourceTree = "<group>"; };
-		27870809287150EE14FE1813DDABAB23 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
-		28600CF072E86ABC6C0ECA2D0825431B /* RNCryptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RNCryptor.h; sourceTree = "<group>"; };
-		297927D6612664752C6E985BCD8809B0 /* SparkSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SparkSession.h; path = Pod/Classes/SDK/SparkSession.h; sourceTree = "<group>"; };
-		29C4E10F7B3EA4FE3F42A3A9B83660CE /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		23D004F971137D0A11196EE956560AC1 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		2794F37C6CA2F3EC6386FC46D2E9AA4E /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		29E4B57DF56D3DB3D79983E49285FCB0 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		29F763A4615DDEAFACFB00D2733526E3 /* Pods-GarageDoorOpenerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GarageDoorOpenerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2B8A1F76E005701746E733F4C3D197BD /* Pods-GarageDoorOpenerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GarageDoorOpenerTests-umbrella.h"; sourceTree = "<group>"; };
-		2BAED7A8A72D3C85064EF8FC75119362 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
-		2DFECB34FD4F6A1EEA06E1B620F755E0 /* EventSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EventSource.m; path = Pod/Classes/Helpers/EventSource.m; sourceTree = "<group>"; };
-		2F55BC4ED63D6CCD8C25686ED85BD567 /* Spark-SDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Spark-SDK.modulemap"; sourceTree = "<group>"; };
-		320449FA5CB81D20516414E28F568C4F /* RNCryptor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RNCryptor.modulemap; sourceTree = "<group>"; };
-		3CA0B46362A18DF351782858AB1EE1A2 /* Pods_GarageDoorOpenerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GarageDoorOpenerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3EF2878655E0F2D55857F4D604736CA1 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
-		4072EC89F050C773A12DE74301E416DF /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		2BE7D50605EC1F6ACC1DBBC452571AD1 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KeychainItemWrapper.h; path = Pod/Classes/Helpers/KeychainItemWrapper.h; sourceTree = "<group>"; };
+		336D613078ABCF3D68AA831350601A59 /* AFNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AFNetworking.modulemap; sourceTree = "<group>"; };
+		3741C26DF49F882300E6A7E427B32950 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		399695B57838204A8692590ACD4F0271 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		3FECBEF4B3BCD78259C8B8F8BCB58D8B /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
 		41073F8DDEF3ECB2A282C140A985A957 /* Pods-GarageDoorOpenerUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GarageDoorOpenerUITests-frameworks.sh"; sourceTree = "<group>"; };
-		44F755390C3F1C666487CB8E158BC101 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		42F1B355069973CA1B5307CF0D892484 /* AFImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageDownloader.h; path = "UIKit+AFNetworking/AFImageDownloader.h"; sourceTree = "<group>"; };
+		44F5F26A22D79FDDBC769B8F56D705F4 /* SparkEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SparkEvent.h; path = Pod/Classes/SDK/SparkEvent.h; sourceTree = "<group>"; };
 		458E8C479D6E4917B1D7E0E685CCC920 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4804054EF2C1EA814AAF916A2CD74FAF /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
-		480776B35B1CE3DCC4FC04B129D1A0F4 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
-		4B15FFA42FF83A52D53CF4FBEF667241 /* Spark-SDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Spark-SDK-umbrella.h"; sourceTree = "<group>"; };
-		4CBC5E0A04AD0872652FBC88684DD1CB /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
-		4F30D811CD52D6FFE9572A7AE43F4A3D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FDC615577CD684E43AC0662EB666732 /* RNCryptor-objc-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RNCryptor-objc-umbrella.h"; sourceTree = "<group>"; };
+		500BBA0079114340B7D46AF7871D8042 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50A20AAF4417B46E656BECA2B83904F6 /* Pods-GarageDoorOpenerUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GarageDoorOpenerUITests-dummy.m"; sourceTree = "<group>"; };
-		5331EBFE9465018A7E71DFD1FBD647D5 /* Spark-SDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Spark-SDK-dummy.m"; sourceTree = "<group>"; };
+		51355BDAC6A0E9E61EE2233D249B2B14 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		54321294AE39F0CDD52039A4003327D3 /* RNCryptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RNCryptor.h; path = RNCryptor/RNCryptor.h; sourceTree = "<group>"; };
 		5461D992F0D803F0F05DF72B2849301D /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		54F941B96BBC02789A657D3FDF858B23 /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
 		55C739F1127D7E94D9137583AECFCC0E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5C1B5E561BE7C6179976F25BA30583DF /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
-		5C1FD1BF3BC3F28951FFAC0D15D9F117 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59027B645DB349079A8CC68308675C33 /* SparkSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SparkSession.m; path = Pod/Classes/SDK/SparkSession.m; sourceTree = "<group>"; };
+		5A3188716006CE14B69AC4BB610FF4C1 /* Spark-SDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Spark-SDK-dummy.m"; sourceTree = "<group>"; };
+		5E09E164E8D2712257FCADA8E9A76676 /* SparkDevice.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SparkDevice.m; path = Pod/Classes/SDK/SparkDevice.m; sourceTree = "<group>"; };
 		5E0D6FCF76A4740BD4506C9DBFC62CB7 /* Pods-GarageDoorOpenerTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GarageDoorOpenerTests-resources.sh"; sourceTree = "<group>"; };
+		6061EF366CA8E2C4F05139C629650200 /* Spark_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spark_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60A7EBE532D62CE9D83AFB806B0279EE /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		61293F7018641AD0EFE0DBA51B3EF3BF /* KeychainItemWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KeychainItemWrapper.m; path = Pod/Classes/Helpers/KeychainItemWrapper.m; sourceTree = "<group>"; };
 		658297447C00F4A986EBCA16AE9D3514 /* Pods-GarageDoorOpener-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GarageDoorOpener-resources.sh"; sourceTree = "<group>"; };
+		662385C2B8F0E6FEDFFBDD6CC047A413 /* Spark-SDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Spark-SDK.h"; path = "Pod/Classes/Spark-SDK.h"; sourceTree = "<group>"; };
+		66B37A44EAC3EB5C3FD2DAEB6F832FEC /* RNCryptor-objc.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "RNCryptor-objc.modulemap"; sourceTree = "<group>"; };
 		67039143628472F2FB128E30F24C03F2 /* Pods-GarageDoorOpener.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GarageDoorOpener.release.xcconfig"; sourceTree = "<group>"; };
-		699F5927E78CA6F9085A94A9AFEA5B66 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 		6AF165546660F6F50E8E35B98C6E1DD6 /* Pods-GarageDoorOpener-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GarageDoorOpener-umbrella.h"; sourceTree = "<group>"; };
+		6E2D3B4386B11CE7B624BA931756F869 /* SparkCloud.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SparkCloud.h; path = Pod/Classes/SDK/SparkCloud.h; sourceTree = "<group>"; };
+		6E8E2BC66C5C216CE4ACF68ACEB21866 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
 		7040EF5FA00D5DE033EE3ECBE59D4A2B /* Pods-GarageDoorOpenerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GarageDoorOpenerUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		729BAF67AF61F73CB1896A8A330750DF /* SparkEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SparkEvent.m; path = Pod/Classes/SDK/SparkEvent.m; sourceTree = "<group>"; };
-		72F5A34F58313FE30AC3A905110B171F /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
-		7BA50D9247169F60D45B4FA799A13122 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
-		7D70551B8D9707D6DF9A227D0C0433C5 /* Spark_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spark_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7437C62B8447131018EE781EC86D1BD8 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		79D6526C65729FB953E7954DEF35DDCE /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+AFNetworking.h"; path = "UIKit+AFNetworking/UIImage+AFNetworking.h"; sourceTree = "<group>"; };
+		7CB7E091A5E8E431E8C73D6870A355F2 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
 		7E010CE5E06AEA2AA11A8C247F30969D /* Pods-GarageDoorOpenerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GarageDoorOpenerTests.debug.xcconfig"; sourceTree = "<group>"; };
-		7F8923966C1D1E7F35C89BA7FC6F9930 /* Spark-SDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Spark-SDK.xcconfig"; sourceTree = "<group>"; };
-		81686BFF78B36F0DBFF22B85185098E1 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
-		81E170C783B65C3A84E5C56D20CBA54F /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
-		84AAF7372DBDD9AC33D31DEA7E27283A /* Pods_GarageDoorOpenerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GarageDoorOpenerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		85732425EDF70712F8083D80E8B15D4C /* AFImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageDownloader.h; path = "UIKit+AFNetworking/AFImageDownloader.h"; sourceTree = "<group>"; };
-		875875AE139CB4450E7FEA55FB1488F4 /* RNCryptor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RNCryptor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		89BCE50BFD9B2588513D4B97ACD52B49 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
-		8A7A4DF887064E52DAB9DD079FDBC0DB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		815CC37BE5FE3CADA595887BAB41DEF3 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		825B571CFACD11AE50740B5E155F11F6 /* Pods_GarageDoorOpenerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GarageDoorOpenerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83C7FB320D5B7F3E2F694D6D8A1D1F8C /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		842B98234D98737086FD0757448EEEA6 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
+		84E43CD95C8AF8AC31BDBBF8632F7D89 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		86B2FB7143019F1996239EBC17CAF9BA /* Spark-SDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Spark-SDK-prefix.pch"; sourceTree = "<group>"; };
+		8B1FE44966A26A37247972931DDE0A4D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C1F572B66FF44B008BBD9DBE88F1103 /* Pods-GarageDoorOpenerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GarageDoorOpenerTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8CB0CBBC2C0E6341FC71486900DD0241 /* RNCryptor_objc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RNCryptor_objc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CC21F5F5F274B97579682B439A157DB /* Spark-SDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Spark-SDK.xcconfig"; sourceTree = "<group>"; };
 		8EF139D3016A3EC169A4B9F90049B98D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		8F8C36FA50F85620D94097081F44FA7A /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
 		902CC55BC77E1A537C945FF9F06DA9C4 /* Pods-GarageDoorOpenerUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GarageDoorOpenerUITests-umbrella.h"; sourceTree = "<group>"; };
+		905F02A3122ABBDC3334E01DE828CD5C /* SparkCloud.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SparkCloud.m; path = Pod/Classes/SDK/SparkCloud.m; sourceTree = "<group>"; };
+		90B1BFF12F07ED91B001037A4ACA1BCD /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91289CB00AF337302C907499F970EBFA /* Pods-GarageDoorOpener.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GarageDoorOpener.modulemap"; sourceTree = "<group>"; };
+		918EDA98B2FD6A70116240B7A13E8521 /* RNCryptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RNCryptor.m; path = RNCryptor/RNCryptor.m; sourceTree = "<group>"; };
+		91DB39F02D90F55E16161CCC8174108C /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAutoPurgingImageCache.h; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.h"; sourceTree = "<group>"; };
+		91EC7B5D189DF7D3B10151B4FA95BCB3 /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95B1CB648420AF8A23B0D0BD08C36782 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
 		95BA171B2EB36F1CC77262296DEED95F /* Pods-GarageDoorOpener.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GarageDoorOpener.debug.xcconfig"; sourceTree = "<group>"; };
 		966CEDBAD8830267EA195E9A17A5282A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9B06C86D0901214D597C0F8A92D653A0 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
-		9F86A9526538BC17D6B0E59598B54AE0 /* EventSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EventSource.h; path = Pod/Classes/Helpers/EventSource.h; sourceTree = "<group>"; };
+		99297AFD164F3204932B375889293E23 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		9BFA9FE206E5BFC5AC1BD1614B55217D /* Pods_GarageDoorOpener.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GarageDoorOpener.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A135E99C0BE61485B9B78C8A199D77D8 /* Pods-GarageDoorOpenerUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GarageDoorOpenerUITests.modulemap"; sourceTree = "<group>"; };
+		A2BFBFD806B8A5B24289B24F16BA85D7 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
 		A3B0D963CADE3164A77EC5C631331B40 /* Pods-GarageDoorOpenerTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GarageDoorOpenerTests-frameworks.sh"; sourceTree = "<group>"; };
-		A421754DE2E8ADECC8F88CAA0953522B /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		A4010A81DC652387080A7DC122038E72 /* RNDecryptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RNDecryptor.m; path = RNCryptor/RNDecryptor.m; sourceTree = "<group>"; };
 		A5C52DCDC6BA09D3A94D5F985B2483DB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A6BE19D0541E82387A171D75CD8D5D44 /* RNCryptor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RNCryptor-prefix.pch"; sourceTree = "<group>"; };
 		A78E356E7FD14E0E2913DF7D4EA1B399 /* Pods-GarageDoorOpenerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GarageDoorOpenerTests.release.xcconfig"; sourceTree = "<group>"; };
 		A803227BB6F23422CEE1025CC4D3E509 /* Pods-GarageDoorOpener-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GarageDoorOpener-dummy.m"; sourceTree = "<group>"; };
-		AA40D51E944C495563F4DEB61CAA0214 /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+AFNetworking.h"; path = "UIKit+AFNetworking/UIImage+AFNetworking.h"; sourceTree = "<group>"; };
-		AB088E70F7A33A3B08B9F3A07DA16729 /* RNCryptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RNCryptor.swift; sourceTree = "<group>"; };
-		AB64B06134587209BA47C9BD364E65F1 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
-		ABC165571323220759D9E9D8B8EC0AED /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
-		ACE498983B4C12C3956579EF2832655E /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
-		ADC345BE6EB65B3AF9B989ABEF559D9C /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
-		ADC5D322F62F2945E45EEDF90E30AAC8 /* SparkEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SparkEvent.h; path = Pod/Classes/SDK/SparkEvent.h; sourceTree = "<group>"; };
-		B49989B45CA996A6F7A8F70440EDCD99 /* SparkSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SparkSession.m; path = Pod/Classes/SDK/SparkSession.m; sourceTree = "<group>"; };
+		A8B40508B92FFCBAC0B6AB044CC6F754 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		A8D4B6D9F968AA8206187E6CE453F8FE /* SparkSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SparkSession.h; path = Pod/Classes/SDK/SparkSession.h; sourceTree = "<group>"; };
+		A96D68CD1CC945EAF1711FE80887C146 /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
+		AC85CB8C97880B7CA17C181168E547AD /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAutoPurgingImageCache.m; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.m"; sourceTree = "<group>"; };
+		B55CAFDC84405A3F5D548315782C994A /* RNCryptorEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RNCryptorEngine.h; path = RNCryptor/RNCryptorEngine.h; sourceTree = "<group>"; };
+		B55E7036308FDEF630348BC24FA966D4 /* EventSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EventSource.h; path = Pod/Classes/Helpers/EventSource.h; sourceTree = "<group>"; };
+		B589CDD3241D6BB9E0472543121EF2E8 /* RNDecryptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RNDecryptor.h; path = RNCryptor/RNDecryptor.h; sourceTree = "<group>"; };
 		B62B417D20EBBBD7704E802AD3F1970D /* Pods-GarageDoorOpenerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GarageDoorOpenerTests-dummy.m"; sourceTree = "<group>"; };
 		B942BB52C8A53842ACBD56F3075CFB60 /* Pods-GarageDoorOpener-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GarageDoorOpener-frameworks.sh"; sourceTree = "<group>"; };
-		BFFA19939A38F57ED7009A716ADDAF11 /* AFNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-umbrella.h"; sourceTree = "<group>"; };
-		C4B98248318A077111C059E38FC37C28 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		BD9CFFF9E119275AEAA9914FA13D7035 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		BDF18AF065B30DEB2D01B73DFDF3B885 /* RNEncryptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RNEncryptor.h; path = RNCryptor/RNEncryptor.h; sourceTree = "<group>"; };
+		C04EFD7EB49EA35820B2313609FF90D4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C208FCD92FF0DB0C843749A4659AAFD7 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
 		C53988B41BFD74EE13612A4293F09CD6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
-		C6DD1B7788183AD73CFCA64C714F09F8 /* Pods_GarageDoorOpener.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GarageDoorOpener.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9EC046EEE00CAE53FC620929325D144 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		CEE7BAE593B36A4DC881651249742B64 /* SparkDevice.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SparkDevice.m; path = Pod/Classes/SDK/SparkDevice.m; sourceTree = "<group>"; };
-		D50310B681F54C17E0578A42CD68BD6D /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
-		D509B8D52C05F7FD943F0AEB2FAAFE91 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DBF86BC3B15AA82B8853E6A77583B40F /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAutoPurgingImageCache.m; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.m"; sourceTree = "<group>"; };
+		CBA61969E8CA5CBA63951FFAB9BC9EB9 /* Spark-SDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Spark-SDK-umbrella.h"; sourceTree = "<group>"; };
+		CF225B79589324CA3553528AE3872F0F /* RNCryptor+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RNCryptor+Private.h"; path = "RNCryptor/RNCryptor+Private.h"; sourceTree = "<group>"; };
+		D2324C2448EBE9D7596A3333A150F0D4 /* RNCryptor-objc-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RNCryptor-objc-prefix.pch"; sourceTree = "<group>"; };
+		D25C2EE80DDFD5C1E5460B0CE3426E6B /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		D700CB79600B4745E70ED39584497175 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
 		DD54C2BAE3555E6B7432CD3E0F1B0226 /* Pods-GarageDoorOpenerUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GarageDoorOpenerUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		DF3425E25E0EAFBE703FA88BEB073733 /* AFNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-umbrella.h"; sourceTree = "<group>"; };
+		E07D4D267B7F6A6D0EAB9C555C6064A9 /* RNCryptorEngine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RNCryptorEngine.m; path = RNCryptor/RNCryptorEngine.m; sourceTree = "<group>"; };
 		E098DE86ED811B6D87786B436462D468 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		E2395549FE4EF6AD1F0315B4FBF3C588 /* RNCryptor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RNCryptor-dummy.m"; sourceTree = "<group>"; };
-		E376B368E9FC7B70FADB61BD479E66A3 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
-		E3969AF5D6606F6D8BE956A8290AD5AB /* RNCryptor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RNCryptor.xcconfig; sourceTree = "<group>"; };
-		E64A9EE66920A6589D5739C40F528871 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
-		EC644740E8836FCB334852AF243CCB21 /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAutoPurgingImageCache.h; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.h"; sourceTree = "<group>"; };
-		F089E1BD32BFEA649DE8F7009F0BF382 /* SparkDevice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SparkDevice.h; path = Pod/Classes/SDK/SparkDevice.h; sourceTree = "<group>"; };
-		F2BFBAD0609A1D264B329D909DBFB6AB /* Spark-SDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Spark-SDK.h"; path = "Pod/Classes/Spark-SDK.h"; sourceTree = "<group>"; };
+		E23FE6F3425F0A014341B80D18018462 /* AFImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageDownloader.m; path = "UIKit+AFNetworking/AFImageDownloader.m"; sourceTree = "<group>"; };
+		E79FAB405E92ABC46EA246D2DD67449B /* SparkDevice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SparkDevice.h; path = Pod/Classes/SDK/SparkDevice.h; sourceTree = "<group>"; };
+		E7E5A2695E85F7AE65E81572EB04C783 /* EventSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EventSource.m; path = Pod/Classes/Helpers/EventSource.m; sourceTree = "<group>"; };
+		EAFAE8A8FB1A59214C1F09FBA38A45D2 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		EB501302330B96853306B1C2263EE868 /* RNEncryptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RNEncryptor.m; path = RNCryptor/RNEncryptor.m; sourceTree = "<group>"; };
+		EC40EE8539D8FE1975A669F03ECD7849 /* RNCryptor-objc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "RNCryptor-objc.xcconfig"; sourceTree = "<group>"; };
+		ED81F2F99FF9EF7ACC048D2C9B691D3E /* SparkEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SparkEvent.m; path = Pod/Classes/SDK/SparkEvent.m; sourceTree = "<group>"; };
+		F628D8015B9AFFEE7A309B4552AAC304 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
 		F6EC7597E677B96CB62DC1BEBE973BCF /* Pods-GarageDoorOpenerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GarageDoorOpenerTests.modulemap"; sourceTree = "<group>"; };
-		F863FC70260F7520BD1D186640879657 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KeychainItemWrapper.h; path = Pod/Classes/Helpers/KeychainItemWrapper.h; sourceTree = "<group>"; };
-		FB26725E60F19EFF6BD0681ABF5A96EE /* SparkCloud.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SparkCloud.h; path = Pod/Classes/SDK/SparkCloud.h; sourceTree = "<group>"; };
-		FBE6C6752AFFB941AE62974C46BE0C36 /* AFImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageDownloader.m; path = "UIKit+AFNetworking/AFImageDownloader.m"; sourceTree = "<group>"; };
+		FEBD3D1A6E84FB8D7990A1798F539438 /* Spark-SDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Spark-SDK.modulemap"; sourceTree = "<group>"; };
+		FEC4DB7E5938566BB154E6AC4931EDBC /* Spark-SDK-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Spark-SDK-Bridging-Header.h"; path = "Pod/Classes/Spark-SDK-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		40DCC1A1C9C5BDE6F5DC5B4907E5A5C2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0061931E274AA7490FB961088D4E1B91 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		72A050C1740DBC4695C4F4980A174F1C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				20F6E998BFDFB02D681BF0EAB1AD7A59 /* AFNetworking.framework in Frameworks */,
-				61F0B0C2AE09715EC6B67E97FC724DD8 /* Foundation.framework in Frameworks */,
-				01CA06ECD3EA234AAB3908FDBD0F623C /* Security.framework in Frameworks */,
-				6D999ACFEB5522688393DE1EFD41A002 /* SystemConfiguration.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9A037E6C1A94A2A36EECD1B506B4AECF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -255,11 +251,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9DFCB7E3D20364BD0065E377AA0930EA /* Frameworks */ = {
+		9D3298058E6A872E4A9F43D563A68F4C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E5827C47228AED513444310F3BE3392 /* Foundation.framework in Frameworks */,
+				513104411A6DB65D93AC3CDDCA12682F /* AFNetworking.framework in Frameworks */,
+				C10F6E94106DEFC41C7D1E051584A186 /* Foundation.framework in Frameworks */,
+				0D2075D78CC5A12ABC0FC4984331E96B /* Security.framework in Frameworks */,
+				12B1445ECB257C80332B72608E4A205D /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,21 +282,73 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F128501308816DD7485C7E12AB8DF06E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C3519C80B821A7C0676D6CD479C2DDD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE397D267431057D6F478A15E259BF54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B86F7CB7EA259EC027F099939B231B6D /* Foundation.framework in Frameworks */,
+				CFA4CDE408F9B43E6155936382A2C999 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0272C29FC1AE124EB001B95D1D273F84 /* AFNetworking */ = {
+		0E5597933D0EF16BBA9E682DAC29CF13 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				480776B35B1CE3DCC4FC04B129D1A0F4 /* AFNetworking.h */,
-				33B4F6F7470EC7FF8720B2705466AE61 /* NSURLSession */,
-				3A86F155CE8BAF86442AFB98BA98DBC6 /* Reachability */,
-				D43C1188A3E2046D2F6C36A318A0E50D /* Security */,
-				932A882A65699637D7571894F8AD11D6 /* Serialization */,
-				5581AA17973C74621D1DC3602DD6E99E /* Support Files */,
-				C5F7D98B080DCB2DD461C2CA6B2CA4F4 /* UIKit */,
+				336D613078ABCF3D68AA831350601A59 /* AFNetworking.modulemap */,
+				A96D68CD1CC945EAF1711FE80887C146 /* AFNetworking.xcconfig */,
+				91EC7B5D189DF7D3B10151B4FA95BCB3 /* AFNetworking-dummy.m */,
+				8F8C36FA50F85620D94097081F44FA7A /* AFNetworking-prefix.pch */,
+				DF3425E25E0EAFBE703FA88BEB073733 /* AFNetworking-umbrella.h */,
+				8B1FE44966A26A37247972931DDE0A4D /* Info.plist */,
 			);
-			path = AFNetworking;
+			name = "Support Files";
+			path = "../Target Support Files/AFNetworking";
+			sourceTree = "<group>";
+		};
+		0EDEC31839AF6B1360AE1548AA8EEB3B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				500BBA0079114340B7D46AF7871D8042 /* Info.plist */,
+				66B37A44EAC3EB5C3FD2DAEB6F832FEC /* RNCryptor-objc.modulemap */,
+				EC40EE8539D8FE1975A669F03ECD7849 /* RNCryptor-objc.xcconfig */,
+				172721C998874A62E5446B81222D85FC /* RNCryptor-objc-dummy.m */,
+				D2324C2448EBE9D7596A3333A150F0D4 /* RNCryptor-objc-prefix.pch */,
+				4FDC615577CD684E43AC0662EB666732 /* RNCryptor-objc-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RNCryptor-objc";
+			sourceTree = "<group>";
+		};
+		12B43B87D8E4982AE28E8468A7FF5D91 /* Spark-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				662385C2B8F0E6FEDFFBDD6CC047A413 /* Spark-SDK.h */,
+				FEC4DB7E5938566BB154E6AC4931EDBC /* Spark-SDK-Bridging-Header.h */,
+				25699D6B2D157278D0E647EC6BDEBC19 /* Helpers */,
+				A8BA2ABC69F3AAE00ABA54511EBDFA3B /* SDK */,
+				77F70019999236E454A14015324E70BD /* Support Files */,
+			);
+			path = "Spark-SDK";
+			sourceTree = "<group>";
+		};
+		1C29AD81C8D9BEF167FE97A92DFFEB67 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				3FECBEF4B3BCD78259C8B8F8BCB58D8B /* AFNetworkReachabilityManager.h */,
+				3741C26DF49F882300E6A7E427B32950 /* AFNetworkReachabilityManager.m */,
+			);
+			name = Reachability;
 			sourceTree = "<group>";
 		};
 		1EADF5DA00D70829260480C6FB00ECA1 /* Targets Support Files */ = {
@@ -310,24 +361,15 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		33B4F6F7470EC7FF8720B2705466AE61 /* NSURLSession */ = {
+		25699D6B2D157278D0E647EC6BDEBC19 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				89BCE50BFD9B2588513D4B97ACD52B49 /* AFHTTPSessionManager.h */,
-				4072EC89F050C773A12DE74301E416DF /* AFHTTPSessionManager.m */,
-				81E170C783B65C3A84E5C56D20CBA54F /* AFURLSessionManager.h */,
-				D50310B681F54C17E0578A42CD68BD6D /* AFURLSessionManager.m */,
+				B55E7036308FDEF630348BC24FA966D4 /* EventSource.h */,
+				E7E5A2695E85F7AE65E81572EB04C783 /* EventSource.m */,
+				2BE7D50605EC1F6ACC1DBBC452571AD1 /* KeychainItemWrapper.h */,
+				61293F7018641AD0EFE0DBA51B3EF3BF /* KeychainItemWrapper.m */,
 			);
-			name = NSURLSession;
-			sourceTree = "<group>";
-		};
-		3A86F155CE8BAF86442AFB98BA98DBC6 /* Reachability */ = {
-			isa = PBXGroup;
-			children = (
-				9B06C86D0901214D597C0F8A92D653A0 /* AFNetworkReachabilityManager.h */,
-				ACE498983B4C12C3956579EF2832655E /* AFNetworkReachabilityManager.m */,
-			);
-			name = Reachability;
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		4444428BA1852862500CEBA5DB3BD0BA /* Pods-GarageDoorOpenerTests */ = {
@@ -348,54 +390,50 @@
 			path = "Target Support Files/Pods-GarageDoorOpenerTests";
 			sourceTree = "<group>";
 		};
-		52B648EA43948BBB099D72062080B2D9 /* SDK */ = {
+		4DED3F0A267C6E4D20015B70F8B898CD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FB26725E60F19EFF6BD0681ABF5A96EE /* SparkCloud.h */,
-				0B734725971172692FFE0C94589078BB /* SparkCloud.m */,
-				F089E1BD32BFEA649DE8F7009F0BF382 /* SparkDevice.h */,
-				CEE7BAE593B36A4DC881651249742B64 /* SparkDevice.m */,
-				ADC5D322F62F2945E45EEDF90E30AAC8 /* SparkEvent.h */,
-				729BAF67AF61F73CB1896A8A330750DF /* SparkEvent.m */,
-				297927D6612664752C6E985BCD8809B0 /* SparkSession.h */,
-				B49989B45CA996A6F7A8F70440EDCD99 /* SparkSession.m */,
+				90B1BFF12F07ED91B001037A4ACA1BCD /* AFNetworking.framework */,
+				9BFA9FE206E5BFC5AC1BD1614B55217D /* Pods_GarageDoorOpener.framework */,
+				825B571CFACD11AE50740B5E155F11F6 /* Pods_GarageDoorOpenerTests.framework */,
+				1819B814121D75D0805CE7552F9525C4 /* Pods_GarageDoorOpenerUITests.framework */,
+				8CB0CBBC2C0E6341FC71486900DD0241 /* RNCryptor_objc.framework */,
+				6061EF366CA8E2C4F05139C629650200 /* Spark_SDK.framework */,
 			);
-			name = SDK;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		5581AA17973C74621D1DC3602DD6E99E /* Support Files */ = {
+		5996C6FB106039F67291ACF335CA9A16 /* Security */ = {
 			isa = PBXGroup;
 			children = (
-				0805BE20E8B378E99F70E882D8FB850E /* AFNetworking.modulemap */,
-				4CBC5E0A04AD0872652FBC88684DD1CB /* AFNetworking.xcconfig */,
-				54F941B96BBC02789A657D3FDF858B23 /* AFNetworking-dummy.m */,
-				2193BE35CFBDECDA4CF9B3DBB2056E30 /* AFNetworking-prefix.pch */,
-				BFFA19939A38F57ED7009A716ADDAF11 /* AFNetworking-umbrella.h */,
-				8A7A4DF887064E52DAB9DD079FDBC0DB /* Info.plist */,
+				83C7FB320D5B7F3E2F694D6D8A1D1F8C /* AFSecurityPolicy.h */,
+				7437C62B8447131018EE781EC86D1BD8 /* AFSecurityPolicy.m */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/AFNetworking";
+			name = Security;
 			sourceTree = "<group>";
 		};
-		61946A45E9644C8FEEA3BF2E5E52C2B8 /* Helpers */ = {
+		624F805E0D93CB2D1360C4163D4F1A6E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9F86A9526538BC17D6B0E59598B54AE0 /* EventSource.h */,
-				2DFECB34FD4F6A1EEA06E1B620F755E0 /* EventSource.m */,
-				F863FC70260F7520BD1D186640879657 /* KeychainItemWrapper.h */,
-				24A90175C8B18E996C9324F96019297D /* KeychainItemWrapper.m */,
-			);
-			name = Helpers;
-			sourceTree = "<group>";
-		};
-		73193F7A6E996F39FE5D536A34D80759 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0272C29FC1AE124EB001B95D1D273F84 /* AFNetworking */,
-				C6A422566EF57CA55664115AFC602720 /* RNCryptor */,
-				C148207FCAACE39BCC471E915B2CD0D5 /* Spark-SDK */,
+				C702D1103A8493874C6D674AE44C0D43 /* AFNetworking */,
+				97061DC69F0267809CCA358AE736D6EB /* RNCryptor-objc */,
+				12B43B87D8E4982AE28E8468A7FF5D91 /* Spark-SDK */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		77F70019999236E454A14015324E70BD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C04EFD7EB49EA35820B2313609FF90D4 /* Info.plist */,
+				FEBD3D1A6E84FB8D7990A1798F539438 /* Spark-SDK.modulemap */,
+				8CC21F5F5F274B97579682B439A157DB /* Spark-SDK.xcconfig */,
+				5A3188716006CE14B69AC4BB610FF4C1 /* Spark-SDK-dummy.m */,
+				86B2FB7143019F1996239EBC17CAF9BA /* Spark-SDK-prefix.pch */,
+				CBA61969E8CA5CBA63951FFAB9BC9EB9 /* Spark-SDK-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Spark-SDK";
 			sourceTree = "<group>";
 		};
 		7C28C5A53954FE8C9F75336705EBC8BC /* Pods-GarageDoorOpenerUITests */ = {
@@ -416,15 +454,37 @@
 			path = "Target Support Files/Pods-GarageDoorOpenerUITests";
 			sourceTree = "<group>";
 		};
+		7CD2AAD125839E2ADF22AEF74D7528DC /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				EAFAE8A8FB1A59214C1F09FBA38A45D2 /* AFURLRequestSerialization.h */,
+				2794F37C6CA2F3EC6386FC46D2E9AA4E /* AFURLRequestSerialization.m */,
+				95B1CB648420AF8A23B0D0BD08C36782 /* AFURLResponseSerialization.h */,
+				1C58D145B73C8DA7E6FCC550358859BC /* AFURLResponseSerialization.m */,
+			);
+			name = Serialization;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				EFC8D1216166DE80CF4A6175E6193664 /* Frameworks */,
-				73193F7A6E996F39FE5D536A34D80759 /* Pods */,
-				9F7F8DFE5EB4A2F9100BF318DE16CE69 /* Products */,
+				624F805E0D93CB2D1360C4163D4F1A6E /* Pods */,
+				4DED3F0A267C6E4D20015B70F8B898CD /* Products */,
 				1EADF5DA00D70829260480C6FB00ECA1 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		856BE04AA93549F07B4A35B05ACDAE9B /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				F628D8015B9AFFEE7A309B4552AAC304 /* AFHTTPSessionManager.h */,
+				A8B40508B92FFCBAC0B6AB044CC6F754 /* AFHTTPSessionManager.m */,
+				0CA1F6C01312CC5452F87A26367DE611 /* AFURLSessionManager.h */,
+				A2BFBFD806B8A5B24289B24F16BA85D7 /* AFURLSessionManager.m */,
+			);
+			name = NSURLSession;
 			sourceTree = "<group>";
 		};
 		893DA9D9E6EF1BF5A3AB93A699248C40 /* iOS */ = {
@@ -439,114 +499,50 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		932A882A65699637D7571894F8AD11D6 /* Serialization */ = {
+		97061DC69F0267809CCA358AE736D6EB /* RNCryptor-objc */ = {
 			isa = PBXGroup;
 			children = (
-				5C1B5E561BE7C6179976F25BA30583DF /* AFURLRequestSerialization.h */,
-				072F968BD65598FBCFA28099AA889961 /* AFURLRequestSerialization.m */,
-				29C4E10F7B3EA4FE3F42A3A9B83660CE /* AFURLResponseSerialization.h */,
-				070DAE1434BC449C52249F0635A0C2F6 /* AFURLResponseSerialization.m */,
+				54321294AE39F0CDD52039A4003327D3 /* RNCryptor.h */,
+				918EDA98B2FD6A70116240B7A13E8521 /* RNCryptor.m */,
+				CF225B79589324CA3553528AE3872F0F /* RNCryptor+Private.h */,
+				B55CAFDC84405A3F5D548315782C994A /* RNCryptorEngine.h */,
+				E07D4D267B7F6A6D0EAB9C555C6064A9 /* RNCryptorEngine.m */,
+				B589CDD3241D6BB9E0472543121EF2E8 /* RNDecryptor.h */,
+				A4010A81DC652387080A7DC122038E72 /* RNDecryptor.m */,
+				BDF18AF065B30DEB2D01B73DFDF3B885 /* RNEncryptor.h */,
+				EB501302330B96853306B1C2263EE868 /* RNEncryptor.m */,
+				0EDEC31839AF6B1360AE1548AA8EEB3B /* Support Files */,
 			);
-			name = Serialization;
+			path = "RNCryptor-objc";
 			sourceTree = "<group>";
 		};
-		9F7F8DFE5EB4A2F9100BF318DE16CE69 /* Products */ = {
+		A8BA2ABC69F3AAE00ABA54511EBDFA3B /* SDK */ = {
 			isa = PBXGroup;
 			children = (
-				5C1FD1BF3BC3F28951FFAC0D15D9F117 /* AFNetworking.framework */,
-				C6DD1B7788183AD73CFCA64C714F09F8 /* Pods_GarageDoorOpener.framework */,
-				3CA0B46362A18DF351782858AB1EE1A2 /* Pods_GarageDoorOpenerTests.framework */,
-				84AAF7372DBDD9AC33D31DEA7E27283A /* Pods_GarageDoorOpenerUITests.framework */,
-				875875AE139CB4450E7FEA55FB1488F4 /* RNCryptor.framework */,
-				7D70551B8D9707D6DF9A227D0C0433C5 /* Spark_SDK.framework */,
+				6E2D3B4386B11CE7B624BA931756F869 /* SparkCloud.h */,
+				905F02A3122ABBDC3334E01DE828CD5C /* SparkCloud.m */,
+				E79FAB405E92ABC46EA246D2DD67449B /* SparkDevice.h */,
+				5E09E164E8D2712257FCADA8E9A76676 /* SparkDevice.m */,
+				44F5F26A22D79FDDBC769B8F56D705F4 /* SparkEvent.h */,
+				ED81F2F99FF9EF7ACC048D2C9B691D3E /* SparkEvent.m */,
+				A8D4B6D9F968AA8206187E6CE453F8FE /* SparkSession.h */,
+				59027B645DB349079A8CC68308675C33 /* SparkSession.m */,
 			);
-			name = Products;
+			name = SDK;
 			sourceTree = "<group>";
 		};
-		A28724660BA4A616C14EEDFF74DE44F3 /* Support Files */ = {
+		C702D1103A8493874C6D674AE44C0D43 /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
-				4F30D811CD52D6FFE9572A7AE43F4A3D /* Info.plist */,
-				2F55BC4ED63D6CCD8C25686ED85BD567 /* Spark-SDK.modulemap */,
-				7F8923966C1D1E7F35C89BA7FC6F9930 /* Spark-SDK.xcconfig */,
-				5331EBFE9465018A7E71DFD1FBD647D5 /* Spark-SDK-dummy.m */,
-				004D0F343A57698E1F057432031C28A2 /* Spark-SDK-prefix.pch */,
-				4B15FFA42FF83A52D53CF4FBEF667241 /* Spark-SDK-umbrella.h */,
+				C208FCD92FF0DB0C843749A4659AAFD7 /* AFNetworking.h */,
+				856BE04AA93549F07B4A35B05ACDAE9B /* NSURLSession */,
+				1C29AD81C8D9BEF167FE97A92DFFEB67 /* Reachability */,
+				5996C6FB106039F67291ACF335CA9A16 /* Security */,
+				7CD2AAD125839E2ADF22AEF74D7528DC /* Serialization */,
+				0E5597933D0EF16BBA9E682DAC29CF13 /* Support Files */,
+				FFC26CF2CFDC77EC74C56E3AAB83BD14 /* UIKit */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Spark-SDK";
-			sourceTree = "<group>";
-		};
-		C148207FCAACE39BCC471E915B2CD0D5 /* Spark-SDK */ = {
-			isa = PBXGroup;
-			children = (
-				F2BFBAD0609A1D264B329D909DBFB6AB /* Spark-SDK.h */,
-				0A7CE6FA5114E02517D98721D6F6BC6F /* Spark-SDK-Bridging-Header.h */,
-				61946A45E9644C8FEEA3BF2E5E52C2B8 /* Helpers */,
-				52B648EA43948BBB099D72062080B2D9 /* SDK */,
-				A28724660BA4A616C14EEDFF74DE44F3 /* Support Files */,
-			);
-			path = "Spark-SDK";
-			sourceTree = "<group>";
-		};
-		C5F7D98B080DCB2DD461C2CA6B2CA4F4 /* UIKit */ = {
-			isa = PBXGroup;
-			children = (
-				EC644740E8836FCB334852AF243CCB21 /* AFAutoPurgingImageCache.h */,
-				DBF86BC3B15AA82B8853E6A77583B40F /* AFAutoPurgingImageCache.m */,
-				85732425EDF70712F8083D80E8B15D4C /* AFImageDownloader.h */,
-				FBE6C6752AFFB941AE62974C46BE0C36 /* AFImageDownloader.m */,
-				E64A9EE66920A6589D5739C40F528871 /* AFNetworkActivityIndicatorManager.h */,
-				3EF2878655E0F2D55857F4D604736CA1 /* AFNetworkActivityIndicatorManager.m */,
-				A421754DE2E8ADECC8F88CAA0953522B /* UIActivityIndicatorView+AFNetworking.h */,
-				81686BFF78B36F0DBFF22B85185098E1 /* UIActivityIndicatorView+AFNetworking.m */,
-				22F3CC2F14E8E6638B3A1FAB08A193A9 /* UIButton+AFNetworking.h */,
-				ADC345BE6EB65B3AF9B989ABEF559D9C /* UIButton+AFNetworking.m */,
-				AA40D51E944C495563F4DEB61CAA0214 /* UIImage+AFNetworking.h */,
-				4804054EF2C1EA814AAF916A2CD74FAF /* UIImageView+AFNetworking.h */,
-				699F5927E78CA6F9085A94A9AFEA5B66 /* UIImageView+AFNetworking.m */,
-				C4B98248318A077111C059E38FC37C28 /* UIKit+AFNetworking.h */,
-				2BAED7A8A72D3C85064EF8FC75119362 /* UIProgressView+AFNetworking.h */,
-				E376B368E9FC7B70FADB61BD479E66A3 /* UIProgressView+AFNetworking.m */,
-				72F5A34F58313FE30AC3A905110B171F /* UIRefreshControl+AFNetworking.h */,
-				AB64B06134587209BA47C9BD364E65F1 /* UIRefreshControl+AFNetworking.m */,
-				ABC165571323220759D9E9D8B8EC0AED /* UIWebView+AFNetworking.h */,
-				7BA50D9247169F60D45B4FA799A13122 /* UIWebView+AFNetworking.m */,
-			);
-			name = UIKit;
-			sourceTree = "<group>";
-		};
-		C6A422566EF57CA55664115AFC602720 /* RNCryptor */ = {
-			isa = PBXGroup;
-			children = (
-				28600CF072E86ABC6C0ECA2D0825431B /* RNCryptor.h */,
-				AB088E70F7A33A3B08B9F3A07DA16729 /* RNCryptor.swift */,
-				E267E52FC8128D50A447D8ABC07F203A /* Support Files */,
-			);
-			path = RNCryptor;
-			sourceTree = "<group>";
-		};
-		D43C1188A3E2046D2F6C36A318A0E50D /* Security */ = {
-			isa = PBXGroup;
-			children = (
-				27870809287150EE14FE1813DDABAB23 /* AFSecurityPolicy.h */,
-				44F755390C3F1C666487CB8E158BC101 /* AFSecurityPolicy.m */,
-			);
-			name = Security;
-			sourceTree = "<group>";
-		};
-		E267E52FC8128D50A447D8ABC07F203A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D509B8D52C05F7FD943F0AEB2FAAFE91 /* Info.plist */,
-				320449FA5CB81D20516414E28F568C4F /* RNCryptor.modulemap */,
-				E3969AF5D6606F6D8BE956A8290AD5AB /* RNCryptor.xcconfig */,
-				E2395549FE4EF6AD1F0315B4FBF3C588 /* RNCryptor-dummy.m */,
-				A6BE19D0541E82387A171D75CD8D5D44 /* RNCryptor-prefix.pch */,
-				16C908B45476291D506D3C5F6B11D07F /* RNCryptor-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/RNCryptor";
+			path = AFNetworking;
 			sourceTree = "<group>";
 		};
 		EFC8D1216166DE80CF4A6175E6193664 /* Frameworks */ = {
@@ -576,9 +572,52 @@
 			path = "Target Support Files/Pods-GarageDoorOpener";
 			sourceTree = "<group>";
 		};
+		FFC26CF2CFDC77EC74C56E3AAB83BD14 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				91DB39F02D90F55E16161CCC8174108C /* AFAutoPurgingImageCache.h */,
+				AC85CB8C97880B7CA17C181168E547AD /* AFAutoPurgingImageCache.m */,
+				42F1B355069973CA1B5307CF0D892484 /* AFImageDownloader.h */,
+				E23FE6F3425F0A014341B80D18018462 /* AFImageDownloader.m */,
+				842B98234D98737086FD0757448EEEA6 /* AFNetworkActivityIndicatorManager.h */,
+				7CB7E091A5E8E431E8C73D6870A355F2 /* AFNetworkActivityIndicatorManager.m */,
+				51355BDAC6A0E9E61EE2233D249B2B14 /* UIActivityIndicatorView+AFNetworking.h */,
+				6E8E2BC66C5C216CE4ACF68ACEB21866 /* UIActivityIndicatorView+AFNetworking.m */,
+				399695B57838204A8692590ACD4F0271 /* UIButton+AFNetworking.h */,
+				D700CB79600B4745E70ED39584497175 /* UIButton+AFNetworking.m */,
+				79D6526C65729FB953E7954DEF35DDCE /* UIImage+AFNetworking.h */,
+				29E4B57DF56D3DB3D79983E49285FCB0 /* UIImageView+AFNetworking.h */,
+				815CC37BE5FE3CADA595887BAB41DEF3 /* UIImageView+AFNetworking.m */,
+				BD9CFFF9E119275AEAA9914FA13D7035 /* UIKit+AFNetworking.h */,
+				D25C2EE80DDFD5C1E5460B0CE3426E6B /* UIProgressView+AFNetworking.h */,
+				99297AFD164F3204932B375889293E23 /* UIProgressView+AFNetworking.m */,
+				60A7EBE532D62CE9D83AFB806B0279EE /* UIRefreshControl+AFNetworking.h */,
+				84E43CD95C8AF8AC31BDBBF8632F7D89 /* UIRefreshControl+AFNetworking.m */,
+				23D004F971137D0A11196EE956560AC1 /* UIWebView+AFNetworking.h */,
+				1E0E72130F18938CB7F52E8ED5A94CC5 /* UIWebView+AFNetworking.m */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		1D35A63432A2EAADA0BD6BB649B909E3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8126935EC67E307577EE9834F538BEDF /* EventSource.h in Headers */,
+				FD3510FE609ED60229510248CB2D04E9 /* KeychainItemWrapper.h in Headers */,
+				2E30BFBEB221EF37F51E1DB5B1B99D31 /* Spark-SDK-Bridging-Header.h in Headers */,
+				FDC9DA51B1554D81A7D00AFC96F9CFCA /* Spark-SDK-umbrella.h in Headers */,
+				E0741F972FFB2E5D21C43FEAA8C35A14 /* Spark-SDK.h in Headers */,
+				4B8CD21FDF79871816CB103D8A8A38EC /* SparkCloud.h in Headers */,
+				92F1A8E5757279464C0D03E7C6CAEC22 /* SparkDevice.h in Headers */,
+				0E70AEB40CADDA48F9D25481814E3171 /* SparkEvent.h in Headers */,
+				40A4DA55966B8409492163E1C2CA6141 /* SparkSession.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		237FD5CB1EDF654C0D05A74A5CDFF81E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -621,36 +660,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC9E42A438A55306ABC92D2E923EBC67 /* Headers */ = {
+		CDB8B4E87A58E28DEF693D499F825B77 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60CD7DA1FBC72E73A8A3D5929D41807C /* EventSource.h in Headers */,
-				F0FE1A98DAFB6F7F73BD6DC2B8C50CF8 /* KeychainItemWrapper.h in Headers */,
-				70C4C2427F6ED0D7B219B0A07BEE81FE /* Spark-SDK-Bridging-Header.h in Headers */,
-				358AD98AABE30A8B2586B0466BE0C485 /* Spark-SDK-umbrella.h in Headers */,
-				69A41AAADF21598CC296B8E57FAB802F /* Spark-SDK.h in Headers */,
-				1DC77884C245F3DE3A45962EAC31BB2B /* SparkCloud.h in Headers */,
-				B9759F956F1AF8E4290218903095E9E2 /* SparkDevice.h in Headers */,
-				0C8764EE056B74D7CC4588192A3D14DF /* SparkEvent.h in Headers */,
-				11D61F1A3524D9FF4790DF04241DF17D /* SparkSession.h in Headers */,
+				3CA84D5996A386938AF8D94361B46603 /* RNCryptor+Private.h in Headers */,
+				99CD4757E48150EF1A8DB98E9E25A913 /* RNCryptor-objc-umbrella.h in Headers */,
+				5E9083ED070CD91ACA2774336886D76D /* RNCryptor.h in Headers */,
+				F4FD3A2471CE5BA2EC134509F7D008F3 /* RNCryptorEngine.h in Headers */,
+				5244890762E2DFF03F1173AD8921E729 /* RNDecryptor.h in Headers */,
+				DFDB2C38060439545FB7D89961E3A234 /* RNEncryptor.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E6F688EB4DA5EF490AEF20A25D8E2DFE /* Headers */ = {
+		D8E0FBFAE42F6B6DA8FA36BAA60F23B9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B097FF35853960960DF266EA46464BE /* Pods-GarageDoorOpener-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FB500001346A63009072CFEEAC31ABE4 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F4F4CCE888EDCB72FED87897D208FECF /* RNCryptor-umbrella.h in Headers */,
-				1B5DEFAED6AFFE9FF912C33D59394E88 /* RNCryptor.h in Headers */,
+				8167C0785D0FD450BC5C7D4FD1653F01 /* Pods-GarageDoorOpener-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,45 +698,27 @@
 			);
 			name = AFNetworking;
 			productName = AFNetworking;
-			productReference = 5C1FD1BF3BC3F28951FFAC0D15D9F117 /* AFNetworking.framework */;
+			productReference = 90B1BFF12F07ED91B001037A4ACA1BCD /* AFNetworking.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		7F54A2673ACF6B9BC650F5619C3824C3 /* Spark-SDK */ = {
+		34D36A49AEF17209FA0F86CD1B80509B /* Pods-GarageDoorOpener */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A9D730F28D045CCE27428D498522A02D /* Build configuration list for PBXNativeTarget "Spark-SDK" */;
+			buildConfigurationList = 0B057C2CAFB42887DEC8560E093B80AC /* Build configuration list for PBXNativeTarget "Pods-GarageDoorOpener" */;
 			buildPhases = (
-				45BBAA649E1BADD803519F2EB5EA9C5A /* Sources */,
-				72A050C1740DBC4695C4F4980A174F1C /* Frameworks */,
-				DC9E42A438A55306ABC92D2E923EBC67 /* Headers */,
+				F506262185FB41BBFB27A78A3DBE0D24 /* Sources */,
+				F128501308816DD7485C7E12AB8DF06E /* Frameworks */,
+				D8E0FBFAE42F6B6DA8FA36BAA60F23B9 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0D0155E5ABAD10064888AC9D89906E86 /* PBXTargetDependency */,
-			);
-			name = "Spark-SDK";
-			productName = "Spark-SDK";
-			productReference = 7D70551B8D9707D6DF9A227D0C0433C5 /* Spark_SDK.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		942124DC61E51D002CAC419C08E043C3 /* Pods-GarageDoorOpener */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 709E9BE27AC000A2BCB83C5895D37796 /* Build configuration list for PBXNativeTarget "Pods-GarageDoorOpener" */;
-			buildPhases = (
-				E270BC8DFCE72974DB7F4F1F40D483C4 /* Sources */,
-				9DFCB7E3D20364BD0065E377AA0930EA /* Frameworks */,
-				E6F688EB4DA5EF490AEF20A25D8E2DFE /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1DB56E81CAB1533EE2BC196CFABB8B67 /* PBXTargetDependency */,
-				33C002A98D069D22741F818520593147 /* PBXTargetDependency */,
-				10E226D81429EE9222E9833EACBEE95B /* PBXTargetDependency */,
+				58E57F7800E9E71A892B5CDE61FEA33C /* PBXTargetDependency */,
+				8759A20F13D424C847DD8B8CC768FA98 /* PBXTargetDependency */,
+				8FCB7663DF2CC3CC2F9AF687BC52E67C /* PBXTargetDependency */,
 			);
 			name = "Pods-GarageDoorOpener";
 			productName = "Pods-GarageDoorOpener";
-			productReference = C6DD1B7788183AD73CFCA64C714F09F8 /* Pods_GarageDoorOpener.framework */;
+			productReference = 9BFA9FE206E5BFC5AC1BD1614B55217D /* Pods_GarageDoorOpener.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B0A7EAA8E28DEECC5B51320740421789 /* Pods-GarageDoorOpenerUITests */ = {
@@ -726,24 +735,24 @@
 			);
 			name = "Pods-GarageDoorOpenerUITests";
 			productName = "Pods-GarageDoorOpenerUITests";
-			productReference = 84AAF7372DBDD9AC33D31DEA7E27283A /* Pods_GarageDoorOpenerUITests.framework */;
+			productReference = 1819B814121D75D0805CE7552F9525C4 /* Pods_GarageDoorOpenerUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CC0CC7436F9EAFED67079CDA8922F63B /* RNCryptor */ = {
+		BBFB6983DA7B2BB1A8577C32FD16C479 /* RNCryptor-objc */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1FEFA66F4AC87519798FE7F86524FDC9 /* Build configuration list for PBXNativeTarget "RNCryptor" */;
+			buildConfigurationList = A756FD430776D47D68BEE82129F221AE /* Build configuration list for PBXNativeTarget "RNCryptor-objc" */;
 			buildPhases = (
-				647B541208E395A7FAC67F072CA7E294 /* Sources */,
-				40DCC1A1C9C5BDE6F5DC5B4907E5A5C2 /* Frameworks */,
-				FB500001346A63009072CFEEAC31ABE4 /* Headers */,
+				399E6A1A96A7135217CFAF0136F2947B /* Sources */,
+				FE397D267431057D6F478A15E259BF54 /* Frameworks */,
+				CDB8B4E87A58E28DEF693D499F825B77 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = RNCryptor;
-			productName = RNCryptor;
-			productReference = 875875AE139CB4450E7FEA55FB1488F4 /* RNCryptor.framework */;
+			name = "RNCryptor-objc";
+			productName = "RNCryptor-objc";
+			productReference = 8CB0CBBC2C0E6341FC71486900DD0241 /* RNCryptor_objc.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E0AAA84C67646F9B26545692A6FDB7B5 /* Pods-GarageDoorOpenerTests */ = {
@@ -760,7 +769,25 @@
 			);
 			name = "Pods-GarageDoorOpenerTests";
 			productName = "Pods-GarageDoorOpenerTests";
-			productReference = 3CA0B46362A18DF351782858AB1EE1A2 /* Pods_GarageDoorOpenerTests.framework */;
+			productReference = 825B571CFACD11AE50740B5E155F11F6 /* Pods_GarageDoorOpenerTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EDA572D6FC302B355E94EDC24A1DA893 /* Spark-SDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8784B161874E54F7678568C478F4E7C1 /* Build configuration list for PBXNativeTarget "Spark-SDK" */;
+			buildPhases = (
+				E7FAD1C1FAF6F5890B4B534F0818C103 /* Sources */,
+				9D3298058E6A872E4A9F43D563A68F4C /* Frameworks */,
+				1D35A63432A2EAADA0BD6BB649B909E3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C01688D390BC1C1D2343ACE0FA5D55C /* PBXTargetDependency */,
+			);
+			name = "Spark-SDK";
+			productName = "Spark-SDK";
+			productReference = 6061EF366CA8E2C4F05139C629650200 /* Spark_SDK.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -770,23 +797,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0700;
-				TargetAttributes = {
-					1C3436CEA5C3D39764C5F54374794ECB = {
-						DevelopmentTeam = LY3KT5M7GY;
-						LastSwiftMigration = 0800;
-					};
-					7F54A2673ACF6B9BC650F5619C3824C3 = {
-						LastSwiftMigration = 0800;
-					};
-					942124DC61E51D002CAC419C08E043C3 = {
-						LastSwiftMigration = 0800;
-					};
-					CC0CC7436F9EAFED67079CDA8922F63B = {
-						DevelopmentTeam = LY3KT5M7GY;
-						LastSwiftMigration = 0800;
-					};
-				};
+				LastUpgradeCheck = 0910;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -796,16 +807,16 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 9F7F8DFE5EB4A2F9100BF318DE16CE69 /* Products */;
+			productRefGroup = 4DED3F0A267C6E4D20015B70F8B898CD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				1C3436CEA5C3D39764C5F54374794ECB /* AFNetworking */,
-				942124DC61E51D002CAC419C08E043C3 /* Pods-GarageDoorOpener */,
+				34D36A49AEF17209FA0F86CD1B80509B /* Pods-GarageDoorOpener */,
 				E0AAA84C67646F9B26545692A6FDB7B5 /* Pods-GarageDoorOpenerTests */,
 				B0A7EAA8E28DEECC5B51320740421789 /* Pods-GarageDoorOpenerUITests */,
-				CC0CC7436F9EAFED67079CDA8922F63B /* RNCryptor */,
-				7F54A2673ACF6B9BC650F5619C3824C3 /* Spark-SDK */,
+				BBFB6983DA7B2BB1A8577C32FD16C479 /* RNCryptor-objc */,
+				EDA572D6FC302B355E94EDC24A1DA893 /* Spark-SDK */,
 			);
 		};
 /* End PBXProject section */
@@ -842,6 +853,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		399E6A1A96A7135217CFAF0136F2947B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8F4C0B0173F9B5BA5F161D65DDA1CA4 /* RNCryptor-objc-dummy.m in Sources */,
+				0922B96B3B1B3BCA728238B78867CBAB /* RNCryptor.m in Sources */,
+				E4C34B3FEDDC6C2F342684775D2D840E /* RNCryptorEngine.m in Sources */,
+				E64A657E5C9DF93FAAE56A2718D06D93 /* RNDecryptor.m in Sources */,
+				D22257AEE0FE178B81C21E0C3F893BBF /* RNEncryptor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		40CFBCF48CC8C0B88BC6C44F36EB7507 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -850,72 +873,63 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		45BBAA649E1BADD803519F2EB5EA9C5A /* Sources */ = {
+		E7FAD1C1FAF6F5890B4B534F0818C103 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88384F21694834ADF197685789B4F5AF /* EventSource.m in Sources */,
-				E38D6E9CD3E85BF8FA7C5C34F32DD2CE /* KeychainItemWrapper.m in Sources */,
-				0A2102A12B648A60C38D6C3D94358BED /* Spark-SDK-dummy.m in Sources */,
-				FA51245CE9EB967C757BFC770B8B0E6F /* SparkCloud.m in Sources */,
-				625590D5A144FBDB05F07EE2ED71478F /* SparkDevice.m in Sources */,
-				0B778F7BC3AE374B8CA99564C0C0A09D /* SparkEvent.m in Sources */,
-				39C01197A5A0379F7377993E75833016 /* SparkSession.m in Sources */,
+				8D3274FED7452EE883CE20CA522FC01C /* EventSource.m in Sources */,
+				49390FE83D1C54CCCB8FB25C4D077BE4 /* KeychainItemWrapper.m in Sources */,
+				D2E8EC0979DAC020265C549217F46E77 /* Spark-SDK-dummy.m in Sources */,
+				FDFEB3CF9BC6A6417DBA000B117C661C /* SparkCloud.m in Sources */,
+				2C29F5AB399E3D3448930789C72D9113 /* SparkDevice.m in Sources */,
+				078C2DC2EDCF789C7D7BD571F3967317 /* SparkEvent.m in Sources */,
+				B57DACE4DCC151771BCDD0B311D568E9 /* SparkSession.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		647B541208E395A7FAC67F072CA7E294 /* Sources */ = {
+		F506262185FB41BBFB27A78A3DBE0D24 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50CE341A17CA757887DBB391CFBA49CE /* RNCryptor-dummy.m in Sources */,
-				7EE58C6CCD794FD0AE257CC39A39C965 /* RNCryptor.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E270BC8DFCE72974DB7F4F1F40D483C4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E0DEAE67FF940891FE09135C8487E250 /* Pods-GarageDoorOpener-dummy.m in Sources */,
+				2DAEBE4FE411E0685A47376157A9CE8A /* Pods-GarageDoorOpener-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0D0155E5ABAD10064888AC9D89906E86 /* PBXTargetDependency */ = {
+		4C01688D390BC1C1D2343ACE0FA5D55C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AFNetworking;
 			target = 1C3436CEA5C3D39764C5F54374794ECB /* AFNetworking */;
-			targetProxy = AB90BE35C805B36C1CD0A0A8E803D831 /* PBXContainerItemProxy */;
+			targetProxy = 19423BDE8EA4ECD083ACC7308CBEBCB9 /* PBXContainerItemProxy */;
 		};
-		10E226D81429EE9222E9833EACBEE95B /* PBXTargetDependency */ = {
+		58E57F7800E9E71A892B5CDE61FEA33C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = 1C3436CEA5C3D39764C5F54374794ECB /* AFNetworking */;
+			targetProxy = 97197C0666DAE915D084BEF1D69FA05E /* PBXContainerItemProxy */;
+		};
+		8759A20F13D424C847DD8B8CC768FA98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "RNCryptor-objc";
+			target = BBFB6983DA7B2BB1A8577C32FD16C479 /* RNCryptor-objc */;
+			targetProxy = F01BE1B3CE4003275C97E7AC256A0763 /* PBXContainerItemProxy */;
+		};
+		8FCB7663DF2CC3CC2F9AF687BC52E67C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Spark-SDK";
-			target = 7F54A2673ACF6B9BC650F5619C3824C3 /* Spark-SDK */;
-			targetProxy = E7296F91D80BB24FD056DA2F9E0AF780 /* PBXContainerItemProxy */;
-		};
-		1DB56E81CAB1533EE2BC196CFABB8B67 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AFNetworking;
-			target = 1C3436CEA5C3D39764C5F54374794ECB /* AFNetworking */;
-			targetProxy = 6DDF506770C1B4622D68038D9120CA60 /* PBXContainerItemProxy */;
-		};
-		33C002A98D069D22741F818520593147 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RNCryptor;
-			target = CC0CC7436F9EAFED67079CDA8922F63B /* RNCryptor */;
-			targetProxy = 5511F24A3C643E224A8EA568C8C5B4E1 /* PBXContainerItemProxy */;
+			target = EDA572D6FC302B355E94EDC24A1DA893 /* Spark-SDK */;
+			targetProxy = 7826899365A0B0457BE6AB8AC60B6961 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0068B939C3A7A482C7E4649029607A84 /* Debug */ = {
+		1E8F378458F1C9B261F0790BD922364A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E010CE5E06AEA2AA11A8C247F30969D /* Pods-GarageDoorOpenerTests.debug.xcconfig */;
+			baseConfigurationReference = 95BA171B2EB36F1CC77262296DEED95F /* Pods-GarageDoorOpener.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -924,18 +938,47 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-GarageDoorOpenerTests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-GarageDoorOpener/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GarageDoorOpenerTests/Pods-GarageDoorOpenerTests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-GarageDoorOpener/Pods-GarageDoorOpener.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_GarageDoorOpenerTests;
+				PRODUCT_NAME = Pods_GarageDoorOpener;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		294B3CF4EB63B81352EBB0466B4424FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CC21F5F5F274B97579682B439A157DB /* Spark-SDK.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Spark-SDK/Spark-SDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Spark-SDK/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Spark-SDK/Spark-SDK.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Spark_SDK;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -946,10 +989,9 @@
 		};
 		2952B3C6909CF79419E899529474B8A5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4CBC5E0A04AD0872652FBC88684DD1CB /* AFNetworking.xcconfig */;
+			baseConfigurationReference = A96D68CD1CC945EAF1711FE80887C146 /* AFNetworking.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
@@ -966,21 +1008,249 @@
 				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = AFNetworking;
-				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		367EFD8432B78936F9BF37A8AD6FB37D /* Debug */ = {
+		5EEEB603A0452C98DFD22BB28DC63F9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CC21F5F5F274B97579682B439A157DB /* Spark-SDK.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Spark-SDK/Spark-SDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Spark-SDK/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Spark-SDK/Spark-SDK.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Spark_SDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		762C2000FFF66B204C02C7EF6EBEAA88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC40EE8539D8FE1975A669F03ECD7849 /* RNCryptor-objc.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RNCryptor-objc/RNCryptor-objc-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RNCryptor-objc/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RNCryptor-objc/RNCryptor-objc.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RNCryptor_objc;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		86F54D043F5990334F5C515E7BF9CCD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29F763A4615DDEAFACFB00D2733526E3 /* Pods-GarageDoorOpenerUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GarageDoorOpenerUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GarageDoorOpenerUITests/Pods-GarageDoorOpenerUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GarageDoorOpenerUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8808E4044483281E670C628DB60B0B26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67039143628472F2FB128E30F24C03F2 /* Pods-GarageDoorOpener.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GarageDoorOpener/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GarageDoorOpener/Pods-GarageDoorOpener.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GarageDoorOpener;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9DADC82AEE921B273139F828D70202B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC40EE8539D8FE1975A669F03ECD7849 /* RNCryptor-objc.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RNCryptor-objc/RNCryptor-objc-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RNCryptor-objc/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RNCryptor-objc/RNCryptor-objc.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RNCryptor_objc;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A9B3EFF14FE8C8637D5C36C2F66EC5DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC044B65E2FB02CB420DF9AE625B92F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A96D68CD1CC945EAF1711FE80887C146 /* AFNetworking.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AFNetworking/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AFNetworking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C6485F9BB2322FB9C8E56FEA38D59832 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7040EF5FA00D5DE033EE3ECBE59D4A2B /* Pods-GarageDoorOpenerUITests.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -991,7 +1261,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-GarageDoorOpenerUITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-GarageDoorOpenerUITests/Pods-GarageDoorOpenerUITests.modulemap";
@@ -1009,79 +1279,11 @@
 			};
 			name = Debug;
 		};
-		3FA451D268613890FA8A5A03801E11D5 /* Release */ = {
+		CC2B3DD798AD2A426C9F8D6AAD43FB53 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E010CE5E06AEA2AA11A8C247F30969D /* Pods-GarageDoorOpenerTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		402A7965ADA428421636BF8FF93EF6E0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F8923966C1D1E7F35C89BA7FC6F9930 /* Spark-SDK.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Spark-SDK/Spark-SDK-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Spark-SDK/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Spark-SDK/Spark-SDK.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Spark_SDK;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 2.3;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		564D79EE97AB6A8672E3F4F003C68B71 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F8923966C1D1E7F35C89BA7FC6F9930 /* Spark-SDK.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -1090,24 +1292,60 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Spark-SDK/Spark-SDK-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Spark-SDK/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-GarageDoorOpenerTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Spark-SDK/Spark-SDK.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GarageDoorOpenerTests/Pods-GarageDoorOpenerTests.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Spark_SDK;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GarageDoorOpenerTests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */ = {
+		EE16269AD4D95D8F093ECC6292FAA3FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A78E356E7FD14E0E2913DF7D4EA1B399 /* Pods-GarageDoorOpenerTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GarageDoorOpenerTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GarageDoorOpenerTests/Pods-GarageDoorOpenerTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GarageDoorOpenerTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FCB01648D25CB94A09A225F710948CB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1116,19 +1354,29 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
@@ -1142,253 +1390,21 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		7110F913F8D4F3CCA667D4E0213A3B0E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 95BA171B2EB36F1CC77262296DEED95F /* Pods-GarageDoorOpener.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-GarageDoorOpener/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GarageDoorOpener/Pods-GarageDoorOpener.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_GarageDoorOpener;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 2.3;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		739674EB4CDD63555D9D2F23D800D501 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E3969AF5D6606F6D8BE956A8290AD5AB /* RNCryptor.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/RNCryptor/RNCryptor-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RNCryptor/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/RNCryptor/RNCryptor.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = RNCryptor;
-				PROVISIONING_PROFILE = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 2.3;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8AAEBF22CED30ECC3895D4983C498392 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29F763A4615DDEAFACFB00D2733526E3 /* Pods-GarageDoorOpenerUITests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-GarageDoorOpenerUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GarageDoorOpenerUITests/Pods-GarageDoorOpenerUITests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_GarageDoorOpenerUITests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		AC044B65E2FB02CB420DF9AE625B92F2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4CBC5E0A04AD0872652FBC88684DD1CB /* AFNetworking.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AFNetworking/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = AFNetworking;
-				PROVISIONING_PROFILE = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 2.3;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		AD3A6C8AD414B551340C16A1CEB37A52 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 67039143628472F2FB128E30F24C03F2 /* Pods-GarageDoorOpener.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-GarageDoorOpener/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GarageDoorOpener/Pods-GarageDoorOpener.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_GarageDoorOpener;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 2.3;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F8C3D7410C1EF43612DD7049C3CAB882 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E3969AF5D6606F6D8BE956A8290AD5AB /* RNCryptor.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/RNCryptor/RNCryptor-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RNCryptor/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/RNCryptor/RNCryptor.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = RNCryptor;
-				PROVISIONING_PROFILE = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 2.3;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		FA6236C26D1F807BA175118F06C1AEF0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A78E356E7FD14E0E2913DF7D4EA1B399 /* Pods-GarageDoorOpenerTests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-GarageDoorOpenerTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GarageDoorOpenerTests/Pods-GarageDoorOpenerTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_GarageDoorOpenerTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1FEFA66F4AC87519798FE7F86524FDC9 /* Build configuration list for PBXNativeTarget "RNCryptor" */ = {
+		0B057C2CAFB42887DEC8560E093B80AC /* Build configuration list for PBXNativeTarget "Pods-GarageDoorOpener" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F8C3D7410C1EF43612DD7049C3CAB882 /* Debug */,
-				739674EB4CDD63555D9D2F23D800D501 /* Release */,
+				1E8F378458F1C9B261F0790BD922364A /* Debug */,
+				8808E4044483281E670C628DB60B0B26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1396,8 +1412,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */,
-				3FA451D268613890FA8A5A03801E11D5 /* Release */,
+				FCB01648D25CB94A09A225F710948CB4 /* Debug */,
+				A9B3EFF14FE8C8637D5C36C2F66EC5DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1411,20 +1427,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		709E9BE27AC000A2BCB83C5895D37796 /* Build configuration list for PBXNativeTarget "Pods-GarageDoorOpener" */ = {
+		8784B161874E54F7678568C478F4E7C1 /* Build configuration list for PBXNativeTarget "Spark-SDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7110F913F8D4F3CCA667D4E0213A3B0E /* Debug */,
-				AD3A6C8AD414B551340C16A1CEB37A52 /* Release */,
+				294B3CF4EB63B81352EBB0466B4424FA /* Debug */,
+				5EEEB603A0452C98DFD22BB28DC63F9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A9D730F28D045CCE27428D498522A02D /* Build configuration list for PBXNativeTarget "Spark-SDK" */ = {
+		A756FD430776D47D68BEE82129F221AE /* Build configuration list for PBXNativeTarget "RNCryptor-objc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				564D79EE97AB6A8672E3F4F003C68B71 /* Debug */,
-				402A7965ADA428421636BF8FF93EF6E0 /* Release */,
+				762C2000FFF66B204C02C7EF6EBEAA88 /* Debug */,
+				9DADC82AEE921B273139F828D70202B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1432,8 +1448,8 @@
 		AC082D3389039C11634ED7721D20CD0A /* Build configuration list for PBXNativeTarget "Pods-GarageDoorOpenerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				367EFD8432B78936F9BF37A8AD6FB37D /* Debug */,
-				8AAEBF22CED30ECC3895D4983C498392 /* Release */,
+				C6485F9BB2322FB9C8E56FEA38D59832 /* Debug */,
+				86F54D043F5990334F5C515E7BF9CCD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1441,8 +1457,8 @@
 		E73AB43631DF24F84B1C32F8DAD98DBB /* Build configuration list for PBXNativeTarget "Pods-GarageDoorOpenerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0068B939C3A7A482C7E4649029607A84 /* Debug */,
-				FA6236C26D1F807BA175118F06C1AEF0 /* Release */,
+				CC2B3DD798AD2A426C9F8D6AAD43FB53 /* Debug */,
+				EE16269AD4D95D8F093ECC6292FAA3FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

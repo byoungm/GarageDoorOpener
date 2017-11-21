@@ -7,7 +7,7 @@ target 'GarageDoorOpener' do
 
   # Pods for GarageDoorOpener
   pod "Spark-SDK"
-  pod "RNCryptor"
+  pod "RNCryptor-objc", :git => "https://github.com/RNCryptor/RNCryptor-objc.git"
 
   target 'GarageDoorOpenerTests' do
     inherit! :search_paths

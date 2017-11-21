@@ -8,7 +8,8 @@
 
 #import "CredentialManager.h"
 #import <UIKit/UIKit.h>
-@import RNCryptor;
+#import "RNEncryptor.h"
+#import "RNDecryptor.h"
 
 @interface CredentialManager ()
 @property (strong, nonatomic)  NSString *credentialsFilePath;
@@ -35,17 +36,21 @@
     
     NSDictionary *dict = @{@"username":username, @"password":password};
     NSData *data = [NSKeyedArchiver archivedDataWithRootObject:dict];
-    NSData *encryptedData = [RNCryptor encryptData:data password:self.docPassword];
-    [encryptedData writeToFile:self.credentialsFilePath atomically:YES];
+    NSError *err;
+    NSData *encryptedData = [RNEncryptor encryptData:data withSettings:kRNCryptorAES256Settings password:self.docPassword error:&err];
+    if (err == nil)
+    {
+        [encryptedData writeToFile:self.credentialsFilePath atomically:YES];
+    }
 }
 
 - (NSDictionary *)getUsernameAndPassword
 {
-    NSError *error;
+    NSError *err;
     NSData *encryptedData = [NSData dataWithContentsOfFile:self.credentialsFilePath];
-    NSData *decryptedData = [RNCryptor decryptData:encryptedData password:self.docPassword  error:&error];
+    NSData *decryptedData = [RNDecryptor decryptData:encryptedData withPassword:self.docPassword error:&err];
     NSDictionary *dict = @{@"username":@"__ERROR__", @"password":@"__ERROR__"};
-    if (error == nil)
+    if (err == nil)
     {
        dict = (NSDictionary*) [NSKeyedUnarchiver unarchiveObjectWithData:decryptedData];
     }

@@ -33,4 +33,8 @@
     // Use this method to pause ongoing tasks, disable timers, etc.
 }
 
+- (void)session:(nonnull WCSession *)session activationDidCompleteWithState:(WCSessionActivationState)activationState error:(nullable NSError *)error {
+
+}
+
 @end
