@@ -64,14 +64,17 @@
             NSDictionary *dict = [cm getUsernameAndPassword];
             NSString *username = dict[@"username"];
             NSString *password = dict[@"password"];
-            [[SparkCloud sharedInstance] loginWithUser:username password:password completion:^(NSError *error){
-                if (!error)
-                {
-                    NSLog(@"Logged in to cloud\nAccess Token: %@", [SparkCloud sharedInstance].accessToken);
-                }
-                else
-                    NSLog(@"Wrong credentials or no internet connectivity, please try again");
-            }];
+            if ((username != nil) && (password != nil))
+            {
+                [[SparkCloud sharedInstance] loginWithUser:username password:password completion:^(NSError *error){
+                    if (!error)
+                    {
+                        NSLog(@"Logged in to cloud\nAccess Token: %@", [SparkCloud sharedInstance].accessToken);
+                    }
+                    else
+                        NSLog(@"Wrong credentials or no internet connectivity, please try again");
+                }];
+            }
         }
     });
 }
